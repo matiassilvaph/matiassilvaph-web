@@ -52,7 +52,7 @@ def fig(slug,t,place,note,chap,cls=""):
     i=len(ALL); ALL.append(dict(s=slug,t=t,p=place,n=note,c=chap))
     w,h=meta[slug]
     return (f'<figure class="ph {cls}" data-i="{i}"><button class="open" aria-label="Ampliar: {html.escape(t)}">'
-            f'<img src="img/{slug}-s.jpg" width="{w}" height="{h}" loading="lazy" decoding="async" alt="{html.escape(t)}. {html.escape(place)}, Nazaré, Portugal. Fotografía de Matías Silva."></button>'
+            f'<img src="img/{slug}-s.jpg" width="{w}" height="{h}" decoding="async" alt="{html.escape(t)}. {html.escape(place)}, Nazaré, Portugal. Fotografía de Matías Silva."></button>'
             f'<figcaption><span class="t">{html.escape(t)}</span><span class="p">{html.escape(place)}</span></figcaption></figure>')
 
 chap_html=""
@@ -73,7 +73,7 @@ for key,num,title,intro,photos in CH:
 </section>'''
 
 covers=[("mar","forte-bruma","El mar","Olas, acantilado y el Forte"),("pueblo","barcos","El pueblo","Calles, barcos y gatos"),("luz","dorado","La luz","Atardeceres y la hora azul")]
-cover_html="".join(f'<a class="cover" href="#{k}"><img src="img/{s}-s.jpg" alt="" loading="lazy" width="{meta[s][0]}" height="{meta[s][1]}"><span class="cn">{n}</span><span class="cd">{d}</span></a>' for k,s,n,d in covers)
+cover_html="".join(f'<a class="cover" href="#{k}"><img src="img/{s}-s.jpg" alt="" width="{meta[s][0]}" height="{meta[s][1]}"><span class="cn">{n}</span><span class="cd">{d}</span></a>' for k,s,n,d in covers)
 
 SPOTS=[
  ("forte-dorado","Forte de São Miguel Arcanjo","El punto clásico para ver las olas grandes. El faro está sobre el acantilado que separa Praia do Norte del pueblo; desde la explanada se ve romper la ola de frente.","Olas grandes · teleobjetivo largo"),
@@ -81,7 +81,7 @@ SPOTS=[
  ("dorado","Sítio y Miradouro do Suberco","El mirador sobre el pueblo. Es el lugar para el atardecer y para la hora azul, cuando se encienden las luces de la avenida.","Atardecer y noche · trípode"),
  ("barcos","Praia da Nazaré y el pueblo","La playa de los barcos tradicionales y las calles que bajan al mar. Buena para fotografía de calle por la mañana y al final de la tarde.","Calle y cultura · lente fija"),
 ]
-spot_html="".join(f'<article class="spot"><img src="img/{s}-s.jpg" alt="{html.escape(n)}" loading="lazy" width="{meta[s][0]}" height="{meta[s][1]}"><div><h3>{n}</h3><p>{d}</p><span class="tag">{tg}</span></div></article>' for s,n,d,tg in SPOTS)
+spot_html="".join(f'<article class="spot"><img src="img/{s}-s.jpg" alt="{html.escape(n)}" width="{meta[s][0]}" height="{meta[s][1]}"><div><h3>{n}</h3><p>{d}</p><span class="tag">{tg}</span></div></article>' for s,n,d,tg in SPOTS)
 
 FAQ=[
  ("¿Cuándo hay olas grandes en Nazaré?","La temporada va de octubre a marzo. Noviembre, diciembre, enero y febrero son los meses con más probabilidad de olas gigantes. De mayo a agosto el mar suele estar tranquilo."),
