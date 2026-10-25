@@ -98,7 +98,7 @@ ld=[
   "knowsAbout":["Fotografía de Nazaré","Praia do Norte","Fotografía de olas grandes","Fotografía de calle"]},
  {"@context":"https://schema.org","@type":"ImageGallery","name":"Nazaré — Fotografía de Matías Silva","about":{"@type":"Place","name":"Nazaré, Portugal"},
   "author":{"@type":"Person","name":"Matías Silva"},
-  "image":[{"@type":"ImageObject","contentUrl":f"img/{a['s']}.jpg","name":a["t"],"contentLocation":a["p"]+", Nazaré, Portugal","creator":{"@type":"Person","name":"Matías Silva"}} for a in ALL]},
+  "image":[{"@type":"ImageObject","contentUrl":f"https://matiassilvaph.netlify.app/img/{a['s']}.jpg","name":a["t"],"description":a["n"],"contentLocation":{"@type":"Place","name":a["p"]+", Nazaré, Portugal"},"creator":{"@type":"Person","name":"Matías Silva"},"creditText":"Matías Silva","copyrightNotice":"© 2026 Matías Silva","copyrightHolder":{"@type":"Person","name":"Matías Silva"}} for a in ALL]},
  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FAQ]},
 ]
 
