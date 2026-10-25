@@ -1,3 +1,4 @@
+import sys; sys.path.insert(0,"/home/claude/web")
 import json, html
 meta = json.load(open("/home/claude/web/meta.json"))
 
@@ -47,42 +48,12 @@ CATS = [
  ("gato-salto","El salto","Nazaré","El instante justo en que deja la maceta rumbo a la ventana."),
 ]
 
-ALL=[]
-def fig(slug,t,place,note,chap,cls=""):
-    i=len(ALL); ALL.append(dict(s=slug,t=t,p=place,n=note,c=chap))
-    w,h=meta[slug]
-    return (f'<figure class="ph {cls}" data-i="{i}"><button class="open" aria-label="Ampliar: {html.escape(t)}">'
-            f'<img src="img/{slug}-s.jpg" width="{w}" height="{h}" decoding="async" alt="{html.escape(t)}. {html.escape(place)}, Nazaré, Portugal. Fotografía de Matías Silva."></button>'
-            f'<figcaption><span class="t">{html.escape(t)}</span><span class="p">{html.escape(place)}</span></figcaption></figure>')
-
-chap_html=""
-for key,num,title,intro,photos in CH:
-    figs="".join(fig(s,t,p,n,title) for s,t,p,n in photos)
-    extra=""
-    if key=="pueblo":
-        cats="".join(fig(s,t,p,n,"El pueblo · Serie gatos","cat") for s,t,p,n in CATS)
-        extra=f'''<div class="series"><div class="series-head"><p class="eyebrow">Serie</p><h3>Los gatos del pueblo</h3><p>Viven en los patios y sobre los muros. Nadie los apura.</p></div><div class="cats">{cats}</div></div>'''
-    chap_html+=f'''
-<section id="{key}" class="chapter wrap" aria-labelledby="h-{key}">
-  <header class="ch-head">
-    <span class="num">{num}</span>
-    <div><h2 id="h-{key}">{title}</h2><p>{intro}</p></div>
-    <span class="count">{len(photos)+(3 if key=="pueblo" else 0)} fotografías</span>
-  </header>
-  <div class="grid">{figs}</div>{extra}
-</section>'''
-
-covers=[("mar","forte-bruma","El mar","Olas, acantilado y el Forte"),("pueblo","barcos","El pueblo","Calles, barcos y gatos"),("luz","dorado","La luz","Atardeceres y la hora azul")]
-cover_html="".join(f'<a class="cover" href="#{k}"><img src="img/{s}-s.jpg" alt="" width="{meta[s][0]}" height="{meta[s][1]}"><span class="cn">{n}</span><span class="cd">{d}</span></a>' for k,s,n,d in covers)
-
 SPOTS=[
  ("forte-dorado","Forte de São Miguel Arcanjo","El punto clásico para ver las olas grandes. El faro está sobre el acantilado que separa Praia do Norte del pueblo; desde la explanada se ve romper la ola de frente.","Olas grandes · teleobjetivo largo"),
  ("ola-spray","Praia do Norte, desde la arena","Para la textura del agua y el spray. Bajá por el sendero y quedate lejos de la orilla: en días grandes el mar sube sin aviso.","Detalle de olas · velocidad alta"),
  ("dorado","Sítio y Miradouro do Suberco","El mirador sobre el pueblo. Es el lugar para el atardecer y para la hora azul, cuando se encienden las luces de la avenida.","Atardecer y noche · trípode"),
  ("barcos","Praia da Nazaré y el pueblo","La playa de los barcos tradicionales y las calles que bajan al mar. Buena para fotografía de calle por la mañana y al final de la tarde.","Calle y cultura · lente fija"),
 ]
-spot_html="".join(f'<article class="spot"><img src="img/{s}-s.jpg" alt="{html.escape(n)}" width="{meta[s][0]}" height="{meta[s][1]}"><div><h3>{n}</h3><p>{d}</p><span class="tag">{tg}</span></div></article>' for s,n,d,tg in SPOTS)
-
 FAQ=[
  ("¿Cuándo hay olas grandes en Nazaré?","La temporada va de octubre a marzo. Noviembre, diciembre, enero y febrero son los meses con más probabilidad de olas gigantes. De mayo a agosto el mar suele estar tranquilo."),
  ("¿Por qué las olas de Nazaré son tan grandes?","Frente a Praia do Norte hay un cañón submarino que concentra la energía del oleaje del Atlántico Norte. Cuando llega una tormenta grande, la ola crece al entrar al cañón."),
@@ -90,22 +61,81 @@ FAQ=[
  ("¿Qué lente hace falta?","Para los surfistas, un teleobjetivo largo, entre 400 y 600 mm, porque muchas olas rompen lejos. Para el paisaje y la escala del lugar alcanza con un zoom estándar."),
  ("¿Cómo saber si va a haber olas grandes?","Hay que mirar el pronóstico de oleaje: período de 13 segundos o más, mar de fondo del oeste o noroeste y viento suave del este o sudeste. La marea media subiendo suele dar las series más fuertes."),
 ]
-faq_html="".join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q,a in FAQ)
 
-ld=[
- {"@context":"https://schema.org","@type":"Person","name":"Matías Silva","jobTitle":"Fotógrafo","email":"mailto:matiassilva.ph@gmail.com","homeLocation":{"@type":"Place","name":"San Miguel, Buenos Aires, Argentina"},
-  "sameAs":["https://www.instagram.com/matiassilva.ph/","https://www.instagram.com/vivanazare/"],
-  "knowsAbout":["Fotografía de Nazaré","Praia do Norte","Fotografía de olas grandes","Fotografía de calle"]},
- {"@context":"https://schema.org","@type":"ImageGallery","name":"Nazaré — Fotografía de Matías Silva","about":{"@type":"Place","name":"Nazaré, Portugal"},
-  "author":{"@type":"Person","name":"Matías Silva"},
-  "image":[{"@type":"ImageObject","contentUrl":f"https://matiassilvaph.netlify.app/img/{a['s']}.jpg","name":a["t"],"description":a["n"],"contentLocation":{"@type":"Place","name":a["p"]+", Nazaré, Portugal"},"creator":{"@type":"Person","name":"Matías Silva"},"creditText":"Matías Silva","copyrightNotice":"© 2026 Matías Silva","copyrightHolder":{"@type":"Person","name":"Matías Silva"}} for a in ALL]},
- {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FAQ]},
-]
+import i18n_en as EN
+SITE="https://matiassilvaph.netlify.app/"
+ES_UI={"photos":"fotografías","series":"Serie","cats_title":"Los gatos del pueblo","cats_intro":"Viven en los patios y sobre los muros. Nadie los apura.",
+ "cats_chap":"El pueblo · Serie gatos","zoom":"Ampliar","by":"Fotografía de Matías Silva.","gallery":"Nazaré — Fotografía de Matías Silva","job":"Fotógrafo",
+ "knows":["Fotografía de Nazaré","Praia do Norte","Fotografía de olas grandes","Fotografía de calle"]}
+ES_COVERS={"mar":("El mar","Olas, acantilado y el Forte"),"pueblo":("El pueblo","Calles, barcos y gatos"),"luz":("La luz","Atardeceres y la hora azul")}
+COVER_IMG={"mar":"forte-bruma","pueblo":"barcos","luz":"dorado"}
 
-page=open("/home/claude/web/template.html").read()
-page=(page.replace("{{CHAPTERS}}",chap_html).replace("{{COVERS}}",cover_html).replace("{{SPOTS}}",spot_html)
-      .replace("{{FAQ}}",faq_html).replace("{{LD}}",json.dumps(ld,ensure_ascii=False))
-      .replace("{{DATA}}",json.dumps(ALL,ensure_ascii=False)).replace("{{N}}",str(len(ALL)))
-      .replace("{{HW}}",str(meta["familia"][0])).replace("{{HH}}",str(meta["familia"][1])))
-open("/home/claude/web/site/index.html","w").write(page)
-print(len(ALL),"fotos")
+def build(lang):
+    en=lang=="en"; P="../" if en else ""; U=EN.UI if en else ES_UI
+    ALL=[]
+    def tr(s,t,p,n):
+        return EN.PHOTOS[s] if en else (t,p,n)
+    def fig(slug,t,place,note,chap,cls=""):
+        t,place,note=tr(slug,t,place,note)
+        i=len(ALL); ALL.append(dict(s=slug,t=t,p=place,n=note,c=chap))
+        w,h=meta[slug]
+        return (f'<figure class="ph {cls}" data-i="{i}"><button class="open" aria-label="{U["zoom"]}: {html.escape(t)}">'
+                f'<img src="{P}img/{slug}-s.jpg" width="{w}" height="{h}" decoding="async" alt="{html.escape(t)}. {html.escape(place)}, Nazaré, Portugal. {U["by"]}"></button>'
+                f'<figcaption><span class="t">{html.escape(t)}</span><span class="p">{html.escape(place)}</span></figcaption></figure>')
+    chap_html=""
+    for key,num,title,intro,photos in CH:
+        if en: title,intro=EN.CHAPTERS[key]
+        figs="".join(fig(s,t,p,n,title) for s,t,p,n in photos)
+        extra=""
+        if key=="pueblo":
+            cats="".join(fig(s,t,p,n,U["cats_chap"],"cat") for s,t,p,n in CATS)
+            extra=f'''<div class="series"><div class="series-head"><p class="eyebrow">{U["series"]}</p><h3>{U["cats_title"]}</h3><p>{U["cats_intro"]}</p></div><div class="cats">{cats}</div></div>'''
+        chap_html+=f'''
+<section id="{key}" class="chapter wrap" aria-labelledby="h-{key}">
+  <header class="ch-head">
+    <span class="num">{num}</span>
+    <div><h2 id="h-{key}">{title}</h2><p>{intro}</p></div>
+    <span class="count">{len(photos)+(3 if key=="pueblo" else 0)} {U["photos"]}</span>
+  </header>
+  <div class="grid">{figs}</div>{extra}
+</section>'''
+    CV=EN.COVERS if en else ES_COVERS
+    cover_html="".join(f'<a class="cover" href="#{k}"><img src="{P}img/{COVER_IMG[k]}-s.jpg" alt="" width="{meta[COVER_IMG[k]][0]}" height="{meta[COVER_IMG[k]][1]}"><span class="cn">{CV[k][0]}</span><span class="cd">{CV[k][1]}</span></a>' for k in ("mar","pueblo","luz"))
+    SP=EN.SPOTS if en else SPOTS
+    spot_html="".join(f'<article class="spot"><img src="{P}img/{s}-s.jpg" alt="{html.escape(n)}" width="{meta[s][0]}" height="{meta[s][1]}"><div><h3>{n}</h3><p>{d}</p><span class="tag">{tg}</span></div></article>' for s,n,d,tg in SP)
+    FQ=EN.FAQ if en else FAQ
+    faq_html="".join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q,a in FQ)
+    url=SITE+("en/" if en else "")
+    ld=[
+     {"@context":"https://schema.org","@type":"Person","name":"Matías Silva","jobTitle":U["job"],"email":"mailto:matiassilva.ph@gmail.com","url":url,"homeLocation":{"@type":"Place","name":"San Miguel, Buenos Aires, Argentina"},
+      "sameAs":["https://www.instagram.com/matiassilva.ph/","https://www.instagram.com/vivanazare/"],"knowsAbout":U["knows"]},
+     {"@context":"https://schema.org","@type":"ImageGallery","name":U["gallery"],"inLanguage":lang,"url":url,"about":{"@type":"Place","name":"Nazaré, Portugal"},
+      "author":{"@type":"Person","name":"Matías Silva"},
+      "image":[{"@type":"ImageObject","contentUrl":f"{SITE}img/{a['s']}.jpg","name":a["t"],"description":a["n"],"contentLocation":{"@type":"Place","name":a["p"]+", Nazaré, Portugal"},"creator":{"@type":"Person","name":"Matías Silva"},"creditText":"Matías Silva","copyrightNotice":"© 2026 Matías Silva","copyrightHolder":{"@type":"Person","name":"Matías Silva"}} for a in ALL]},
+     {"@context":"https://schema.org","@type":"FAQPage","inLanguage":lang,"mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FQ]},
+    ]
+    headlinks=(f'<link rel="canonical" href="{url}">\n<link rel="alternate" hreflang="es" href="{SITE}">\n'
+               f'<link rel="alternate" hreflang="en" href="{SITE}en/">\n<link rel="alternate" hreflang="x-default" href="{SITE}">')
+    langlink=('<a class="lang" href="../" hreflang="es" lang="es">ES</a>' if en else '<a class="lang" href="en/" hreflang="en" lang="en">EN</a>')
+    picker=(f'<div class="lang-pick" id="lang-pick" data-cur="{lang}" hidden role="dialog" aria-label="Idioma / Language">'
+            '<p>Elegí el idioma · Choose your language</p><div class="row">'
+            f'<button type="button" data-l="es" data-href="{"../" if en else "./"}" lang="es">Español</button>'
+            f'<button type="button" data-l="en" data-href="{"./" if en else "en/"}" lang="en">English</button></div></div>')
+    page=open("/home/claude/web/template.html").read()
+    if en:
+        for a,b in EN.TEMPLATE:
+            assert a in page, a[:60]
+            page=page.replace(a,b)
+    page=(page.replace("{{CHAPTERS}}",chap_html).replace("{{COVERS}}",cover_html).replace("{{SPOTS}}",spot_html)
+          .replace("{{FAQ}}",faq_html).replace("{{LD}}",json.dumps(ld,ensure_ascii=False))
+          .replace("{{DATA}}",json.dumps(ALL,ensure_ascii=False)).replace("{{N}}",str(len(ALL)))
+          .replace("{{HW}}",str(meta["familia"][0])).replace("{{HH}}",str(meta["familia"][1]))
+          .replace("{{HEADLINKS}}",headlinks).replace("{{LANGLINK}}",langlink).replace("{{PICKER}}",picker).replace("{{P}}",P))
+    assert "{{" not in page
+    return page,len(ALL)
+
+import os
+os.makedirs("/home/claude/web/site/en",exist_ok=True)
+for lang,out in (("es","/home/claude/web/site/index.html"),("en","/home/claude/web/site/en/index.html")):
+    pg,n=build(lang); open(out,"w").write(pg)
+print(n,"fotos x 2 idiomas")

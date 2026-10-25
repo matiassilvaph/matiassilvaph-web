@@ -3,11 +3,12 @@
 <meta name="description" content="Nazaré, Portugal, fotografiada por Matías Silva: las olas de Praia do Norte, el pueblo y la luz del Atlántico. Incluye una guía para fotografiar Nazaré.">
 <meta property="og:title" content="Nazaré · Matías Silva Fotografía">
 <meta property="og:description" content="Las olas de Praia do Norte, el pueblo y la luz del Atlántico.">
-<meta property="og:image" content="img/familia.jpg">
+<meta property="og:image" content="https://matiassilvaph.netlify.app/img/familia.jpg">
+{{HEADLINKS}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="preload" as="image" href="img/familia.jpg">
+<link rel="preload" as="image" href="{{P}}img/familia.jpg">
 <script type="application/ld+json">{{LD}}</script>
 <style>
 /* Layout: muro de galería oscuro; la foto manda y el texto acompaña como ficha de archivo. Un solo tema, oscuro, a propósito. */
@@ -160,13 +161,21 @@ footer{padding-block:80px 40px;font:12px var(--mono);color:var(--muted)}
   .lb aside{max-height:40vh}
 }
 @media (max-width:480px){.spot{grid-template-columns:96px minmax(0,1fr)}}
+.top nav a.lang{color:var(--fg);border:1px solid var(--line);padding:1px 7px;border-radius:2px}
+.top nav a.lang:hover{border-color:var(--accent)}
+.lang-pick{position:fixed;z-index:15;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:min(320px,calc(100% - 32px));background:var(--surface);border:1px solid var(--line);padding:18px;display:flex;flex-direction:column;gap:12px;box-shadow:0 12px 40px rgba(0,0,0,.45)}
+.lang-pick p{margin:0;font-size:.92rem;color:var(--muted)}
+.lang-pick .row{display:flex;gap:8px}
+.lang-pick button{flex:1;font:500 .95rem var(--body);padding:10px 12px;cursor:pointer;background:transparent;color:var(--fg);border:1px solid var(--line)}
+.lang-pick button.pref{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.lang-pick button:hover{border-color:var(--accent)}
 </style>
 
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#inicio">Matías Silva <i>fotografía</i></a>
     <nav aria-label="Secciones">
-      <a href="#mar">El mar</a><a href="#pueblo">El pueblo</a><a href="#luz">La luz</a><a href="#guia">Guía</a><a href="#quien-soy">Quién soy</a>
+      <a href="#mar">El mar</a><a href="#pueblo">El pueblo</a><a href="#luz">La luz</a><a href="#guia">Guía</a><a href="#quien-soy">Quién soy</a>{{LANGLINK}}
     </nav>
   </div>
 </header>
@@ -174,7 +183,7 @@ footer{padding-block:80px 40px;font:12px var(--mono);color:var(--muted)}
 <main id="inicio">
   <section class="wrap hero" aria-label="Portada">
     <div class="hero-img">
-      <img src="img/familia.jpg" width="{{HW}}" height="{{HH}}" alt="Una familia camina hacia el mar al atardecer por una calle de Nazaré, Portugal." fetchpriority="high">
+      <img src="{{P}}img/familia.jpg" width="{{HW}}" height="{{HH}}" alt="Una familia camina hacia el mar al atardecer por una calle de Nazaré, Portugal." fetchpriority="high">
       <div class="hero-title"><p class="eyebrow">Matías Silva · Fotografía</p><h1>Nazaré</h1></div>
     </div>
     <div class="hero-sub">
@@ -223,7 +232,7 @@ footer{padding-block:80px 40px;font:12px var(--mono);color:var(--muted)}
       <span class="count"></span>
     </header>
     <div class="about">
-      <img src="img/detras.jpg" width="960" height="1280" alt="Cámara sobre trípode frente a Praia do Norte en un día de olas.">
+      <img src="{{P}}img/detras.jpg" width="960" height="1280" alt="Cámara sobre trípode frente a Praia do Norte en un día de olas.">
       <div>
         <p class="lead">Soy de San Miguel, Buenos Aires. Nazaré es mi segunda casa.</p>
         <p>Viví tres años en Portugal. Parte de ese tiempo lo pasé instalado en Nazaré, y el resto viajaba hasta allá cada vez que podía para estudiar sus olas, su cultura, su gente y su energía. Fueron tres años de mirar el mismo lugar con paciencia, y de ahí salió la forma en que hoy lo fotografío.</p>
@@ -255,6 +264,8 @@ footer{padding-block:80px 40px;font:12px var(--mono);color:var(--muted)}
 
 <footer class="wrap">© 2026 Matías Silva · Todas las fotografías son de autoría propia.</footer>
 
+{{PICKER}}
+
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lb-t">
   <div class="stage"><img id="lb-img" alt=""></div>
   <aside>
@@ -277,10 +288,10 @@ const $=id=>document.getElementById(id);
 const lb=$("lb");let cur=0,last=null;
 function show(i){
   cur=(i+D.length)%D.length;const a=D[cur];
-  $("lb-img").src="img/"+a.s+".jpg";$("lb-img").alt=a.t+". "+a.p+", Nazaré.";
+  $("lb-img").src="{{P}}img/"+a.s+".jpg";$("lb-img").alt=a.t+". "+a.p+", Nazaré.";
   $("lb-c").textContent=a.c;$("lb-t").textContent=a.t;$("lb-p").textContent=a.p;$("lb-n").textContent=a.n;
   $("lb-pos").textContent=(cur+1)+" / "+D.length;
-  const n=new Image();n.src="img/"+D[(cur+1)%D.length].s+".jpg";
+  const n=new Image();n.src="{{P}}img/"+D[(cur+1)%D.length].s+".jpg";
 }
 function open(i,src){last=src;show(i);lb.hidden=false;document.body.style.overflow="hidden";$("lb-close").focus()}
 function close(){lb.hidden=true;document.body.style.overflow="";if(last)last.focus()}
@@ -290,4 +301,14 @@ lb.addEventListener("click",e=>{if(e.target===lb||e.target.classList.contains("s
 document.addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key==="Escape")close();if(e.key==="ArrowRight")show(cur+1);if(e.key==="ArrowLeft")show(cur-1)});
 let sx=null;lb.addEventListener("touchstart",e=>{sx=e.touches[0].clientX},{passive:true});
 lb.addEventListener("touchend",e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));sx=null});
+(function(){
+  var p=document.getElementById("lang-pick");if(!p)return;
+  var k="langChosen";try{if(localStorage.getItem(k))return}catch(e){}
+  var nav=(navigator.language||"").toLowerCase(),es=nav.indexOf("es")===0;
+  p.querySelector(es?"[data-l=es]":"[data-l=en]").classList.add("pref");
+  p.hidden=false;
+  p.addEventListener("click",function(e){var b=e.target.closest("button[data-l]");if(!b)return;
+    try{localStorage.setItem(k,b.dataset.l)}catch(err){}
+    if(b.dataset.l===document.documentElement.lang||b.dataset.l===p.dataset.cur){p.hidden=true}else{location.href=b.dataset.href}});
+})();
 </script>
