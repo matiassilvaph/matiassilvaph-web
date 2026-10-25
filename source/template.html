@@ -122,7 +122,8 @@ details p{margin:0 0 18px;color:var(--muted);max-width:68ch}
 .facts{display:grid;grid-template-columns:auto 1fr;gap:8px 22px;margin:28px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:.94rem}
 .facts dt{font:12px/1.9 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
 .facts dd{margin:0}
-.links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.links .h{overflow-wrap:anywhere}
 .links a{display:block;text-decoration:none;border:1px solid var(--line);padding:22px;transition:border-color .2s}
 .links a:hover{border-color:var(--accent)}
 .links .h{font-family:var(--display);font-size:1.4rem}
@@ -241,10 +242,11 @@ footer{padding-block:80px 40px;font:12px var(--mono);color:var(--muted)}
   <section id="contacto" class="chapter wrap" aria-labelledby="h-cont">
     <header class="ch-head">
       <span class="num">VI</span>
-      <div><h2 id="h-cont">Contacto</h2><p>Para colaboraciones o consultas, escribime por mensaje directo.</p></div>
+      <div><h2 id="h-cont">Contacto</h2><p>Para colaboraciones, consultas o uso de fotografías, escribime por mail o por mensaje directo.</p></div>
       <span class="count"></span>
     </header>
     <div class="links">
+      <a href="mailto:matiassilva.ph@gmail.com"><div class="h">matiassilva.ph@gmail.com</div><div class="d">Colaboraciones y consultas</div></a>
       <a href="https://www.instagram.com/matiassilva.ph/" target="_blank" rel="noopener"><div class="h">@matiassilva.ph</div><div class="d">Fotografía y proceso</div></a>
       <a href="https://www.instagram.com/vivanazare/" target="_blank" rel="noopener"><div class="h">@vivanazare</div><div class="d">Gente, cultura y olas de Nazaré</div></a>
     </div>

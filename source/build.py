@@ -93,7 +93,7 @@ FAQ=[
 faq_html="".join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q,a in FAQ)
 
 ld=[
- {"@context":"https://schema.org","@type":"Person","name":"Matías Silva","jobTitle":"Fotógrafo","homeLocation":{"@type":"Place","name":"San Miguel, Buenos Aires, Argentina"},
+ {"@context":"https://schema.org","@type":"Person","name":"Matías Silva","jobTitle":"Fotógrafo","email":"mailto:matiassilva.ph@gmail.com","homeLocation":{"@type":"Place","name":"San Miguel, Buenos Aires, Argentina"},
   "sameAs":["https://www.instagram.com/matiassilva.ph/","https://www.instagram.com/vivanazare/"],
   "knowsAbout":["Fotografía de Nazaré","Praia do Norte","Fotografía de olas grandes","Fotografía de calle"]},
  {"@context":"https://schema.org","@type":"ImageGallery","name":"Nazaré — Fotografía de Matías Silva","about":{"@type":"Place","name":"Nazaré, Portugal"},
