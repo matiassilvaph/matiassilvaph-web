@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://matiassilvaph.netlify.app/sitemap.xml
