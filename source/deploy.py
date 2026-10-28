@@ -33,21 +33,22 @@ def wrap(src,out,lang):
 R='/home/claude/matiassilvaph-web/'
 wrap('/home/claude/web/site/index.html',R+'index.html','es')
 wrap('/home/claude/web/site/en/index.html',R+'en/index.html','en')
-open(R+'sitemap.xml','w').write("""<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://matiassilvaph.netlify.app/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/"/>
-    <lastmod>2026-10-25</lastmod>
+import posts
+pairs=[("/","/en/"),("/blog/","/en/blog/")]+[(f"/blog/{x['slug']}/",f"/en/blog/{x['slug']}/") for x in posts.POSTS]
+for es,en in pairs[1:]:
+    wrap('/home/claude/web/site'+es+'index.html',R+es.lstrip('/')+'index.html','es')
+    wrap('/home/claude/web/site'+en+'index.html',R+en.lstrip('/')+'index.html','en')
+B="https://matiassilvaph.netlify.app"
+urls=""
+for es,en in pairs:
+    for u in (es,en):
+        urls+=f"""  <url>
+    <loc>{B}{u}</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="{B}{es}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{B}{en}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{B}{es}"/>
+    <lastmod>2026-10-28</lastmod>
   </url>
-  <url>
-    <loc>https://matiassilvaph.netlify.app/en/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/"/>
-    <lastmod>2026-10-25</lastmod>
-  </url>
-</urlset>
-""")
+"""
+open(R+'sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+urls+'</urlset>\n')
+
