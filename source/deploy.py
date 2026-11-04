@@ -47,7 +47,7 @@ for es,en in pairs:
     <xhtml:link rel="alternate" hreflang="es" href="{B}{es}"/>
     <xhtml:link rel="alternate" hreflang="en" href="{B}{en}"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="{B}{es}"/>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
 """
 open(R+'sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+urls+'</urlset>\n')

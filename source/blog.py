@@ -105,7 +105,7 @@ out = {}
 for lang in ("es", "en"):
     t = L[lang]
     cards = ""
-    for p in POSTS:
+    for p in reversed(POSTS):
         c = p[lang]
         url = f"{t['blog']}{p['slug']}/"
         alt_es, alt_en = f"/blog/{p['slug']}/", f"/en/blog/{p['slug']}/"

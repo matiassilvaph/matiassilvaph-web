@@ -233,7 +233,7 @@ POSTS = [
 
 <h2>Ejercicio para practicar</h2>
 <p>Buscá algo que se mueva de forma constante: una fuente de agua, autos pasando, gente caminando. En modo S / Tv, sacá la misma escena a <strong>1/1000</strong>, <strong>1/125</strong> y <strong>1/15</strong>. Mirá cómo cambia el movimiento y qué apertura e ISO eligió la cámara en cada caso. Después repetí en M, ajustando vos todo.</p>
-<p class="next">Lectura anterior: <a href="/blog/triangulo-de-exposicion/">Triángulo de exposición: apertura, velocidad e ISO</a>.</p>
+<p class="next">Lectura anterior: <a href="/blog/triangulo-de-exposicion/">Triángulo de exposición: apertura, velocidad e ISO</a>. Siguiente: <a href="/blog/como-leer-el-histograma/">Cómo leer el histograma</a>.</p>
 """
  },
  "en": {
@@ -296,7 +296,150 @@ POSTS = [
 
 <h2>Practice exercise</h2>
 <p>Find something that moves steadily: a fountain, passing cars, people walking. In S / Tv, shoot the same scene at <strong>1/1000</strong>, <strong>1/125</strong> and <strong>1/15</strong>. See how the motion changes and which aperture and ISO the camera chose each time. Then repeat in M, setting everything yourself.</p>
-<p class="next">Previous: <a href="/en/blog/triangulo-de-exposicion/">The exposure triangle: aperture, shutter speed and ISO</a>.</p>
+<p class="next">Previous: <a href="/en/blog/triangulo-de-exposicion/">The exposure triangle: aperture, shutter speed and ISO</a>. Next: <a href="/en/blog/como-leer-el-histograma/">How to read a histogram</a>.</p>
+"""
+ },
+},
+{
+ "slug": "como-leer-el-histograma",
+ "date": "2026-11-03",
+ "image": "forte-dorado",
+ "es": {
+  "title": "Cómo leer el histograma: la herramienta para no quemar ni empastar una foto",
+  "desc": "Qué muestra el histograma de la cámara, cómo detectar luces quemadas y sombras empastadas, y cuándo una montaña pegada a un borde está bien. Sirve para cualquier cámara.",
+  "cat": "Fundamentos",
+  "body": """
+<p class="lead">La pantalla de la cámara engaña. Con sol se ve oscura, de noche se ve brillante, y una foto que parece bien en la mano puede estar quemada en la computadora. El histograma no depende de la pantalla ni de la luz que haya alrededor: es la forma más confiable de saber si la exposición está bien.</p>
+<p>Este artículo sigue a <a href="/blog/triangulo-de-exposicion/">Triángulo de exposición</a> y <a href="/blog/modos-de-la-camara/">Modos de la cámara</a>. Con el histograma sabés si los ajustes que elegiste funcionaron.</p>
+
+<h2>Qué muestra</h2>
+<p>El histograma es un gráfico de cuántos píxeles de la foto hay en cada nivel de brillo.</p>
+<ul>
+<li><strong>Eje horizontal</strong>: el brillo. A la izquierda, el negro puro. A la derecha, el blanco puro. En el medio, los tonos intermedios.</li>
+<li><strong>Altura</strong>: cuántos píxeles tienen ese brillo. Una montaña alta en un punto significa que gran parte de la foto tiene ese tono.</li>
+</ul>
+<p>No muestra <em>dónde</em> está cada tono en la imagen, solo cuánto hay de cada uno. Un cielo claro y una pared blanca suman en el mismo lugar del gráfico.</p>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Zona del gráfico</th><th>Qué representa</th><th>Ejemplos</th></tr></thead>
+<tbody>
+<tr><td>Borde izquierdo</td><td>Negros</td><td>Siluetas, noche, sombras profundas</td></tr>
+<tr><td>Izquierda</td><td>Sombras</td><td>Árboles a contraluz, interiores</td></tr>
+<tr><td>Centro</td><td>Medios tonos</td><td>Piel, pasto, cielo azul, asfalto</td></tr>
+<tr><td>Derecha</td><td>Luces</td><td>Nubes, arena con sol</td></tr>
+<tr><td>Borde derecho</td><td>Blancos</td><td>Espuma de las olas, el sol, la nieve</td></tr>
+</tbody></table></div>
+
+<h2>Los dos problemas que detecta</h2>
+<p><strong>1. Luces quemadas.</strong> Si la montaña choca contra el borde derecho y se corta, una parte de la foto quedó en blanco puro, sin información. Es lo que pasa con un cielo de atardecer que sale blanco, o con la espuma de una ola sin textura. En edición no se recupera: no hay datos para recuperar.</p>
+<p><strong>2. Sombras empastadas.</strong> Si la montaña choca contra el borde izquierdo, una parte quedó en negro puro. Se recupera un poco más que las luces, sobre todo en RAW, pero al aclararla aparece ruido.</p>
+<p>Muchas cámaras tienen además una <strong>alerta de luces altas</strong>: al ver la foto, las zonas quemadas parpadean. Se activa en el menú de reproducción, con nombres como "Alerta de altas luces", "Destellos" o "Resaltar zonas quemadas", según la marca.</p>
+
+<figure class="fig"><img src="/img/familia.jpg" alt="Familia caminando hacia el mar al atardecer en contraluz, en una calle de Nazaré." loading="lazy" width="1440" height="961"><figcaption>En un contraluz, la montaña se reparte hacia los dos bordes: sombras oscuras y el cielo cerca del blanco. Lo importante es que el sol sea lo único que toque el borde derecho. Nazaré.</figcaption></figure>
+
+<h2>No existe un histograma correcto</h2>
+<p>El error más común es pensar que la montaña tiene que estar centrada. No es así: el histograma correcto depende de la escena.</p>
+<ul>
+<li><strong>Escena clara</strong> (playa con sol, nieve, una pared blanca): la montaña va a la derecha, y está bien.</li>
+<li><strong>Escena oscura</strong> (la ciudad de noche, un interior con poca luz): la montaña va a la izquierda, y está bien.</li>
+<li><strong>Escena con mucho contraste</strong> (un contraluz al atardecer): la montaña se reparte hacia los dos bordes. Ahí hay que decidir qué se sacrifica.</li>
+</ul>
+<p>La pregunta no es "¿está centrada?", sino <strong>"¿se cortó algo importante?"</strong>. Si lo único que toca el borde derecho es el sol, no importa. Si es la cara de una persona o la cresta de la ola, hay que corregir.</p>
+
+<h2>Cómo corregir</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Lo que ves</th><th>En A/Av, S/Tv o P</th><th>En manual</th></tr></thead>
+<tbody>
+<tr><td>Montaña cortada a la derecha</td><td>Compensación de exposición en −0,7 o −1</td><td>Velocidad más alta o diafragma más cerrado</td></tr>
+<tr><td>Montaña cortada a la izquierda (y la sombra importa)</td><td>Compensación en +0,7 o +1</td><td>Velocidad más baja, diafragma más abierto o más ISO</td></tr>
+<tr><td>Cortada en los dos lados</td><td colspan="2">La escena tiene más contraste del que el sensor registra. Elegí qué proteger (casi siempre las luces) o hacé varias fotos con distinta exposición para combinarlas.</td></tr>
+</tbody></table></div>
+
+<h2>Histograma RGB</h2>
+<p>Muchas cámaras ofrecen dos versiones: <strong>luminosidad</strong> (un solo gráfico) y <strong>RGB</strong> (uno por cada color: rojo, verde y azul). Conviene usar el RGB: en un atardecer, el canal rojo se quema antes que el resto, y en el gráfico de luminosidad no se ve. El resultado es un naranja plano, sin degradé.</p>
+
+<h2>Un detalle si sacás en RAW</h2>
+<p>El histograma de la cámara se calcula sobre la vista previa en JPEG, no sobre el archivo RAW. El RAW suele guardar un poco más de información en las luces de lo que muestra el gráfico. Por eso, si el histograma toca apenas el borde derecho, muchas veces se recupera en edición. Sirve como margen, no como excusa: lo seguro es no cortar.</p>
+
+<h2>Dónde verlo</h2>
+<ul>
+<li><strong>Al revisar la foto</strong>: en casi todas las cámaras, presionando el botón de información (INFO o DISP) varias veces en reproducción.</li>
+<li><strong>Antes de disparar</strong>: las cámaras sin espejo y muchas réflex en visión directa lo muestran en vivo, en la pantalla o en el visor electrónico. Es la forma más rápida de trabajar.</li>
+<li><strong>En el celular</strong>: las apps de cámara con modo profesional o manual suelen mostrarlo; la cámara nativa del iPhone y de muchos Android, no.</li>
+</ul>
+
+<h2>Ejercicio para practicar</h2>
+<p>Buscá una escena con cielo y sombra a la vez: una calle a la tarde, un árbol contra el cielo. Sacá la misma foto con la compensación de exposición en <strong>−1</strong>, <strong>0</strong> y <strong>+1</strong>. Mirá cómo se corre la montaña en cada caso y en cuál de las tres el cielo deja de tocar el borde derecho. Después compará las tres en la computadora.</p>
+<p class="next">Lectura anterior: <a href="/blog/modos-de-la-camara/">Modos de la cámara: cuándo usar A, S, M y P</a>.</p>
+"""
+ },
+ "en": {
+  "title": "How to read a histogram: the tool that keeps you from blowing out or crushing a photo",
+  "desc": "What the camera histogram shows, how to spot blown highlights and crushed shadows, and when a peak against one edge is fine. Works with any camera.",
+  "cat": "Fundamentals",
+  "body": """
+<p class="lead">The camera screen lies. In sunlight it looks dark, at night it looks bright, and a photo that looks fine in your hand can turn out blown on the computer. The histogram does not depend on the screen or the light around you: it is the most reliable way to know whether the exposure is right.</p>
+<p>This article follows <a href="/en/blog/triangulo-de-exposicion/">The exposure triangle</a> and <a href="/en/blog/modos-de-la-camara/">Camera modes</a>. The histogram tells you whether the settings you chose worked.</p>
+
+<h2>What it shows</h2>
+<p>A histogram is a graph of how many pixels in the photo sit at each brightness level.</p>
+<ul>
+<li><strong>Horizontal axis</strong>: brightness. Pure black on the left, pure white on the right, midtones in between.</li>
+<li><strong>Height</strong>: how many pixels have that brightness. A tall peak at one point means a large part of the photo has that tone.</li>
+</ul>
+<p>It does not show <em>where</em> each tone is in the image, only how much of each there is. A bright sky and a white wall add up in the same place on the graph.</p>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Area of the graph</th><th>What it represents</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td>Left edge</td><td>Blacks</td><td>Silhouettes, night, deep shadow</td></tr>
+<tr><td>Left</td><td>Shadows</td><td>Backlit trees, interiors</td></tr>
+<tr><td>Centre</td><td>Midtones</td><td>Skin, grass, blue sky, asphalt</td></tr>
+<tr><td>Right</td><td>Highlights</td><td>Clouds, sunlit sand</td></tr>
+<tr><td>Right edge</td><td>Whites</td><td>White water, the sun, snow</td></tr>
+</tbody></table></div>
+
+<h2>The two problems it reveals</h2>
+<p><strong>1. Blown highlights.</strong> If the graph runs into the right edge and gets cut off, part of the photo is pure white with no information. That is what happens when a sunset sky turns white, or the foam on a wave has no texture. It cannot be recovered in editing: there is no data to recover.</p>
+<p><strong>2. Crushed shadows.</strong> If the graph runs into the left edge, part of the photo is pure black. Shadows recover a little better than highlights, especially in RAW, but brightening them brings out noise.</p>
+<p>Many cameras also have a <strong>highlight warning</strong>: when you review the photo, blown areas blink. It is switched on in the playback menu, under names like "Highlight alert", "Blinkies" or "Highlight warning", depending on the brand.</p>
+
+<figure class="fig"><img src="/img/familia.jpg" alt="A backlit family walking toward the sea at sunset on a street in Nazaré." loading="lazy" width="1440" height="961"><figcaption>In a backlit scene, the graph spreads toward both edges: dark shadows and a sky near white. What matters is that the sun is the only thing touching the right edge. Nazaré.</figcaption></figure>
+
+<h2>There is no correct histogram</h2>
+<p>The most common mistake is thinking the graph should sit in the middle. It should not: the right histogram depends on the scene.</p>
+<ul>
+<li><strong>Bright scene</strong> (sunny beach, snow, a white wall): the graph sits to the right, and that is fine.</li>
+<li><strong>Dark scene</strong> (a city at night, a dim interior): the graph sits to the left, and that is fine.</li>
+<li><strong>High-contrast scene</strong> (a sunset backlight): the graph spreads toward both edges. You have to decide what to give up.</li>
+</ul>
+<p>The question is not "is it centred?" but <strong>"did something important get cut off?"</strong> If the only thing touching the right edge is the sun, it does not matter. If it is someone's face or the crest of the wave, correct it.</p>
+
+<h2>How to correct it</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>What you see</th><th>In A/Av, S/Tv or P</th><th>In manual</th></tr></thead>
+<tbody>
+<tr><td>Graph cut off on the right</td><td>Exposure compensation at −0.7 or −1</td><td>Faster shutter or smaller aperture</td></tr>
+<tr><td>Graph cut off on the left (and the shadow matters)</td><td>Compensation at +0.7 or +1</td><td>Slower shutter, wider aperture or higher ISO</td></tr>
+<tr><td>Cut off on both sides</td><td colspan="2">The scene has more contrast than the sensor can record. Choose what to protect (usually the highlights) or take several exposures to blend later.</td></tr>
+</tbody></table></div>
+
+<h2>RGB histogram</h2>
+<p>Many cameras offer two versions: <strong>luminance</strong> (a single graph) and <strong>RGB</strong> (one per colour channel: red, green and blue). Use RGB: at sunset the red channel blows out before the others, and the luminance graph does not show it. The result is a flat orange with no gradation.</p>
+
+<h2>A note if you shoot RAW</h2>
+<p>The camera histogram is calculated from the JPEG preview, not from the RAW file. The RAW usually holds a little more highlight information than the graph shows. So if the histogram just touches the right edge, it can often be recovered in editing. Treat it as a margin, not an excuse: the safe option is not to clip.</p>
+
+<h2>Where to see it</h2>
+<ul>
+<li><strong>When reviewing a photo</strong>: on almost every camera, press the information button (INFO or DISP) a few times in playback.</li>
+<li><strong>Before you shoot</strong>: mirrorless cameras and many DSLRs in live view show it live, on the screen or in the electronic viewfinder. It is the fastest way to work.</li>
+<li><strong>On a phone</strong>: camera apps with a pro or manual mode usually show it; the built-in camera on iPhone and many Android phones does not.</li>
+</ul>
+
+<h2>Practice exercise</h2>
+<p>Find a scene with both sky and shade: a street in the afternoon, a tree against the sky. Take the same photo with exposure compensation at <strong>−1</strong>, <strong>0</strong> and <strong>+1</strong>. Watch how the graph shifts each time and in which of the three the sky stops touching the right edge. Then compare all three on the computer.</p>
+<p class="next">Previous: <a href="/en/blog/modos-de-la-camara/">Camera modes: when to use A, S, M and P</a>.</p>
 """
  },
 },
