@@ -38,6 +38,8 @@ pairs=[("/","/en/"),("/blog/","/en/blog/")]+[(f"/blog/{x['slug']}/",f"/en/blog/{
 for es,en in pairs[1:]:
     wrap('/home/claude/web/site'+es+'index.html',R+es.lstrip('/')+'index.html','es')
     wrap('/home/claude/web/site'+en+'index.html',R+en.lstrip('/')+'index.html','en')
+wrap('/home/claude/web/site/servicios/index.html',R+'servicios/index.html','es')
+wrap('/home/claude/web/site/en/servicios/index.html',R+'en/servicios/index.html','en')
 B="https://matiassilvaph.netlify.app"
 urls=""
 for es,en in pairs:
