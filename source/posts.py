@@ -600,4 +600,294 @@ POSTS = [
 """
  },
 },
+{
+ "slug": "que-camara-comprar-para-empezar",
+ "date": "2026-11-13",
+ "image": "arco",
+ "es": {
+  "title": 'Qué cámara comprar para empezar a fotografiar en 2026 (con precios en Argentina)',
+  "desc": 'Cómo elegir tu primera cámara según presupuesto: celular, usada, sin espejo de entrada o cuadro completo. Precios de referencia en Argentina y errores que conviene evitar.',
+  "cat": "Equipo",
+  "body": """
+<p class="lead">La mejor cámara para empezar no es la más cara ni la que más megapíxeles tiene. Es la que vas a llevar encima y te deja aprender a decidir la exposición. Esta guía ordena las opciones por presupuesto, con precios de referencia en Argentina, para que elijas sin gastar de más.</p>
+
+<h2>Antes de mirar modelos: cuatro preguntas</h2>
+<ol>
+<li><strong>¿Qué querés fotografiar?</strong> Retrato y calle piden poco. Deporte, surf o animales piden buen enfoque y, más adelante, un teleobjetivo.</li>
+<li><strong>¿Cuánto podés gastar en total?</strong> Contá el cuerpo y el lente juntos. Un cuerpo caro con un lente malo rinde menos que al revés.</li>
+<li><strong>¿Cuánto peso vas a cargar?</strong> Una cámara que queda en el cajón no saca fotos.</li>
+<li><strong>¿Tenés un celular reciente?</strong> Si la respuesta es sí, ya tenés una cámara para empezar.</li>
+</ol>
+
+<h2>Lo que importa y lo que no</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Concepto</th><th>Qué es</th><th>Cuánto pesa en la decisión</th></tr></thead>
+<tbody>
+<tr><td>Sin espejo o réflex</td><td>Las sin espejo muestran en el visor la foto como va a salir. Las réflex muestran la escena a través de un espejo.</td><td>Hoy conviene sin espejo: las marcas ya casi no lanzan réflex nuevas. Una réflex usada sigue siendo una buena forma barata de aprender.</td></tr>
+<tr><td>Tamaño del sensor</td><td>APS-C es el formato de las cámaras de entrada. Cuadro completo (full frame) es más grande.</td><td>El cuadro completo rinde mejor con poca luz y desenfoca más el fondo, pero el equipo cuesta y pesa más. Para aprender, APS-C alcanza.</td></tr>
+<tr><td>Montura</td><td>El sistema de lentes de cada marca.</td><td>Importa más que el cuerpo. Vas a cambiar de cámara, pero los lentes se quedan.</td></tr>
+<tr><td>Visor</td><td>La ventanita para mirar con el ojo.</td><td>Muy útil a pleno sol, cuando la pantalla no se ve.</td></tr>
+<tr><td>Megapíxeles</td><td>La resolución del sensor.</td><td>Poco. Entre 20 y 26 MP sobran para redes, web e impresiones grandes.</td></tr>
+</tbody></table></div>
+
+<h2>Opciones por presupuesto</h2>
+<p>Precios de referencia de una tienda de Buenos Aires en noviembre de 2026, en dólares. En pesos varían con el tipo de cambio, y conviene comparar varias tiendas antes de comprar.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Presupuesto</th><th>Opción</th><th>Referencia</th><th>Para quién</th></tr></thead>
+<tbody>
+<tr><td>Sin gastar</td><td>El celular que ya tenés, con una app de modo manual</td><td>US$ 0</td><td>Para aprender composición y luz desde hoy.</td></tr>
+<tr><td>Bajo</td><td>Réflex o sin espejo usada, con lente de kit</td><td>Variable</td><td>Para aprender exposición con controles reales sin gastar mucho.</td></tr>
+<tr><td>Entrada</td><td>Canon EOS R50 con 18-45 mm</td><td>US$ 986</td><td>La más simple para empezar. Buen enfoque y menús que explican cada ajuste.</td></tr>
+<tr><td>Entrada</td><td>Sony a6400 con 16-50 mm</td><td>US$ 1.176</td><td>Enfoque muy bueno y acceso a todos los lentes de montura E.</td></tr>
+<tr><td>Entrada</td><td>Nikon Z50 II con 16-50 mm</td><td>US$ 1.355</td><td>Buen agarre y enfoque moderno, con montura compatible con los lentes Z de cuadro completo.</td></tr>
+<tr><td>Cuadro completo</td><td>Canon EOS RP con 24-105 mm</td><td>US$ 1.456</td><td>La forma más barata de entrar al cuadro completo con lente incluido.</td></tr>
+<tr><td>Cuadro completo</td><td>Sony A7 III (solo cuerpo)</td><td>US$ 1.650</td><td>Para quien ya sabe que la fotografía va en serio y quiere rendimiento con poca luz.</td></tr>
+</tbody></table></div>
+<p>Si buscás lo más barato en nuevo, la Canon EOS R100 suele ser la sin espejo con visor de menor precio. Es más lenta y tiene menos funciones, pero cumple para aprender.</p>
+
+<figure class="fig"><img src="/img/tuktuk.jpg" alt="Un tuk-tuk en la calle del acantilado de Nazaré, con un hombre al teléfono y dos personas caminando." loading="lazy" width="1440" height="960"><figcaption>Una escena de calle y buena luz no necesitan una cámara cara. Nazaré.</figcaption></figure>
+
+<h2>Por qué elegí la Sony A7 III</h2>
+<p>Aprendí con una Canon Rebel T5i, una réflex de entrada. Me sirvió para entender la exposición, pero en Nazaré se quedaba corta con poca luz y con el agua en movimiento. Cuando decidí dar el paso, elegí la Sony A7 III por tres motivos:</p>
+<ul>
+<li><strong>Cuadro completo con buen rendimiento en poca luz</strong>, para atardeceres, noches y días grises de invierno.</li>
+<li><strong>La montura E</strong>, que tiene lentes de Sony y también de Sigma y Tamron, con opciones para todos los presupuestos.</li>
+<li><strong>Precio</strong>: salió en 2018, y hoy cuesta mucho menos que un modelo nuevo, con prestaciones que siguen vigentes.</li>
+</ul>
+<p>Para empezar no hace falta tanto. Una sin espejo de entrada con un buen lente te deja aprender todo lo que importa.</p>
+
+<h2>Si comprás usada</h2>
+<ul>
+<li><strong>Contador de disparos</strong>: pedilo. Cada modelo tiene una vida útil estimada del obturador y conviene estar lejos de ese número.</li>
+<li><strong>Sensor y lente</strong>: sacá una foto a f/16 contra el cielo. Las manchas oscuras son polvo en el sensor; los hongos en el lente se ven como telarañas al mirarlo a contraluz.</li>
+<li><strong>Enfoque y botones</strong>: probá que enfoque rápido y que todas las ruedas y botones respondan.</li>
+<li><strong>Papeles</strong>: factura o garantía, si existen. Desconfiá de precios muy por debajo del mercado.</li>
+</ul>
+
+<h2>El lente importa más de lo que parece</h2>
+<p>El lente que viene en el kit sirve para empezar. Pero el cambio más grande en tus fotos suele llegar con un <strong>50 mm f/1.8</strong>: es barato, liviano, muy nítido y desenfoca el fondo como ningún zoom de kit. Fue el primer lente que compré para la Sony.</p>
+
+<h2>Tres errores comunes</h2>
+<ol>
+<li><strong>Gastar todo en el cuerpo</strong> y quedarse sin presupuesto para un buen lente.</li>
+<li><strong>Elegir por megapíxeles o por video 8K</strong> cuando lo que se quiere es sacar fotos.</li>
+<li><strong>Comprar accesorios antes de usar la cámara</strong>. Primero salí a fotografiar; después vas a saber qué te falta.</li>
+</ol>
+
+<h2>En resumen</h2>
+<p>Si recién empezás, aprendé con lo que tengas y, cuando quieras dar el paso, elegí una sin espejo de entrada con un buen lente. El cuadro completo es para cuando ya sabés que la fotografía va a ser parte de tu vida. Sea cual sea la cámara, lo que hace la diferencia es entender el <a href="/blog/triangulo-de-exposicion/">triángulo de exposición</a> y salir a usarla seguido.</p>
+<p class="next">Siguiente lectura: <a href="/blog/modos-de-la-camara/">Modos de la cámara: cuándo usar A, S, M y P</a>.</p>
+"""
+ },
+ "en": {
+  "title": 'Which camera to buy to start photographing in 2026',
+  "desc": 'How to choose your first camera by budget: phone, used, entry-level mirrorless or full frame. Reference prices from Argentina and mistakes worth avoiding.',
+  "cat": "Gear",
+  "body": """
+<p class="lead">The best camera to start with is not the most expensive one or the one with the most megapixels. It is the one you will actually carry and that lets you learn to control exposure. This guide sorts the options by budget, with reference prices from Argentina, so you can choose without overspending.</p>
+
+<h2>Before looking at models: four questions</h2>
+<ol>
+<li><strong>What do you want to photograph?</strong> Portraits and street ask for little. Sport, surf or wildlife need good autofocus and, later on, a telephoto lens.</li>
+<li><strong>What is your total budget?</strong> Count body and lens together. An expensive body with a poor lens delivers less than the other way round.</li>
+<li><strong>How much weight will you carry?</strong> A camera left in a drawer takes no photographs.</li>
+<li><strong>Do you have a recent phone?</strong> If so, you already have a camera to start with.</li>
+</ol>
+
+<h2>What matters and what does not</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Concept</th><th>What it is</th><th>How much it should weigh in</th></tr></thead>
+<tbody>
+<tr><td>Mirrorless or DSLR</td><td>Mirrorless cameras show the photo in the viewfinder as it will come out. DSLRs show the scene through a mirror.</td><td>Today mirrorless is the better choice: brands have almost stopped releasing new DSLRs. A used DSLR is still a cheap way to learn.</td></tr>
+<tr><td>Sensor size</td><td>APS-C is the format of entry-level cameras. Full frame is larger.</td><td>Full frame performs better in low light and blurs the background more, but the gear costs and weighs more. To learn, APS-C is enough.</td></tr>
+<tr><td>Mount</td><td>Each brand's lens system.</td><td>It matters more than the body. You will change cameras, but the lenses stay.</td></tr>
+<tr><td>Viewfinder</td><td>The small window you look through.</td><td>Very useful in bright sun, when the screen is hard to see.</td></tr>
+<tr><td>Megapixels</td><td>The sensor's resolution.</td><td>Not much. Between 20 and 26 MP is plenty for social media, the web and large prints.</td></tr>
+</tbody></table></div>
+
+<h2>Options by budget</h2>
+<p>Reference prices from a Buenos Aires store in November 2026, in US dollars. Prices elsewhere will differ, so compare several shops before buying.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Budget</th><th>Option</th><th>Reference</th><th>Who it suits</th></tr></thead>
+<tbody>
+<tr><td>Free</td><td>The phone you already have, with a manual-mode app</td><td>US$ 0</td><td>To start learning composition and light today.</td></tr>
+<tr><td>Low</td><td>A used DSLR or mirrorless with a kit lens</td><td>Varies</td><td>To learn exposure with real controls without spending much.</td></tr>
+<tr><td>Entry</td><td>Canon EOS R50 with 18-45 mm</td><td>US$ 986</td><td>The simplest way to start. Good autofocus and menus that explain each setting.</td></tr>
+<tr><td>Entry</td><td>Sony a6400 with 16-50 mm</td><td>US$ 1,176</td><td>Very good autofocus and access to every E-mount lens.</td></tr>
+<tr><td>Entry</td><td>Nikon Z50 II with 16-50 mm</td><td>US$ 1,355</td><td>Good grip and modern autofocus, on a mount shared with Nikon's full-frame Z lenses.</td></tr>
+<tr><td>Full frame</td><td>Canon EOS RP with 24-105 mm</td><td>US$ 1,456</td><td>The cheapest way into full frame with a lens included.</td></tr>
+<tr><td>Full frame</td><td>Sony A7 III (body only)</td><td>US$ 1,650</td><td>For those who already know photography is serious and want low-light performance.</td></tr>
+</tbody></table></div>
+<p>If you want the cheapest new option, the Canon EOS R100 is usually the lowest-priced mirrorless camera with a viewfinder. It is slower and has fewer features, but it does the job for learning.</p>
+
+<figure class="fig"><img src="/img/tuktuk.jpg" alt="A tuk-tuk on the cliff-top street in Nazaré, with a man on the phone and two people walking." loading="lazy" width="1440" height="960"><figcaption>A street scene and good light do not need an expensive camera. Nazaré.</figcaption></figure>
+
+<h2>Why I chose the Sony A7 III</h2>
+<p>I learned on a Canon Rebel T5i, an entry-level DSLR. It taught me exposure, but in Nazaré it fell short in low light and with moving water. When I decided to take the step, I chose the Sony A7 III for three reasons:</p>
+<ul>
+<li><strong>Full frame with good low-light performance</strong>, for sunsets, nights and grey winter days.</li>
+<li><strong>The E mount</strong>, with lenses from Sony and also from Sigma and Tamron, at every price point.</li>
+<li><strong>Price</strong>: it came out in 2018 and today costs far less than a new model, with features that still hold up.</li>
+</ul>
+<p>You do not need that much to start. An entry-level mirrorless camera with a good lens lets you learn everything that matters.</p>
+
+<h2>If you buy used</h2>
+<ul>
+<li><strong>Shutter count</strong>: ask for it. Each model has an estimated shutter life, and you want to be well below it.</li>
+<li><strong>Sensor and lens</strong>: take a photo at f/16 against the sky. Dark spots are dust on the sensor; fungus in a lens looks like cobwebs when you hold it up to the light.</li>
+<li><strong>Focus and controls</strong>: check that it focuses quickly and that every dial and button responds.</li>
+<li><strong>Paperwork</strong>: an invoice or warranty, if there is one. Be wary of prices far below the market.</li>
+</ul>
+
+<h2>The lens matters more than it seems</h2>
+<p>The kit lens is fine to start. But the biggest change in your photos often comes with a <strong>50 mm f/1.8</strong>: it is cheap, light, very sharp and blurs the background like no kit zoom can. It was the first lens I bought for the Sony.</p>
+
+<h2>Three common mistakes</h2>
+<ol>
+<li><strong>Spending everything on the body</strong> and having nothing left for a good lens.</li>
+<li><strong>Choosing by megapixels or 8K video</strong> when what you want is to take photographs.</li>
+<li><strong>Buying accessories before using the camera</strong>. Go out and shoot first; then you will know what you are missing.</li>
+</ol>
+
+<h2>In short</h2>
+<p>If you are just starting, learn with what you have and, when you want to take the step, choose an entry-level mirrorless camera with a good lens. Full frame is for when you already know photography will be part of your life. Whatever the camera, what makes the difference is understanding the <a href="/en/blog/triangulo-de-exposicion/">exposure triangle</a> and going out to use it often.</p>
+<p class="next">Next: <a href="/en/blog/modos-de-la-camara/">Camera modes: when to use A, S, M and P</a>.</p>
+"""
+ },
+},
+{
+ "slug": "como-configurar-una-camara-nueva",
+ "date": "2026-11-20",
+ "image": "farol",
+ "es": {
+  "title": 'Cómo configurar una cámara nueva: 10 ajustes para el primer día',
+  "desc": 'Los diez ajustes que conviene cambiar al sacar una cámara de la caja: RAW, enfoque con botón trasero, exposición en pantalla y más. Para cualquier marca, con ejemplos en la Sony A7 III.',
+  "cat": "Equipo",
+  "body": """
+<p class="lead">Una cámara nueva sale de la caja configurada para no equivocarse, no para sacar las mejores fotos. Estos diez ajustes llevan diez minutos y cambian cómo trabajás desde la primera salida. Sirven para cualquier marca. Como ejemplo uso la Sony A7 III, con el nombre de cada opción en inglés, que es como aparece en la mayoría de las guías.</p>
+<p>Si tu cámara está en español, los nombres pueden variar un poco. Buscá la idea, no la palabra exacta.</p>
+
+<h2>1. Fecha, hora y zona horaria</h2>
+<p>Cada foto guarda la fecha y la hora en sus datos internos (EXIF). Si están mal, después no vas a poder ordenar ni encontrar nada. Si viajás, cambiá la zona horaria al llegar.</p>
+<p><strong>Sony A7 III:</strong> Setup → Area Setting y Date/Time Setup.</p>
+
+<h2>2. Tu nombre en cada archivo</h2>
+<p>La mayoría de las cámaras permite grabar el nombre del autor y el copyright dentro de cada foto. Si una imagen circula sin crédito, ese dato sigue ahí.</p>
+<p><strong>Sony A7 III:</strong> Setup → Copyright Info → Write Copyright Info: On, y completá Set Photographer y Set Copyright.</p>
+
+<h2>3. Formatear la tarjeta en la cámara</h2>
+<p>Antes de usar una tarjeta nueva, o una que estuvo en otra cámara, formateala desde el menú. Evita errores de escritura y archivos dañados. Ojo: borra todo lo que tenga.</p>
+<p><strong>Sony A7 III:</strong> Setup → Format.</p>
+
+<h2>4. Que no dispare sin tarjeta</h2>
+<p>Muchas cámaras vienen preparadas para disparar sin tarjeta, como modo de demostración. Es la forma más triste de perder una sesión entera.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Release w/o Card: Disable.</p>
+
+<h2>5. Sacar en RAW</h2>
+<p>El JPEG es una foto ya procesada por la cámara. El RAW guarda todos los datos del sensor y deja mucho más margen para recuperar luces y sombras al editar. Si querés tener las dos cosas, elegí RAW + JPEG.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → Quality: RAW (o RAW &amp; JPEG). En RAW File Type, Compressed ocupa la mitad de espacio; Uncompressed conserva el máximo de datos.</p>
+
+<h2>6. Ver en pantalla la exposición real</h2>
+<p>En una cámara sin espejo, la pantalla y el visor pueden mostrar la foto tal como va a salir. Si esta opción está apagada, siempre ves una imagen "correcta", aunque la foto vaya a salir oscura.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Live View Display → Setting Effect ON.</p>
+
+<h2>7. Histograma y cuadrícula a la vista</h2>
+<p>El <a href="/blog/como-leer-el-histograma/">histograma</a> te dice si estás quemando luces antes de disparar. La cuadrícula ayuda a mantener derecho el horizonte y a ubicar el sujeto.</p>
+<p><strong>Sony A7 III:</strong> el botón DISP cambia la información en pantalla; en Camera Settings 2 → DISP Button podés elegir cuáles vistas aparecen. La cuadrícula está en Camera Settings 2 → Grid Line: Rule of 3rds Grid.</p>
+
+<h2>8. Apagar la revisión automática y el sonido</h2>
+<p>Ver cada foto después de disparar te saca de la escena justo cuando puede venir la siguiente. El pitido de enfoque molesta en la calle, en un evento o en una ceremonia.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Auto Review: Off, y Audio signals: Off.</p>
+
+<h2>9. Enfoque continuo y detección de ojos</h2>
+<p>El enfoque continuo sigue al sujeto mientras se mueve. La detección de rostro y ojos hace casi todo el trabajo en retratos.</p>
+<p><strong>Sony A7 III:</strong> Focus Mode: AF-C (Continuous AF) y Focus Area: Wide o Zone para empezar. Con el firmware actualizado, la detección de ojos se activa en Face/Eye AF Set.</p>
+
+<h2>10. Enfoque con el botón trasero</h2>
+<p>Separar el enfoque del disparo es el ajuste que más cambia la forma de trabajar. El botón trasero enfoca; el disparador solo dispara. Así podés enfocar una vez, recomponer y disparar varias veces sin que la cámara vuelva a enfocar, o mantener el botón apretado para seguir a un sujeto en movimiento.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → AF w/ shutter: Off. El botón AF-ON ya viene asignado a enfocar.</p>
+
+<h2>Uno más, si usás ISO automático</h2>
+<p>En los modos A, S o M con ISO automático, la cámara puede elegir una velocidad demasiado lenta y la foto sale movida. Muchas cámaras permiten fijar una velocidad mínima.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → ISO AUTO Min. SS: Faster, o un valor fijo como 1/125.</p>
+
+<h2>Antes de salir</h2>
+<ul>
+<li>Cargá la batería completa y, si podés, llevá una de repuesto.</li>
+<li>Revisá que la compensación de exposición esté en 0.</li>
+<li>Elegí un modo y quedate con él toda la salida. Para empezar, <a href="/blog/modos-de-la-camara/">prioridad de apertura</a>.</li>
+</ul>
+<p>Con estos ajustes la cámara deja de decidir por vos. Lo que queda es salir a fotografiar.</p>
+<p class="next">Lectura anterior: <a href="/blog/que-camara-comprar-para-empezar/">Qué cámara comprar para empezar a fotografiar</a>.</p>
+"""
+ },
+ "en": {
+  "title": 'How to set up a new camera: 10 settings for day one',
+  "desc": 'The ten settings worth changing when a camera comes out of the box: RAW, back-button focus, exposure preview and more. For any brand, with examples on the Sony A7 III.',
+  "cat": "Gear",
+  "body": """
+<p class="lead">A new camera comes out of the box set up not to make mistakes, not to take the best photographs. These ten settings take ten minutes and change how you work from your very first outing. They apply to any brand. As an example I use the Sony A7 III, with each option named as it appears in the menu.</p>
+<p>On other cameras the names may differ a little. Look for the idea, not the exact word.</p>
+
+<h2>1. Date, time and time zone</h2>
+<p>Every photo stores the date and time in its internal data (EXIF). If they are wrong, you will not be able to sort or find anything later. If you travel, change the time zone when you arrive.</p>
+<p><strong>Sony A7 III:</strong> Setup → Area Setting and Date/Time Setup.</p>
+
+<h2>2. Your name in every file</h2>
+<p>Most cameras can write the author's name and copyright into every photo. If an image circulates without credit, that information is still there.</p>
+<p><strong>Sony A7 III:</strong> Setup → Copyright Info → Write Copyright Info: On, then fill in Set Photographer and Set Copyright.</p>
+
+<h2>3. Format the card in the camera</h2>
+<p>Before using a new card, or one that has been in another camera, format it from the menu. It prevents write errors and corrupted files. Careful: it erases everything on the card.</p>
+<p><strong>Sony A7 III:</strong> Setup → Format.</p>
+
+<h2>4. No shooting without a card</h2>
+<p>Many cameras are set to fire without a card, as a demo mode. It is the saddest way to lose a whole session.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Release w/o Card: Disable.</p>
+
+<h2>5. Shoot RAW</h2>
+<p>A JPEG is a photo already processed by the camera. RAW keeps all the sensor data and leaves far more room to recover highlights and shadows when editing. If you want both, choose RAW + JPEG.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → Quality: RAW (or RAW &amp; JPEG). Under RAW File Type, Compressed takes half the space; Uncompressed keeps the most data.</p>
+
+<h2>6. See the real exposure on screen</h2>
+<p>On a mirrorless camera, the screen and viewfinder can show the photo exactly as it will come out. With this option off, you always see a "correct" image, even if the photo will come out dark.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Live View Display → Setting Effect ON.</p>
+
+<h2>7. Histogram and grid in view</h2>
+<p>The <a href="/en/blog/como-leer-el-histograma/">histogram</a> tells you whether you are blowing highlights before you shoot. The grid helps keep the horizon straight and place the subject.</p>
+<p><strong>Sony A7 III:</strong> the DISP button cycles the on-screen information; in Camera Settings 2 → DISP Button you choose which views appear. The grid is in Camera Settings 2 → Grid Line: Rule of 3rds Grid.</p>
+
+<h2>8. Turn off auto review and the beep</h2>
+<p>Looking at every photo after you take it pulls you out of the scene just when the next shot may come. The focus beep is a nuisance on the street, at an event or at a ceremony.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Auto Review: Off, and Audio signals: Off.</p>
+
+<h2>9. Continuous focus and eye detection</h2>
+<p>Continuous focus follows the subject as it moves. Face and eye detection does almost all the work in portraits.</p>
+<p><strong>Sony A7 III:</strong> Focus Mode: AF-C (Continuous AF) and Focus Area: Wide or Zone to start. With up-to-date firmware, eye detection is enabled under Face/Eye AF Set.</p>
+
+<h2>10. Back-button focus</h2>
+<p>Separating focus from the shutter is the setting that changes your way of working the most. The rear button focuses; the shutter button only fires. You can focus once, recompose and shoot several frames without the camera refocusing, or hold the button down to track a moving subject.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → AF w/ shutter: Off. The AF-ON button is already assigned to focusing.</p>
+
+<h2>One more, if you use auto ISO</h2>
+<p>In A, S or M mode with auto ISO, the camera may pick a shutter speed that is too slow and the photo comes out blurred. Many cameras let you set a minimum speed.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → ISO AUTO Min. SS: Faster, or a fixed value such as 1/125.</p>
+
+<h2>Before you head out</h2>
+<ul>
+<li>Fully charge the battery and, if you can, carry a spare.</li>
+<li>Check that exposure compensation is at 0.</li>
+<li>Pick one mode and stick with it for the whole outing. To start, <a href="/en/blog/modos-de-la-camara/">aperture priority</a>.</li>
+</ul>
+<p>With these settings the camera stops deciding for you. What is left is to go out and photograph.</p>
+<p class="next">Previous: <a href="/en/blog/que-camara-comprar-para-empezar/">Which camera to buy to start photographing</a>.</p>
+"""
+ },
+},
 ]
+
+# Publicación programada: solo se publican los artículos cuya fecha ya llegó (hora de Buenos Aires).
+import datetime as _dt
+import os as _os
+_HOY = _os.environ.get("HOY") or (_dt.datetime.utcnow() - _dt.timedelta(hours=3)).date().isoformat()
+POSTS = [p for p in POSTS if p["date"] <= _HOY]

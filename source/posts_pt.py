@@ -285,4 +285,139 @@ PT = {
 <p>Para além da onda, um dia de mar grande tem outras fotografias: as pessoas no Forte, as motas de água, a bruma sobre a vila. Muitas vezes são essas que melhor contam o que ali se vive.</p>
 <p class="next">Para ver fotografias da Nazaré e o guia para a fotografar, visita a <a href="/pt/">página principal</a>.</p>
 """},
+"que-camara-comprar-para-empezar": {
+ "title": 'Que câmara comprar para começar a fotografar em 2026',
+ "desc": 'Como escolher a primeira câmara consoante o orçamento: telemóvel, usada, sem espelho de entrada ou formato completo. Preços de referência na Argentina e erros a evitar.',
+ "cat": "Equipamento",
+ "body": """
+<p class="lead">A melhor câmara para começar não é a mais cara nem a que tem mais megapíxeis. É a que vais levar contigo e que te deixa aprender a decidir a exposição. Este guia organiza as opções por orçamento, com preços de referência na Argentina, para escolheres sem gastar a mais.</p>
+
+<h2>Antes de ver modelos: quatro perguntas</h2>
+<ol>
+<li><strong>O que queres fotografar?</strong> Retrato e rua pedem pouco. Desporto, surf ou animais pedem boa focagem e, mais tarde, uma teleobjetiva.</li>
+<li><strong>Quanto podes gastar no total?</strong> Conta o corpo e a objetiva juntos. Um corpo caro com uma objetiva fraca rende menos do que o contrário.</li>
+<li><strong>Quanto peso vais carregar?</strong> Uma câmara que fica na gaveta não tira fotografias.</li>
+<li><strong>Tens um telemóvel recente?</strong> Se sim, já tens uma câmara para começar.</li>
+</ol>
+
+<h2>O que importa e o que não importa</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Conceito</th><th>O que é</th><th>Quanto pesa na decisão</th></tr></thead>
+<tbody>
+<tr><td>Sem espelho ou reflex</td><td>As sem espelho mostram no visor a fotografia como vai ficar. As reflex mostram a cena através de um espelho.</td><td>Hoje convém sem espelho: as marcas quase deixaram de lançar reflex novas. Uma reflex usada continua a ser uma forma barata de aprender.</td></tr>
+<tr><td>Tamanho do sensor</td><td>APS-C é o formato das câmaras de entrada. O formato completo (full frame) é maior.</td><td>O formato completo rende melhor com pouca luz e desfoca mais o fundo, mas o equipamento custa e pesa mais. Para aprender, APS-C chega.</td></tr>
+<tr><td>Montagem</td><td>O sistema de objetivas de cada marca.</td><td>Importa mais do que o corpo. Vais mudar de câmara, mas as objetivas ficam.</td></tr>
+<tr><td>Visor</td><td>A janela pequena por onde se olha.</td><td>Muito útil ao sol, quando o ecrã não se vê bem.</td></tr>
+<tr><td>Megapíxeis</td><td>A resolução do sensor.</td><td>Pouco. Entre 20 e 26 MP sobram para redes sociais, web e impressões grandes.</td></tr>
+</tbody></table></div>
+
+<h2>Opções por orçamento</h2>
+<p>Preços de referência de uma loja de Buenos Aires em novembro de 2026, em dólares. Em Portugal os valores são outros, por isso compara várias lojas antes de comprar.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Orçamento</th><th>Opção</th><th>Referência</th><th>Para quem</th></tr></thead>
+<tbody>
+<tr><td>Sem gastar</td><td>O telemóvel que já tens, com uma aplicação de modo manual</td><td>US$ 0</td><td>Para aprender composição e luz desde hoje.</td></tr>
+<tr><td>Baixo</td><td>Reflex ou sem espelho usada, com objetiva de kit</td><td>Variável</td><td>Para aprender exposição com controlos reais sem gastar muito.</td></tr>
+<tr><td>Entrada</td><td>Canon EOS R50 com 18-45 mm</td><td>US$ 986</td><td>A mais simples para começar. Boa focagem e menus que explicam cada ajuste.</td></tr>
+<tr><td>Entrada</td><td>Sony a6400 com 16-50 mm</td><td>US$ 1.176</td><td>Focagem muito boa e acesso a todas as objetivas de montagem E.</td></tr>
+<tr><td>Entrada</td><td>Nikon Z50 II com 16-50 mm</td><td>US$ 1.355</td><td>Boa pega e focagem moderna, numa montagem compatível com as objetivas Z de formato completo.</td></tr>
+<tr><td>Formato completo</td><td>Canon EOS RP com 24-105 mm</td><td>US$ 1.456</td><td>A forma mais barata de entrar no formato completo com objetiva incluída.</td></tr>
+<tr><td>Formato completo</td><td>Sony A7 III (só corpo)</td><td>US$ 1.650</td><td>Para quem já sabe que a fotografia é a sério e quer bom rendimento com pouca luz.</td></tr>
+</tbody></table></div>
+<p>Se procuras o mais barato em novo, a Canon EOS R100 costuma ser a sem espelho com visor de preço mais baixo. É mais lenta e tem menos funções, mas cumpre para aprender.</p>
+
+<figure class="fig"><img src="/img/tuktuk.jpg" alt="Um tuk-tuk na rua da falésia da Nazaré, com um homem ao telefone e duas pessoas a caminhar." loading="lazy" width="1440" height="960"><figcaption>Uma cena de rua e boa luz não precisam de uma câmara cara. Nazaré.</figcaption></figure>
+
+<h2>Porque escolhi a Sony A7 III</h2>
+<p>Aprendi com uma Canon Rebel T5i, uma reflex de entrada. Serviu-me para perceber a exposição, mas na Nazaré ficava aquém com pouca luz e com a água em movimento. Quando decidi dar o passo, escolhi a Sony A7 III por três motivos:</p>
+<ul>
+<li><strong>Formato completo com bom rendimento com pouca luz</strong>, para pores do sol, noites e dias cinzentos de inverno.</li>
+<li><strong>A montagem E</strong>, que tem objetivas da Sony e também da Sigma e da Tamron, com opções para todos os orçamentos.</li>
+<li><strong>Preço</strong>: saiu em 2018 e hoje custa muito menos do que um modelo novo, com características que continuam atuais.</li>
+</ul>
+<p>Para começar não é preciso tanto. Uma sem espelho de entrada com uma boa objetiva deixa-te aprender tudo o que importa.</p>
+
+<h2>Se comprares usada</h2>
+<ul>
+<li><strong>Contador de disparos</strong>: pede-o. Cada modelo tem uma vida útil estimada do obturador e convém estar longe desse número.</li>
+<li><strong>Sensor e objetiva</strong>: tira uma fotografia a f/16 contra o céu. As manchas escuras são pó no sensor; os fungos na objetiva parecem teias de aranha quando a vês contra a luz.</li>
+<li><strong>Focagem e botões</strong>: confirma que foca depressa e que todas as rodas e botões respondem.</li>
+<li><strong>Documentos</strong>: fatura ou garantia, se existirem. Desconfia de preços muito abaixo do mercado.</li>
+</ul>
+
+<h2>A objetiva importa mais do que parece</h2>
+<p>A objetiva do kit serve para começar. Mas a maior mudança nas tuas fotografias costuma chegar com uma <strong>50 mm f/1.8</strong>: é barata, leve, muito nítida e desfoca o fundo como nenhuma zoom de kit. Foi a primeira objetiva que comprei para a Sony.</p>
+
+<h2>Três erros comuns</h2>
+<ol>
+<li><strong>Gastar tudo no corpo</strong> e ficar sem orçamento para uma boa objetiva.</li>
+<li><strong>Escolher por megapíxeis ou por vídeo 8K</strong> quando o que se quer é tirar fotografias.</li>
+<li><strong>Comprar acessórios antes de usar a câmara</strong>. Primeiro sai para fotografar; depois vais saber o que te falta.</li>
+</ol>
+
+<h2>Em resumo</h2>
+<p>Se estás a começar, aprende com o que tens e, quando quiseres dar o passo, escolhe uma sem espelho de entrada com uma boa objetiva. O formato completo é para quando já sabes que a fotografia vai fazer parte da tua vida. Seja qual for a câmara, o que faz a diferença é perceber o <a href="/pt/blog/triangulo-de-exposicion/">triângulo de exposição</a> e sair para a usar com frequência.</p>
+<p class="next">Leitura seguinte: <a href="/pt/blog/modos-de-la-camara/">Modos da câmara: quando usar A, S, M e P</a>.</p>
+"""},
+"como-configurar-una-camara-nueva": {
+ "title": 'Como configurar uma câmara nova: 10 ajustes para o primeiro dia',
+ "desc": 'Os dez ajustes que convém mudar ao tirar uma câmara da caixa: RAW, focagem com o botão traseiro, exposição no ecrã e mais. Para qualquer marca, com exemplos na Sony A7 III.',
+ "cat": "Equipamento",
+ "body": """
+<p class="lead">Uma câmara nova sai da caixa configurada para não errar, não para tirar as melhores fotografias. Estes dez ajustes levam dez minutos e mudam a forma como trabalhas desde a primeira saída. Servem para qualquer marca. Como exemplo uso a Sony A7 III, com o nome de cada opção em inglês, que é como aparece na maioria dos guias.</p>
+<p>Se a tua câmara estiver em português, os nomes podem variar um pouco. Procura a ideia, não a palavra exata.</p>
+
+<h2>1. Data, hora e fuso horário</h2>
+<p>Cada fotografia guarda a data e a hora nos seus dados internos (EXIF). Se estiverem errados, depois não vais conseguir ordenar nem encontrar nada. Se viajares, muda o fuso horário quando chegares.</p>
+<p><strong>Sony A7 III:</strong> Setup → Area Setting e Date/Time Setup.</p>
+
+<h2>2. O teu nome em cada ficheiro</h2>
+<p>A maioria das câmaras permite gravar o nome do autor e o copyright dentro de cada fotografia. Se uma imagem circular sem crédito, essa informação continua lá.</p>
+<p><strong>Sony A7 III:</strong> Setup → Copyright Info → Write Copyright Info: On, e preenche Set Photographer e Set Copyright.</p>
+
+<h2>3. Formatar o cartão na câmara</h2>
+<p>Antes de usar um cartão novo, ou um que esteve noutra câmara, formata-o a partir do menu. Evita erros de gravação e ficheiros danificados. Atenção: apaga tudo o que tiver.</p>
+<p><strong>Sony A7 III:</strong> Setup → Format.</p>
+
+<h2>4. Não disparar sem cartão</h2>
+<p>Muitas câmaras vêm preparadas para disparar sem cartão, como modo de demonstração. É a forma mais triste de perder uma sessão inteira.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Release w/o Card: Disable.</p>
+
+<h2>5. Fotografar em RAW</h2>
+<p>O JPEG é uma fotografia já processada pela câmara. O RAW guarda todos os dados do sensor e deixa muito mais margem para recuperar altas luzes e sombras na edição. Se quiseres as duas coisas, escolhe RAW + JPEG.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → Quality: RAW (ou RAW &amp; JPEG). Em RAW File Type, Compressed ocupa metade do espaço; Uncompressed conserva o máximo de dados.</p>
+
+<h2>6. Ver no ecrã a exposição real</h2>
+<p>Numa câmara sem espelho, o ecrã e o visor podem mostrar a fotografia tal como vai ficar. Se esta opção estiver desligada, vês sempre uma imagem "correta", mesmo que a fotografia vá ficar escura.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Live View Display → Setting Effect ON.</p>
+
+<h2>7. Histograma e grelha à vista</h2>
+<p>O <a href="/pt/blog/como-leer-el-histograma/">histograma</a> diz-te se estás a queimar altas luzes antes de disparar. A grelha ajuda a manter o horizonte direito e a posicionar o motivo.</p>
+<p><strong>Sony A7 III:</strong> o botão DISP muda a informação no ecrã; em Camera Settings 2 → DISP Button escolhes que vistas aparecem. A grelha está em Camera Settings 2 → Grid Line: Rule of 3rds Grid.</p>
+
+<h2>8. Desligar a revisão automática e o som</h2>
+<p>Ver cada fotografia depois de disparar tira-te da cena precisamente quando pode vir a seguinte. O sinal sonoro da focagem incomoda na rua, num evento ou numa cerimónia.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 2 → Auto Review: Off, e Audio signals: Off.</p>
+
+<h2>9. Focagem contínua e deteção de olhos</h2>
+<p>A focagem contínua acompanha o motivo enquanto se move. A deteção de rosto e olhos faz quase todo o trabalho nos retratos.</p>
+<p><strong>Sony A7 III:</strong> Focus Mode: AF-C (Continuous AF) e Focus Area: Wide ou Zone para começar. Com o firmware atualizado, a deteção de olhos ativa-se em Face/Eye AF Set.</p>
+
+<h2>10. Focagem com o botão traseiro</h2>
+<p>Separar a focagem do disparo é o ajuste que mais muda a forma de trabalhar. O botão traseiro foca; o disparador só dispara. Assim podes focar uma vez, recompor e disparar várias vezes sem que a câmara volte a focar, ou manter o botão premido para seguir um motivo em movimento.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → AF w/ shutter: Off. O botão AF-ON já vem atribuído à focagem.</p>
+
+<h2>Mais um, se usas ISO automático</h2>
+<p>Nos modos A, S ou M com ISO automático, a câmara pode escolher uma velocidade demasiado lenta e a fotografia fica tremida. Muitas câmaras permitem fixar uma velocidade mínima.</p>
+<p><strong>Sony A7 III:</strong> Camera Settings 1 → ISO AUTO Min. SS: Faster, ou um valor fixo como 1/125.</p>
+
+<h2>Antes de sair</h2>
+<ul>
+<li>Carrega a bateria por completo e, se puderes, leva uma suplente.</li>
+<li>Confirma que a compensação de exposição está em 0.</li>
+<li>Escolhe um modo e fica com ele toda a saída. Para começar, <a href="/pt/blog/modos-de-la-camara/">prioridade à abertura</a>.</li>
+</ul>
+<p>Com estes ajustes a câmara deixa de decidir por ti. O que fica é sair para fotografar.</p>
+<p class="next">Leitura anterior: <a href="/pt/blog/que-camara-comprar-para-empezar/">Que câmara comprar para começar a fotografar</a>.</p>
+"""},
 }
