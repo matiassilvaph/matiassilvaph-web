@@ -51,19 +51,19 @@ BLOG_CSS = """
 """
 
 L = {
- "es": dict(home="/", blog="/blog/", nav=[("/#mar","El mar"),("/#pueblo","El pueblo"),("/#luz","La luz"),("/#guia","Guía"),("/blog/","Blog"),("/#quien-soy","Quién soy")],
+ "es": dict(home="/", blog="/blog/", nav=[("/#mar","El mar"),("/#pueblo","El pueblo"),("/#luz","La luz"),("/#guia","Guía"),("/blog/","Blog"),("/sobre/","Quién soy")],
             brand="fotografía", blogtitle="Blog", blogdesc="Artículos sobre fotografía para quienes empiezan: exposición, modos de la cámara, composición y luz. Sirven para cualquier cámara.",
             blogh="Blog", blogp="Lo que voy aprendiendo sobre fotografía, explicado simple. Conceptos que sirven con cualquier cámara, del celular a una sin espejo.",
             read="min de lectura", by="Por Matías Silva", home_l="Inicio",
             author="<b>Matías Silva</b> · Fotógrafo entre San Miguel y Nazaré. Escribo sobre lo que aprendo en cada salida.",
             foot="© 2026 Matías Silva · Todas las fotografías son de autoría propia.", months=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]),
- "pt": dict(home="/pt/", blog="/pt/blog/", nav=[("/pt/#mar","O mar"),("/pt/#pueblo","A vila"),("/pt/#luz","A luz"),("/pt/#guia","Guia"),("/pt/blog/","Blog"),("/pt/#quien-soy","Quem sou")],
+ "pt": dict(home="/pt/", blog="/pt/blog/", nav=[("/pt/#mar","O mar"),("/pt/#pueblo","A vila"),("/pt/#luz","A luz"),("/pt/#guia","Guia"),("/pt/blog/","Blog"),("/pt/sobre/","Quem sou")],
             brand="fotografia", blogtitle="Blog", blogdesc="Artigos de fotografia para quem está a começar: exposição, modos da câmara, composição e luz. Servem para qualquer câmara.",
             blogh="Blog", blogp="O que vou aprendendo sobre fotografia, explicado de forma simples. Conceitos que servem para qualquer câmara, do telemóvel a uma sem espelho.",
             read="min de leitura", by="Por Matías Silva", home_l="Início",
             author="<b>Matías Silva</b> · Fotógrafo entre San Miguel e a Nazaré. Escrevo sobre o que aprendo em cada saída.",
             foot="© 2026 Matías Silva · Todas as fotografias são de autoria própria.", months=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]),
- "en": dict(home="/en/", blog="/en/blog/", nav=[("/en/#mar","The sea"),("/en/#pueblo","The town"),("/en/#luz","The light"),("/en/#guia","Guide"),("/en/blog/","Blog"),("/en/#quien-soy","About")],
+ "en": dict(home="/en/", blog="/en/blog/", nav=[("/en/#mar","The sea"),("/en/#pueblo","The town"),("/en/#luz","The light"),("/en/#guia","Guide"),("/en/blog/","Blog"),("/en/sobre/","About")],
             brand="photography", blogtitle="Blog", blogdesc="Photography articles for beginners: exposure, camera modes, composition and light. They work with any camera.",
             blogh="Blog", blogp="What I am learning about photography, explained simply. Concepts that work with any camera, from a phone to a mirrorless.",
             read="min read", by="By Matías Silva", home_l="Home",

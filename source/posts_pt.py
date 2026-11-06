@@ -210,4 +210,79 @@ PT = {
 <p>Procura uma cena com céu e sombra ao mesmo tempo: uma rua ao fim da tarde, uma árvore contra o céu. Tira a mesma fotografia com a compensação de exposição em <strong>−1</strong>, <strong>0</strong> e <strong>+1</strong>. Vê como a montanha se desloca em cada caso e em qual das três o céu deixa de tocar no extremo direito. Depois compara as três no computador.</p>
 <p class="next">Leitura anterior: <a href="/pt/blog/modos-de-la-camara/">Modos da câmara: quando usar A, S, M e P</a>.</p>
 """},
+"temporada-de-olas-en-nazare": {
+ "title": "Época de ondas grandes na Nazaré 2026/27: quando ir, onde ficar e como saber se vai haver ondas",
+ "desc": "Guia prático da época das ondas gigantes na Praia do Norte: meses, Nazaré Big Wave Challenge 2026/27, como ler a previsão, onde ver as ondas e como as fotografar.",
+ "cat": "Nazaré",
+ "body": """
+<p class="lead">De novembro a fevereiro, a Praia do Norte pode receber as maiores ondas alguma vez surfadas. Não há data marcada: aparecem quando uma tempestade do Atlântico Norte envia a ondulação diretamente para a Nazaré. Este guia explica quando ir, como saber se vai haver ondas e onde ficar para as ver e fotografar.</p>
+
+<h2>Porquê na Nazaré</h2>
+<p>Em frente à Praia do Norte começa o <strong>Canhão da Nazaré</strong>, um vale submarino com cerca de 230 quilómetros de comprimento que chega a perto de 5000 metros de profundidade. O canhão leva a energia da ondulação quase intacta até muito perto da costa, e aí a onda cresce de repente. Por isso, com a mesma tempestade, na Nazaré rebentam ondas muito maiores do que no resto da costa portuguesa.</p>
+
+<h2>Quando é a época</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Meses</th><th>O que esperar</th></tr></thead>
+<tbody>
+<tr><td>Novembro a fevereiro</td><td>A maior probabilidade de ondas gigantes. É quando se concentram as tempestades do Atlântico Norte.</td></tr>
+<tr><td>Outubro e março</td><td>Pode haver dias grandes, mas são menos frequentes.</td></tr>
+<tr><td>Abril a setembro</td><td>Mar quase sempre calmo. Boa época para a praia, a luz e as ruas.</td></tr>
+</tbody></table></div>
+<p>Mesmo em plena época, não há ondas gigantes todos os dias. Entre uma ondulação e outra podem passar semanas de mar normal. Se a viagem é só pelas ondas, convém ter alguns dias de margem e decidir com a previsão.</p>
+
+<h2>A competição: Nazaré Big Wave Challenge 2026/27</h2>
+<p>Todos os invernos, a World Surf League organiza o <strong>Nazaré Big Wave Challenge</strong>. Na época 2026/27, o período de espera vai de <strong>1 de novembro de 2026 a 31 de março de 2027</strong>. A competição realiza-se num só dia, quando chega uma ondulação de pelo menos 25 pés (cerca de 7,6 metros) e o vento, a maré e a segurança o permitem.</p>
+<ul>
+<li><strong>Alerta amarelo</strong>: é emitido até 72 horas antes e indica que o evento pode ser ativado.</li>
+<li><strong>Alerta verde</strong>: confirma que a competição se realiza nas 24 horas seguintes, se as condições se mantiverem.</li>
+</ul>
+<p>Competem nove equipas convidadas de surf de reboque: seis masculinas e três femininas. No dia da competição, o Forte enche desde muito cedo.</p>
+
+<h2>O recorde</h2>
+<p>O recorde Guinness da maior onda surfada pertence ao alemão <strong>Sebastian Steudtner</strong>: <strong>26,21 metros</strong>, a 29 de outubro de 2020, na Praia do Norte. Em 2024 surfou no mesmo local uma onda medida em 28,57 metros que, segundo a informação disponível, ainda não foi homologada como recorde.</p>
+
+<h2>Como saber se vai haver ondas</h2>
+<p>As ondas grandes veem-se chegar com vários dias de antecedência em qualquer previsão de surf. Estes são os dados que importam:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Dado</th><th>O que procurar</th><th>Porquê</th></tr></thead>
+<tbody>
+<tr><td>Período</td><td>13 segundos ou mais</td><td>Quanto mais longo o período, mais energia traz a ondulação e mais cresce no canhão.</td></tr>
+<tr><td>Direção da ondulação</td><td>Oeste ou noroeste</td><td>É a direção que entra em cheio pelo canhão até à Praia do Norte.</td></tr>
+<tr><td>Vento</td><td>Fraco, de leste ou sueste</td><td>Vento de terra: arruma a onda e levanta a espuma da crista.</td></tr>
+<tr><td>Maré</td><td>Média, a subir</td><td>Costuma trazer as séries mais fortes.</td></tr>
+</tbody></table></div>
+<p>A altura sozinha engana. Uma previsão de 5 metros com 18 segundos de período na Nazaré é muito mais do que 6 metros com 10 segundos. Se o período for curto e o vento soprar de oeste, o mar vai estar grande mas desarrumado.</p>
+
+<figure class="fig"><img src="/img/acantilado-olas.jpg" alt="Duas pessoas caminham até à beira da falésia enquanto o mar bate na rocha na Praia do Norte, Nazaré." loading="lazy" width="1440" height="960"><figcaption>Do trilho que desce para a Praia do Norte vê-se a força do mar contra a rocha. Nazaré.</figcaption></figure>
+
+<h2>Onde ficar</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Local</th><th>Para que serve</th><th>A ter em conta</th></tr></thead>
+<tbody>
+<tr><td>Esplanada do Forte de São Miguel Arcanjo</td><td>Ver a onda rebentar de frente, com o farol em primeiro plano. É o sítio clássico.</td><td>Nos dias grandes enche. Chega cedo.</td></tr>
+<tr><td>Falésia e trilho para a Praia do Norte</td><td>Ver a onda de lado e a escala das pessoas contra o mar.</td><td>Mantém-te longe da beira e das zonas vedadas.</td></tr>
+<tr><td>Areal da Praia do Norte</td><td>Textura da água e da espuma, ao nível do mar.</td><td>Fica bem longe da rebentação. Nos dias grandes a água sobe sem avisar.</td></tr>
+<tr><td>Sítio e Miradouro do Suberco</td><td>Vista geral da vila, da praia e do Forte.</td><td>Daí não se vê bem a onda, mas serve para te orientares e para o pôr do sol.</td></tr>
+</tbody></table></div>
+
+<h2>Como organizar o dia</h2>
+<ul>
+<li><strong>Chega cedo.</strong> Estacionar perto do Forte é quase impossível nos dias grandes. Muitos deixam o carro na vila, sobem ao Sítio de ascensor e caminham a partir daí.</li>
+<li><strong>Agasalho e proteção para a chuva.</strong> Passam-se horas de pé ao vento e a espuma chega longe.</li>
+<li><strong>Paciência.</strong> As séries grandes chegam de vez em quando. Entre uma e outra podem passar vários minutos.</li>
+<li><strong>Segue os avisos locais.</strong> A Polícia Marítima fecha zonas quando o mar está perigoso. Respeitá-las não é opcional.</li>
+</ul>
+
+<figure class="fig"><img src="/img/maiores-ondas.jpg" alt="Portão de entrada do Forte de São Miguel Arcanjo com a inscrição Maiores Ondas do Mundo e o sol por cima." loading="lazy" width="1440" height="960"><figcaption>A entrada do Forte, o ponto de observação mais conhecido. Nazaré.</figcaption></figure>
+
+<h2>Para as fotografar</h2>
+<ul>
+<li><strong>Objetiva</strong>: para os surfistas é preciso uma teleobjetiva longa, entre 400 e 600 mm, porque muitas ondas rebentam longe. Para a escala do lugar basta uma zoom normal.</li>
+<li><strong>Velocidade</strong>: 1/2000 ou mais para congelar a onda e a espuma. O mais prático é o modo manual com ISO automático, como se explica em <a href="/pt/blog/modos-de-la-camara/">Modos da câmara</a>.</li>
+<li><strong>Exposição</strong>: a espuma engana o fotómetro. Vê o <a href="/pt/blog/como-leer-el-histograma/">histograma</a> para não queimar a crista.</li>
+<li><strong>Equipamento</strong>: leva um pano para a frente da objetiva. O sal da espuma agarra-se ao vidro e estraga a nitidez sem que se note no ecrã.</li>
+</ul>
+<p>Para além da onda, um dia de mar grande tem outras fotografias: as pessoas no Forte, as motas de água, a bruma sobre a vila. Muitas vezes são essas que melhor contam o que ali se vive.</p>
+<p class="next">Para ver fotografias da Nazaré e o guia para a fotografar, visita a <a href="/pt/">página principal</a>.</p>
+"""},
 }

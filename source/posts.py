@@ -443,4 +443,161 @@ POSTS = [
 """
  },
 },
+{
+ "slug": "temporada-de-olas-en-nazare",
+ "date": "2026-11-06",
+ "image": "praia-do-norte",
+ "es": {
+  "title": "Temporada de olas grandes en Nazaré 2026/27: cuándo ir, dónde pararse y cómo saber si va a haber olas",
+  "desc": "Guía práctica de la temporada de olas gigantes en Praia do Norte: meses, Nazaré Big Wave Challenge 2026/27, cómo leer el pronóstico, dónde ver las olas y cómo fotografiarlas.",
+  "cat": "Nazaré",
+  "body": """
+<p class="lead">De noviembre a febrero, Praia do Norte puede recibir las olas más grandes que se surfean en el mundo. No hay fecha fija: aparecen cuando una tormenta del Atlántico Norte manda el mar de fondo justo hacia Nazaré. Esta guía resume cuándo ir, cómo saber si va a haber olas y dónde pararse para verlas y fotografiarlas.</p>
+
+<h2>Por qué en Nazaré</h2>
+<p>Frente a Praia do Norte nace el <strong>Cañón de Nazaré</strong>, una grieta submarina de unos 230 kilómetros de largo que llega a cerca de 5.000 metros de profundidad. El cañón lleva la energía del mar de fondo casi intacta hasta muy cerca de la costa, y ahí la ola crece de golpe. Por eso, con la misma tormenta, en Nazaré rompen olas mucho más grandes que en el resto de la costa portuguesa.</p>
+
+<h2>Cuándo es la temporada</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Meses</th><th>Qué esperar</th></tr></thead>
+<tbody>
+<tr><td>Noviembre a febrero</td><td>La mayor probabilidad de olas gigantes. Es cuando se concentran las tormentas del Atlántico Norte.</td></tr>
+<tr><td>Octubre y marzo</td><td>Puede haber días grandes, pero son menos frecuentes.</td></tr>
+<tr><td>Abril a septiembre</td><td>Mar mayormente tranquilo. Buena época para la playa, la luz y las calles.</td></tr>
+</tbody></table></div>
+<p>Aunque vayas en plena temporada, no hay olas gigantes todos los días. Entre un swell y otro pueden pasar semanas de mar normal. Si el viaje es solo por las olas, conviene tener flexibilidad de unos días y decidir con el pronóstico.</p>
+
+<h2>La competencia: Nazaré Big Wave Challenge 2026/27</h2>
+<p>La World Surf League organiza cada invierno el <strong>Nazaré Big Wave Challenge</strong>. Para la temporada 2026/27, el período de espera va del <strong>1 de noviembre de 2026 al 31 de marzo de 2027</strong>. La competencia se hace en un solo día, cuando llega un swell de al menos 25 pies (unos 7,6 metros) y el viento, la marea y la seguridad lo permiten.</p>
+<ul>
+<li><strong>Alerta amarilla</strong>: se emite hasta 72 horas antes y avisa que el evento podría activarse.</li>
+<li><strong>Alerta verde</strong>: confirma que la competencia se hace en las 24 horas siguientes, si las condiciones se mantienen.</li>
+</ul>
+<p>Compiten nueve equipos invitados de surf remolcado: seis masculinos y tres femeninos. El día de la competencia el Forte se llena desde muy temprano.</p>
+
+<h2>El récord</h2>
+<p>El récord Guinness de la ola más grande surfeada lo tiene el alemán <strong>Sebastian Steudtner</strong>: <strong>26,21 metros</strong>, el 29 de octubre de 2020, en Praia do Norte. En 2024 surfeó en el mismo lugar una ola medida en 28,57 metros, que según la información disponible todavía no fue homologada como récord.</p>
+
+<h2>Cómo saber si va a haber olas</h2>
+<p>Las olas grandes se ven venir con varios días de anticipación en cualquier pronóstico de surf. Estos son los datos que importan:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Dato</th><th>Lo que buscás</th><th>Por qué</th></tr></thead>
+<tbody>
+<tr><td>Período</td><td>13 segundos o más</td><td>Cuanto más largo el período, más energía trae el mar de fondo y más crece en el cañón.</td></tr>
+<tr><td>Dirección del swell</td><td>Oeste o noroeste</td><td>Es la dirección que entra de lleno por el cañón hacia Praia do Norte.</td></tr>
+<tr><td>Viento</td><td>Suave, del este o sudeste</td><td>Viento de tierra: ordena la ola y levanta el spray de la cresta.</td></tr>
+<tr><td>Marea</td><td>Media, subiendo</td><td>Suele dar las series más fuertes.</td></tr>
+</tbody></table></div>
+<p>La altura sola engaña. Un pronóstico de 5 metros con 18 segundos de período en Nazaré es mucho más que uno de 6 metros con 10 segundos. Si el período es corto y el viento sopla del oeste, el mar va a estar grande pero desordenado.</p>
+
+<figure class="fig"><img src="/img/acantilado-olas.jpg" alt="Dos personas caminan hacia el borde del acantilado mientras el mar golpea la roca en Praia do Norte, Nazaré." loading="lazy" width="1440" height="960"><figcaption>Desde el sendero que baja a Praia do Norte se ve la fuerza del mar contra la roca. Nazaré.</figcaption></figure>
+
+<h2>Dónde pararse</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Lugar</th><th>Para qué sirve</th><th>A tener en cuenta</th></tr></thead>
+<tbody>
+<tr><td>Explanada del Forte de São Miguel Arcanjo</td><td>Ver romper la ola de frente, con el faro en primer plano. Es el lugar clásico.</td><td>En días grandes se llena. Llegá a primera hora.</td></tr>
+<tr><td>Acantilado y sendero hacia Praia do Norte</td><td>Ver la ola de costado y la escala de la gente contra el mar.</td><td>Mantenete lejos del borde y de las zonas cerradas.</td></tr>
+<tr><td>Arena de Praia do Norte</td><td>Textura del agua y del spray, a nivel del mar.</td><td>Quedate muy lejos de la orilla. En días grandes el agua sube sin aviso.</td></tr>
+<tr><td>Sítio y Miradouro do Suberco</td><td>Vista general del pueblo, la playa y el Forte.</td><td>Desde ahí no se ve bien la ola, pero sirve para ubicarse y para el atardecer.</td></tr>
+</tbody></table></div>
+
+<h2>Cómo organizarse ese día</h2>
+<ul>
+<li><strong>Llegá temprano.</strong> Estacionar cerca del Forte es casi imposible en días grandes. Muchos dejan el auto en el pueblo, suben al Sítio en el ascensor y caminan desde ahí.</li>
+<li><strong>Abrigo y protección para la lluvia.</strong> Se pasan horas parado al viento y el spray llega lejos.</li>
+<li><strong>Paciencia.</strong> Las series grandes vienen cada tanto. Entre una y otra pueden pasar varios minutos.</li>
+<li><strong>Seguí los avisos locales.</strong> La policía marítima cierra zonas cuando el mar está peligroso. Respetarlas no es opcional.</li>
+</ul>
+
+<figure class="fig"><img src="/img/maiores-ondas.jpg" alt="Portón de entrada al Forte de São Miguel Arcanjo con la inscripción Maiores Ondas do Mundo y el sol encima." loading="lazy" width="1440" height="960"><figcaption>La entrada al Forte, el punto de observación más conocido. Nazaré.</figcaption></figure>
+
+<h2>Para fotografiarlas</h2>
+<ul>
+<li><strong>Lente</strong>: para los surfistas hace falta un teleobjetivo largo, entre 400 y 600 mm, porque muchas olas rompen lejos. Para la escala del lugar alcanza con un zoom estándar.</li>
+<li><strong>Velocidad</strong>: 1/2000 o más para congelar la ola y el spray. Lo más práctico es el modo manual con ISO automático, como se explica en <a href="/blog/modos-de-la-camara/">Modos de la cámara</a>.</li>
+<li><strong>Exposición</strong>: la espuma engaña al fotómetro. Mirá el <a href="/blog/como-leer-el-histograma/">histograma</a> para no quemar la cresta.</li>
+<li><strong>Equipo</strong>: llevá un paño para el frente del lente. La sal del spray se pega y arruina la nitidez sin que lo notes en la pantalla.</li>
+</ul>
+<p>Más allá de la ola, el día de mar grande tiene otras fotos: la gente en el Forte, las motos de agua, la bruma sobre el pueblo. Muchas veces son las que mejor cuentan lo que se vive ahí.</p>
+<p class="next">Para ver fotos de Nazaré y la guía para fotografiarla, visitá la <a href="/">página principal</a>.</p>
+"""
+ },
+ "en": {
+  "title": "Nazaré big wave season 2026/27: when to go, where to stand and how to tell if the waves are coming",
+  "desc": "A practical guide to the giant wave season at Praia do Norte: months, the 2026/27 Nazaré Big Wave Challenge, how to read the forecast, where to watch and how to photograph the waves.",
+  "cat": "Nazaré",
+  "body": """
+<p class="lead">From November to February, Praia do Norte can get the biggest waves ever surfed. There is no fixed date: they show up when a North Atlantic storm sends its swell straight at Nazaré. This guide covers when to go, how to tell whether the waves are coming and where to stand to watch and photograph them.</p>
+
+<h2>Why Nazaré</h2>
+<p>Off Praia do Norte lies the <strong>Nazaré Canyon</strong>, an underwater gorge about 230 kilometres long that reaches depths of around 5,000 metres. The canyon carries the swell's energy almost intact to very close to the shore, where the wave suddenly grows. That is why, with the same storm, Nazaré gets much bigger waves than the rest of the Portuguese coast.</p>
+
+<h2>When the season is</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Months</th><th>What to expect</th></tr></thead>
+<tbody>
+<tr><td>November to February</td><td>The best chance of giant waves. This is when North Atlantic storms are most frequent.</td></tr>
+<tr><td>October and March</td><td>Big days are possible, but less frequent.</td></tr>
+<tr><td>April to September</td><td>Mostly calm sea. A good time for the beach, the light and the streets.</td></tr>
+</tbody></table></div>
+<p>Even in peak season there are not giant waves every day. Weeks of ordinary sea can pass between swells. If the trip is only about the waves, keep a few days of flexibility and decide with the forecast.</p>
+
+<h2>The contest: Nazaré Big Wave Challenge 2026/27</h2>
+<p>Every winter the World Surf League runs the <strong>Nazaré Big Wave Challenge</strong>. For the 2026/27 season the waiting period runs from <strong>1 November 2026 to 31 March 2027</strong>. The contest takes place on a single day, when a swell of at least 25 feet (about 7.6 metres) arrives and wind, tide and safety allow it.</p>
+<ul>
+<li><strong>Yellow alert</strong>: issued up to 72 hours ahead, it signals that the event may be activated.</li>
+<li><strong>Green alert</strong>: confirms the contest will run within the next 24 hours, as long as conditions hold.</li>
+</ul>
+<p>Nine invited tow-surfing teams compete: six men's and three women's. On contest day the Forte fills up from very early.</p>
+
+<h2>The record</h2>
+<p>The Guinness record for the largest wave surfed belongs to Germany's <strong>Sebastian Steudtner</strong>: <strong>26.21 metres</strong>, on 29 October 2020, at Praia do Norte. In 2024 he rode a wave measured at 28.57 metres at the same spot, which, according to available information, has not yet been ratified as a record.</p>
+
+<h2>How to tell whether the waves are coming</h2>
+<p>Big waves show up several days ahead in any surf forecast. These are the numbers that matter:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Data</th><th>What you want</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Period</td><td>13 seconds or more</td><td>The longer the period, the more energy the swell carries and the more it grows in the canyon.</td></tr>
+<tr><td>Swell direction</td><td>West or northwest</td><td>It is the direction that runs straight up the canyon to Praia do Norte.</td></tr>
+<tr><td>Wind</td><td>Light, from the east or southeast</td><td>Offshore wind: it cleans up the wave and lifts the spray off the crest.</td></tr>
+<tr><td>Tide</td><td>Mid, rising</td><td>It often brings the strongest sets.</td></tr>
+</tbody></table></div>
+<p>Height alone is misleading. A 5-metre forecast with an 18-second period in Nazaré is far more than 6 metres at 10 seconds. If the period is short and the wind blows from the west, the sea will be big but messy.</p>
+
+<figure class="fig"><img src="/img/acantilado-olas.jpg" alt="Two people walk toward the cliff edge as the sea hits the rock at Praia do Norte, Nazaré." loading="lazy" width="1440" height="960"><figcaption>From the trail down to Praia do Norte you can see the force of the sea against the rock. Nazaré.</figcaption></figure>
+
+<h2>Where to stand</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Spot</th><th>What it is good for</th><th>Keep in mind</th></tr></thead>
+<tbody>
+<tr><td>Forte de São Miguel Arcanjo esplanade</td><td>Watching the wave break head-on, with the lighthouse in the foreground. The classic spot.</td><td>It gets packed on big days. Arrive first thing.</td></tr>
+<tr><td>Cliff and trail toward Praia do Norte</td><td>A side view of the wave and the scale of people against the sea.</td><td>Stay away from the edge and from closed areas.</td></tr>
+<tr><td>Praia do Norte sand</td><td>Texture of the water and spray, at sea level.</td><td>Stay well back from the shoreline. On big days the water surges without warning.</td></tr>
+<tr><td>Sítio and Miradouro do Suberco</td><td>An overview of the town, the beach and the Forte.</td><td>You cannot see the wave well from there, but it is good for getting your bearings and for sunset.</td></tr>
+</tbody></table></div>
+
+<h2>Planning the day</h2>
+<ul>
+<li><strong>Arrive early.</strong> Parking near the Forte is almost impossible on big days. Many people leave the car in town, take the funicular up to the Sítio and walk from there.</li>
+<li><strong>Warm clothes and rain gear.</strong> You will stand for hours in the wind, and the spray carries far.</li>
+<li><strong>Patience.</strong> Big sets come now and then. Several minutes can pass between them.</li>
+<li><strong>Follow local warnings.</strong> The maritime police close areas when the sea is dangerous. Respecting them is not optional.</li>
+</ul>
+
+<figure class="fig"><img src="/img/maiores-ondas.jpg" alt="Entrance gate to the Forte de São Miguel Arcanjo with the inscription Maiores Ondas do Mundo and the sun above." loading="lazy" width="1440" height="960"><figcaption>The entrance to the Forte, the best-known viewpoint. Nazaré.</figcaption></figure>
+
+<h2>Photographing them</h2>
+<ul>
+<li><strong>Lens</strong>: for the surfers you need a long telephoto, between 400 and 600 mm, because many waves break far out. For the scale of the place a standard zoom is enough.</li>
+<li><strong>Shutter speed</strong>: 1/2000 or faster to freeze the wave and the spray. The most practical setup is manual mode with auto ISO, as explained in <a href="/en/blog/modos-de-la-camara/">Camera modes</a>.</li>
+<li><strong>Exposure</strong>: white water fools the light meter. Check the <a href="/en/blog/como-leer-el-histograma/">histogram</a> so you do not blow out the crest.</li>
+<li><strong>Gear</strong>: bring a cloth for the front element. Salt from the spray sticks to it and ruins sharpness without showing on the screen.</li>
+</ul>
+<p>Beyond the wave, a big-sea day has other photographs: the crowd at the Forte, the jet skis, the mist over the town. Often they tell the story of the day best.</p>
+<p class="next">To see photographs of Nazaré and the guide to photographing it, visit the <a href="/en/">home page</a>.</p>
+"""
+ },
+},
 ]

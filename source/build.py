@@ -107,7 +107,7 @@ def build(lang):
     faq_html="".join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q,a in FQ)
     url=SITE+(lang+"/" if en else "")
     ld=[
-     {"@context":"https://schema.org","@type":"Person","name":"Matías Silva","jobTitle":U["job"],"email":"mailto:matiassilva.ph@gmail.com","url":url,"homeLocation":{"@type":"Place","name":"San Miguel, Buenos Aires, Argentina"},
+     {"@context":"https://schema.org","@type":"Person","@id":SITE+"#matias-silva","name":"Matías Silva","jobTitle":U["job"],"email":"mailto:matiassilva.ph@gmail.com","url":url,"homeLocation":{"@type":"Place","name":"San Miguel, Buenos Aires, Argentina"},
       "sameAs":["https://www.instagram.com/matiassilva.ph/","https://www.instagram.com/vivanazare/"],"knowsAbout":U["knows"]},
      {"@context":"https://schema.org","@type":"ImageGallery","name":U["gallery"],"inLanguage":("pt-PT" if lang=="pt" else lang),"url":url,"about":{"@type":"Place","name":"Nazaré, Portugal"},
       "author":{"@type":"Person","name":"Matías Silva"},
