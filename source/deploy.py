@@ -45,7 +45,7 @@ for es,en in pairs:
 wrap('/home/claude/web/site/servicios/index.html',R+'servicios/index.html','es')
 wrap('/home/claude/web/site/en/servicios/index.html',R+'en/servicios/index.html','en')
 wrap('/home/claude/web/site/pt/servicios/index.html',R+'pt/servicios/index.html','pt-PT')
-B="https://matiassilvaph.netlify.app"
+B="https://matiassilvaph.com"
 urls=""
 for es,en in pairs:
     pt="/pt"+es

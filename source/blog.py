@@ -4,7 +4,7 @@ from posts import POSTS
 from posts_pt import PT as POSTS_PT
 for _p in POSTS: _p['pt']=POSTS_PT[_p['slug']]
 
-SITE = "https://matiassilvaph.netlify.app"
+SITE = "https://matiassilvaph.com"
 tpl = open("/home/claude/web/template.html").read()
 CSS = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">'

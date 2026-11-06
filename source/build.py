@@ -63,7 +63,7 @@ FAQ=[
 ]
 
 import i18n_en as EN, i18n_pt as PT
-SITE="https://matiassilvaph.netlify.app/"
+SITE="https://matiassilvaph.com/"
 ES_UI={"photos":"fotografías","series":"Serie","cats_title":"Los gatos del pueblo","cats_intro":"Viven en los patios y sobre los muros. Nadie los apura.",
  "cats_chap":"El pueblo · Serie gatos","zoom":"Ampliar","by":"Fotografía de Matías Silva.","gallery":"Nazaré — Fotografía de Matías Silva","job":"Fotógrafo",
  "knows":["Fotografía de Nazaré","Praia do Norte","Fotografía de olas grandes","Fotografía de calle"]}

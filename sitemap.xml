@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://matiassilvaph.netlify.app/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/"/>
+    <loc>https://matiassilvaph.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/en/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/"/>
+    <loc>https://matiassilvaph.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/pt/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/"/>
+    <loc>https://matiassilvaph.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/"/>
+    <loc>https://matiassilvaph.com/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/en/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/"/>
+    <loc>https://matiassilvaph.com/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/pt/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/"/>
+    <loc>https://matiassilvaph.com/pt/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/blog/triangulo-de-exposicion/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/triangulo-de-exposicion/"/>
+    <loc>https://matiassilvaph.com/blog/triangulo-de-exposicion/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/triangulo-de-exposicion/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/en/blog/triangulo-de-exposicion/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/triangulo-de-exposicion/"/>
+    <loc>https://matiassilvaph.com/en/blog/triangulo-de-exposicion/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/triangulo-de-exposicion/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/pt/blog/triangulo-de-exposicion/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/triangulo-de-exposicion/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/triangulo-de-exposicion/"/>
+    <loc>https://matiassilvaph.com/pt/blog/triangulo-de-exposicion/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/triangulo-de-exposicion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/triangulo-de-exposicion/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/blog/modos-de-la-camara/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/modos-de-la-camara/"/>
+    <loc>https://matiassilvaph.com/blog/modos-de-la-camara/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/modos-de-la-camara/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/en/blog/modos-de-la-camara/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/modos-de-la-camara/"/>
+    <loc>https://matiassilvaph.com/en/blog/modos-de-la-camara/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/modos-de-la-camara/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/pt/blog/modos-de-la-camara/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/modos-de-la-camara/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/modos-de-la-camara/"/>
+    <loc>https://matiassilvaph.com/pt/blog/modos-de-la-camara/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/modos-de-la-camara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/modos-de-la-camara/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/blog/como-leer-el-histograma/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/como-leer-el-histograma/"/>
+    <loc>https://matiassilvaph.com/blog/como-leer-el-histograma/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/como-leer-el-histograma/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/en/blog/como-leer-el-histograma/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/como-leer-el-histograma/"/>
+    <loc>https://matiassilvaph.com/en/blog/como-leer-el-histograma/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/como-leer-el-histograma/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://matiassilvaph.netlify.app/pt/blog/como-leer-el-histograma/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.netlify.app/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.netlify.app/en/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.netlify.app/pt/blog/como-leer-el-histograma/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.netlify.app/blog/como-leer-el-histograma/"/>
+    <loc>https://matiassilvaph.com/pt/blog/como-leer-el-histograma/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/blog/como-leer-el-histograma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/blog/como-leer-el-histograma/"/>
     <lastmod>2026-11-06</lastmod>
   </url>
 </urlset>
