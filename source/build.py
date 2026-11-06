@@ -62,7 +62,7 @@ FAQ=[
  ("¿Cómo saber si va a haber olas grandes?","Hay que mirar el pronóstico de oleaje: período de 13 segundos o más, mar de fondo del oeste o noroeste y viento suave del este o sudeste. La marea media subiendo suele dar las series más fuertes."),
 ]
 
-import i18n_en as EN
+import i18n_en as EN, i18n_pt as PT
 SITE="https://matiassilvaph.netlify.app/"
 ES_UI={"photos":"fotografías","series":"Serie","cats_title":"Los gatos del pueblo","cats_intro":"Viven en los patios y sobre los muros. Nadie los apura.",
  "cats_chap":"El pueblo · Serie gatos","zoom":"Ampliar","by":"Fotografía de Matías Silva.","gallery":"Nazaré — Fotografía de Matías Silva","job":"Fotógrafo",
@@ -71,10 +71,10 @@ ES_COVERS={"mar":("El mar","Olas, acantilado y el Forte"),"pueblo":("El pueblo",
 COVER_IMG={"mar":"forte-bruma","pueblo":"barcos","luz":"dorado"}
 
 def build(lang):
-    en=lang=="en"; P="../" if en else ""; U=EN.UI if en else ES_UI
+    L={"en":EN,"pt":PT}.get(lang); en=L is not None; P="../" if en else ""; U=L.UI if en else ES_UI
     ALL=[]
     def tr(s,t,p,n):
-        return EN.PHOTOS[s] if en else (t,p,n)
+        return L.PHOTOS[s] if en else (t,p,n)
     def fig(slug,t,place,note,chap,cls=""):
         t,place,note=tr(slug,t,place,note)
         i=len(ALL); ALL.append(dict(s=slug,t=t,p=place,n=note,c=chap))
@@ -84,7 +84,7 @@ def build(lang):
                 f'<figcaption><span class="t">{html.escape(t)}</span><span class="p">{html.escape(place)}</span></figcaption></figure>')
     chap_html=""
     for key,num,title,intro,photos in CH:
-        if en: title,intro=EN.CHAPTERS[key]
+        if en: title,intro=L.CHAPTERS[key]
         figs="".join(fig(s,t,p,n,title) for s,t,p,n in photos)
         extra=""
         if key=="pueblo":
@@ -99,31 +99,35 @@ def build(lang):
   </header>
   <div class="grid">{figs}</div>{extra}
 </section>'''
-    CV=EN.COVERS if en else ES_COVERS
+    CV=L.COVERS if en else ES_COVERS
     cover_html="".join(f'<a class="cover" href="#{k}"><img src="{P}img/{COVER_IMG[k]}-s.jpg" alt="" width="{meta[COVER_IMG[k]][0]}" height="{meta[COVER_IMG[k]][1]}"><span class="cn">{CV[k][0]}</span><span class="cd">{CV[k][1]}</span></a>' for k in ("mar","pueblo","luz"))
-    SP=EN.SPOTS if en else SPOTS
+    SP=L.SPOTS if en else SPOTS
     spot_html="".join(f'<article class="spot"><img src="{P}img/{s}-s.jpg" alt="{html.escape(n)}" width="{meta[s][0]}" height="{meta[s][1]}"><div><h3>{n}</h3><p>{d}</p><span class="tag">{tg}</span></div></article>' for s,n,d,tg in SP)
-    FQ=EN.FAQ if en else FAQ
+    FQ=L.FAQ if en else FAQ
     faq_html="".join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q,a in FQ)
-    url=SITE+("en/" if en else "")
+    url=SITE+(lang+"/" if en else "")
     ld=[
      {"@context":"https://schema.org","@type":"Person","name":"Matías Silva","jobTitle":U["job"],"email":"mailto:matiassilva.ph@gmail.com","url":url,"homeLocation":{"@type":"Place","name":"San Miguel, Buenos Aires, Argentina"},
       "sameAs":["https://www.instagram.com/matiassilva.ph/","https://www.instagram.com/vivanazare/"],"knowsAbout":U["knows"]},
-     {"@context":"https://schema.org","@type":"ImageGallery","name":U["gallery"],"inLanguage":lang,"url":url,"about":{"@type":"Place","name":"Nazaré, Portugal"},
+     {"@context":"https://schema.org","@type":"ImageGallery","name":U["gallery"],"inLanguage":("pt-PT" if lang=="pt" else lang),"url":url,"about":{"@type":"Place","name":"Nazaré, Portugal"},
       "author":{"@type":"Person","name":"Matías Silva"},
       "image":[{"@type":"ImageObject","contentUrl":f"{SITE}img/{a['s']}.jpg","name":a["t"],"description":a["n"],"contentLocation":{"@type":"Place","name":a["p"]+", Nazaré, Portugal"},"creator":{"@type":"Person","name":"Matías Silva"},"creditText":"Matías Silva","copyrightNotice":"© 2026 Matías Silva","copyrightHolder":{"@type":"Person","name":"Matías Silva"}} for a in ALL]},
-     {"@context":"https://schema.org","@type":"FAQPage","inLanguage":lang,"mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FQ]},
+     {"@context":"https://schema.org","@type":"FAQPage","inLanguage":("pt-PT" if lang=="pt" else lang),"mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FQ]},
     ]
     headlinks=(f'<link rel="canonical" href="{url}">\n<link rel="alternate" hreflang="es" href="{SITE}">\n'
-               f'<link rel="alternate" hreflang="en" href="{SITE}en/">\n<link rel="alternate" hreflang="x-default" href="{SITE}">')
-    langlink=('<a class="lang" href="../" hreflang="es" lang="es">ES</a>' if en else '<a class="lang" href="en/" hreflang="en" lang="en">EN</a>')
+               f'<link rel="alternate" hreflang="en" href="{SITE}en/">\n<link rel="alternate" hreflang="pt-PT" href="{SITE}pt/">\n<link rel="alternate" hreflang="x-default" href="{SITE}">')
+    R="../" if en else ""
+    hrefs={"es":R or "./","en":R+"en/","pt":R+"pt/"}
+    if lang=="en": hrefs["en"]="./"
+    if lang=="pt": hrefs["pt"]="./"
+    names={"es":"Español","en":"English","pt":"Português"}
+    langlink="".join(f'<a class="lang" href="{hrefs[k]}" hreflang="{k}" lang="{k}">{k.upper()}</a>' for k in ("es","en","pt") if k!=lang)
     picker=(f'<div class="lang-pick" id="lang-pick" data-cur="{lang}" hidden role="dialog" aria-label="Idioma / Language">'
-            '<p>Elegí el idioma · Choose your language</p><div class="row">'
-            f'<button type="button" data-l="es" data-href="{"../" if en else "./"}" lang="es">Español</button>'
-            f'<button type="button" data-l="en" data-href="{"./" if en else "en/"}" lang="en">English</button></div></div>')
+            '<p>Elegí el idioma · Choose your language · Escolha o idioma</p><div class="row">'
+            +"".join(f'<button type="button" data-l="{k}" data-href="{hrefs[k]}" lang="{k}">{names[k]}</button>' for k in ("es","en","pt"))+'</div></div>')
     page=open("/home/claude/web/template.html").read()
     if en:
-        for a,b in EN.TEMPLATE:
+        for a,b in L.TEMPLATE:
             assert a in page, a[:60]
             page=page.replace(a,b)
     page=(page.replace("{{CHAPTERS}}",chap_html).replace("{{COVERS}}",cover_html).replace("{{SPOTS}}",spot_html)
@@ -135,7 +139,7 @@ def build(lang):
     return page,len(ALL)
 
 import os
-os.makedirs("/home/claude/web/site/en",exist_ok=True)
-for lang,out in (("es","/home/claude/web/site/index.html"),("en","/home/claude/web/site/en/index.html")):
+os.makedirs("/home/claude/web/site/en",exist_ok=True); os.makedirs("/home/claude/web/site/pt",exist_ok=True)
+for lang,out in (("es","/home/claude/web/site/index.html"),("en","/home/claude/web/site/en/index.html"),("pt","/home/claude/web/site/pt/index.html")):
     pg,n=build(lang); open(out,"w").write(pg)
-print(n,"fotos x 2 idiomas")
+print(n,"fotos x 3 idiomas")

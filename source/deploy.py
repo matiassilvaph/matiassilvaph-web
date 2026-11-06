@@ -33,9 +33,10 @@ def wrap(src,out,lang):
 R='/home/claude/matiassilvaph-web/'
 wrap('/home/claude/web/site/index.html',R+'index.html','es')
 wrap('/home/claude/web/site/en/index.html',R+'en/index.html','en')
+wrap('/home/claude/web/site/pt/index.html',R+'pt/index.html','pt-PT')
 import posts
-pairs=[("/","/en/"),("/blog/","/en/blog/")]+[(f"/blog/{x['slug']}/",f"/en/blog/{x['slug']}/") for x in posts.POSTS]
-for es,en in pairs[1:]:
+pairs=[("/blog/","/en/blog/")]+[(f"/blog/{x['slug']}/",f"/en/blog/{x['slug']}/") for x in posts.POSTS]
+for es,en in pairs:
     wrap('/home/claude/web/site'+es+'index.html',R+es.lstrip('/')+'index.html','es')
     wrap('/home/claude/web/site'+en+'index.html',R+en.lstrip('/')+'index.html','en')
 wrap('/home/claude/web/site/servicios/index.html',R+'servicios/index.html','es')
@@ -52,5 +53,16 @@ for es,en in pairs:
     <lastmod>2026-11-03</lastmod>
   </url>
 """
-open(R+'sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+urls+'</urlset>\n')
+home=""
+for u in ("/","/en/","/pt/"):
+    home+=f"""  <url>
+    <loc>{B}{u}</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="{B}/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{B}/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="{B}/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{B}/"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+"""
+open(R+'sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+home+urls+'</urlset>\n')
 

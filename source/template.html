@@ -161,6 +161,7 @@ footer{padding-block:80px 40px;font:12px var(--mono);color:var(--muted)}
   .lb aside{max-height:40vh}
 }
 @media (max-width:480px){.spot{grid-template-columns:96px minmax(0,1fr)}}
+.top nav a.lang+a.lang{margin-left:-8px}
 .top nav a.lang{color:var(--fg);border:1px solid var(--line);padding:1px 7px;border-radius:2px}
 .top nav a.lang:hover{border-color:var(--accent)}
 .lang-pick{position:fixed;z-index:15;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:min(320px,calc(100% - 32px));background:var(--surface);border:1px solid var(--line);padding:18px;display:flex;flex-direction:column;gap:12px;box-shadow:0 12px 40px rgba(0,0,0,.45)}
@@ -304,8 +305,8 @@ lb.addEventListener("touchend",e=>{if(sx===null)return;const dx=e.changedTouches
 (function(){
   var p=document.getElementById("lang-pick");if(!p)return;
   var k="langChosen";try{if(localStorage.getItem(k))return}catch(e){}
-  var nav=(navigator.language||"").toLowerCase(),es=nav.indexOf("es")===0;
-  p.querySelector(es?"[data-l=es]":"[data-l=en]").classList.add("pref");
+  var nav=(navigator.language||"").toLowerCase(),pl=nav.indexOf("es")===0?"es":nav.indexOf("pt")===0?"pt":"en";
+  p.querySelector("[data-l="+pl+"]").classList.add("pref");
   p.hidden=false;
   p.addEventListener("click",function(e){var b=e.target.closest("button[data-l]");if(!b)return;
     try{localStorage.setItem(k,b.dataset.l)}catch(err){}
