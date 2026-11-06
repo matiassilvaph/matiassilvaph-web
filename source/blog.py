@@ -1,6 +1,8 @@
 import sys, re, os, json, html
 sys.path.insert(0, "/home/claude/web")
 from posts import POSTS
+from posts_pt import PT as POSTS_PT
+for _p in POSTS: _p['pt']=POSTS_PT[_p['slug']]
 
 SITE = "https://matiassilvaph.netlify.app"
 tpl = open("/home/claude/web/template.html").read()
@@ -55,6 +57,12 @@ L = {
             read="min de lectura", by="Por Matías Silva", home_l="Inicio",
             author="<b>Matías Silva</b> · Fotógrafo entre San Miguel y Nazaré. Escribo sobre lo que aprendo en cada salida.",
             foot="© 2026 Matías Silva · Todas las fotografías son de autoría propia.", months=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]),
+ "pt": dict(home="/pt/", blog="/pt/blog/", nav=[("/pt/#mar","O mar"),("/pt/#pueblo","A vila"),("/pt/#luz","A luz"),("/pt/#guia","Guia"),("/pt/blog/","Blog"),("/pt/#quien-soy","Quem sou")],
+            brand="fotografia", blogtitle="Blog", blogdesc="Artigos de fotografia para quem está a começar: exposição, modos da câmara, composição e luz. Servem para qualquer câmara.",
+            blogh="Blog", blogp="O que vou aprendendo sobre fotografia, explicado de forma simples. Conceitos que servem para qualquer câmara, do telemóvel a uma sem espelho.",
+            read="min de leitura", by="Por Matías Silva", home_l="Início",
+            author="<b>Matías Silva</b> · Fotógrafo entre San Miguel e a Nazaré. Escrevo sobre o que aprendo em cada saída.",
+            foot="© 2026 Matías Silva · Todas as fotografias são de autoria própria.", months=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]),
  "en": dict(home="/en/", blog="/en/blog/", nav=[("/en/#mar","The sea"),("/en/#pueblo","The town"),("/en/#luz","The light"),("/en/#guia","Guide"),("/en/blog/","Blog"),("/en/#quien-soy","About")],
             brand="photography", blogtitle="Blog", blogdesc="Photography articles for beginners: exposure, camera modes, composition and light. They work with any camera.",
             blogh="Blog", blogp="What I am learning about photography, explained simply. Concepts that work with any camera, from a phone to a mirrorless.",
@@ -66,22 +74,23 @@ L = {
 def fdate(d, lang):
     y, m, dd = d.split("-")
     mn = L[lang]["months"][int(m)-1]
-    return f"{int(dd)} de {mn} de {y}" if lang == "es" else f"{mn} {int(dd)}, {y}"
+    return f"{mn} {int(dd)}, {y}" if lang == "en" else f"{int(dd)} de {mn} de {y}"
 
 def mins(body):
     return max(1, round(len(re.sub("<[^>]+>", " ", body).split()) / 200))
 
-def page(lang, title, desc, url, alt_es, alt_en, ld, content, ogimg="familia"):
+def page(lang, title, desc, url, alt_es, alt_en, ld, content, ogimg="familia", alt_pt=None):
     t = L[lang]
-    other = alt_en if lang == "es" else alt_es
+    alts = {"es": alt_es, "en": alt_en, "pt": alt_pt}
     nav = "".join(f'<a href="{h}">{n}</a>' for h, n in t["nav"])
-    nav += (f'<a class="lang" href="{other}" hreflang="en" lang="en">EN</a>' if lang == "es" else f'<a class="lang" href="{other}" hreflang="es" lang="es">ES</a>')
+    nav += "".join(f'<a class="lang" href="{u}" hreflang="{k}" lang="{k}">{k.upper()}</a>' for k, u in alts.items() if u and k != lang)
+    ptlink = f'<link rel="alternate" hreflang="pt-PT" href="{SITE}{alt_pt}">\n' if alt_pt else ""
     return f"""<title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{SITE}{url}">
 <link rel="alternate" hreflang="es" href="{SITE}{alt_es}">
 <link rel="alternate" hreflang="en" href="{SITE}{alt_en}">
-<link rel="alternate" hreflang="x-default" href="{SITE}{alt_es}">
+{ptlink}<link rel="alternate" hreflang="x-default" href="{SITE}{alt_es}">
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:type" content="{'article' if ld.get('@type')=='BlogPosting' else 'website'}">
@@ -92,7 +101,7 @@ def page(lang, title, desc, url, alt_es, alt_en, ld, content, ogimg="familia"):
 <header class="top">
   <div class="wrap">
     <a class="brand" href="{t['home']}">Matías Silva <i>{t['brand']}</i></a>
-    <nav aria-label="{'Secciones' if lang=='es' else 'Sections'}">{nav}</nav>
+    <nav aria-label="{dict(es='Secciones',en='Sections',pt='Secções')[lang]}">{nav}</nav>
   </div>
 </header>
 <main>
@@ -102,15 +111,15 @@ def page(lang, title, desc, url, alt_es, alt_en, ld, content, ogimg="familia"):
 """
 
 out = {}
-for lang in ("es", "en"):
+for lang in ("es", "en", "pt"):
     t = L[lang]
     cards = ""
     for p in reversed(POSTS):
         c = p[lang]
         url = f"{t['blog']}{p['slug']}/"
-        alt_es, alt_en = f"/blog/{p['slug']}/", f"/en/blog/{p['slug']}/"
+        alt_es, alt_en, alt_pt = f"/blog/{p['slug']}/", f"/en/blog/{p['slug']}/", f"/pt/blog/{p['slug']}/"
         ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": c["title"], "description": c["desc"],
-              "inLanguage": lang, "datePublished": p["date"], "dateModified": p["date"], "image": f"{SITE}/img/{p['image']}.jpg",
+              "inLanguage": ("pt-PT" if lang == "pt" else lang), "datePublished": p["date"], "dateModified": p["date"], "image": f"{SITE}/img/{p['image']}.jpg",
               "author": {"@type": "Person", "name": "Matías Silva", "url": SITE + t["home"]},
               "publisher": {"@type": "Person", "name": "Matías Silva"}, "mainEntityOfPage": SITE + url}
         content = f"""<div class="wrap">
@@ -123,17 +132,17 @@ for lang in ("es", "en"):
   <article class="prose">{c['body']}</article>
   <aside class="author"><img src="/img/detras.jpg" alt="" width="96" height="96" loading="lazy"><p>{t['author']}</p></aside>
 </div>"""
-        out[f"{lang}/{p['slug']}"] = (url, page(lang, c["title"] + " · Matías Silva", c["desc"], url, alt_es, alt_en, ld, content, p["image"]))
+        out[f"{lang}/{p['slug']}"] = (url, page(lang, c["title"] + " · Matías Silva", c["desc"], url, alt_es, alt_en, ld, content, p["image"], alt_pt))
         cards += f"""<a class="card" href="{url}"><img src="/img/{p['image']}-s.jpg" alt="" loading="lazy" width="760" height="507">
 <div class="post-meta"><span class="cat">{c['cat']}</span><span>{fdate(p['date'], lang)}</span><span>{mins(c['body'])} {t['read']}</span></div>
 <h2>{c['title']}</h2><p>{c['desc']}</p></a>"""
-    ld = {"@context": "https://schema.org", "@type": "Blog", "name": "Blog · Matías Silva", "inLanguage": lang, "url": SITE + t["blog"],
+    ld = {"@context": "https://schema.org", "@type": "Blog", "name": "Blog · Matías Silva", "inLanguage": ("pt-PT" if lang == "pt" else lang), "url": SITE + t["blog"],
           "author": {"@type": "Person", "name": "Matías Silva"}}
     content = f"""<div class="wrap">
   <header class="blog-head"><p class="eyebrow">Matías Silva</p><h1>{t['blogh']}</h1><p>{t['blogp']}</p></header>
   <div class="cards">{cards}</div>
 </div>"""
-    out[f"{lang}/index"] = (t["blog"], page(lang, "Blog · Matías Silva " + ("Fotografía" if lang == "es" else "Photography"), t["blogdesc"], t["blog"], "/blog/", "/en/blog/", ld, content))
+    out[f"{lang}/index"] = (t["blog"], page(lang, "Blog · Matías Silva " + dict(es="Fotografía", en="Photography", pt="Fotografia")[lang], t["blogdesc"], t["blog"], "/blog/", "/en/blog/", ld, content, alt_pt="/pt/blog/"))
 
 for k, (url, pg) in out.items():
     path = "/home/claude/web/site" + url + "index.html"

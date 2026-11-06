@@ -98,9 +98,40 @@ T = {
   ],
   contact_h="Enquiries", contact_p="Write to me with the type of session, the date you have in mind and the area.", ig="Or send a direct message on Instagram:",
   areaname="San Miguel, Buenos Aires"),
+ "pt": dict(
+  url="/pt/servicios/", title="Serviços de fotografia em San Miguel, Buenos Aires · Matías Silva",
+  desc="Retrato profissional para consultores imobiliários, equipas e eventos em San Miguel, Bella Vista e na zona norte da Grande Buenos Aires. Preço por sessão, agenda limitada.",
+  eyebrow="Serviços", h1="Fotografia por sessão em San Miguel, Buenos Aires",
+  intro="Trabalho por sessão, não por número de fotografias. Cada sessão inclui a direção, a edição e uma entrega cuidada. Aceito poucas sessões por mês para dedicar a cada uma o tempo de que precisa.",
+  launch="Preços de lançamento · Novembro 2026",
+  svcs=[
+   ("Retrato profissional para consultores imobiliários", "ARS 140.000", "por sessão",
+    ["1,5 horas no local: escritório, imóvel ou exterior", "2 mudas de roupa", "Direção de pose e expressão", "10 fotografias editadas", "Entrega em 5 dias úteis"],
+    "Pensado para perfis em portais, redes sociais e cartões profissionais.", False),
+   ("Equipa imobiliária", "ARS 380.000", "até 5 pessoas",
+    ["Meia manhã no escritório ou no local", "Retratos individuais de cada consultor", "Fotografia de equipa", "Estilo de edição único para toda a imobiliária"],
+    "Para que toda a equipa tenha uma imagem coerente.", False),
+   ("Eventos selecionados", "ARS 220.000", "até 3 horas",
+    ["Cobertura documental, sem interromper", "Edição da seleção final", "Entrega em 10 dias úteis"],
+    "Apresentações, lançamentos e encontros. Aceito poucos eventos e escolho os que se ajustam ao meu trabalho.", False),
+   ("Fotografia de imóveis", "Sob consulta", "brevemente",
+    ["Interiores e exteriores", "Luz natural", "Fotografias prontas para portais"],
+    "Disponível nos próximos meses.", True),
+  ],
+  how="Como trabalho", steps=[("Contacto","Escreve-me com a ideia e a data."),("Conversa breve","Definimos local, roupa e estilo."),("Sessão","Sem pressa e com direção a todo o momento."),("Entrega","Galeria online com as fotografias editadas.")],
+  faq_h="Perguntas frequentes",
+  faq=[
+   ("Em que zonas trabalhas?", "Em San Miguel, Bella Vista, Muñiz, José C. Paz, Hurlingham e Pilar. Para outras zonas de Buenos Aires, contacta-me."),
+   ("Porque cobras por sessão e não por fotografia?", "Porque o que se paga é o trabalho completo: a preparação, a direção durante a sessão e a edição. Entrego as melhores fotografias, não a maior quantidade."),
+   ("Que roupa convém levar para um retrato profissional?", "Cores lisas e neutras, sem padrões pequenos nem logótipos. Convém levar uma opção formal e outra mais descontraída. Falamos sobre isso antes da sessão."),
+   ("Quanto tempo demora a entrega?", "Cinco dias úteis para retratos e dez para eventos."),
+   ("Porquê preços de lançamento?", "Porque são os preços dos primeiros trabalhos em San Miguel. São atualizados periodicamente."),
+  ],
+  contact_h="Contactos", contact_p="Escreve-me com o tipo de sessão, a data que tens em mente e a zona.", ig="Ou por mensagem direta no Instagram:",
+  areaname="San Miguel, Buenos Aires"),
 }
 
-for lang in ("es", "en"):
+for lang in ("es", "en", "pt"):
     t = T[lang]
     cards = ""
     for name, price, unit, items, note, soon in t["svcs"]:
@@ -125,7 +156,7 @@ for lang in ("es", "en"):
           "areaServed": [{"@type": "Place", "name": a + ", Buenos Aires"} for a in AREA],
           "founder": {"@type": "Person", "name": "Matías Silva"},
           "hasOfferCatalog": {"@type": "OfferCatalog", "name": t["eyebrow"], "itemListElement": offers}}
-    pg = blog.page(lang, t["title"], t["desc"], t["url"], "/servicios/", "/en/servicios/", ld, content)
+    pg = blog.page(lang, t["title"], t["desc"], t["url"], "/servicios/", "/en/servicios/", ld, content, alt_pt="/pt/servicios/")
     pg = pg.replace("<title>", '<meta name="robots" content="noindex">\n<title>', 1).replace("</style>", CSS + "</style>", 1)
     path = "/home/claude/web/site" + t["url"] + "index.html"
     os.makedirs(os.path.dirname(path), exist_ok=True)

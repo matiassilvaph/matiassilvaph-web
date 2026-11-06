@@ -37,20 +37,26 @@ wrap('/home/claude/web/site/pt/index.html',R+'pt/index.html','pt-PT')
 import posts
 pairs=[("/blog/","/en/blog/")]+[(f"/blog/{x['slug']}/",f"/en/blog/{x['slug']}/") for x in posts.POSTS]
 for es,en in pairs:
+    pt="/pt"+es
+    wrap('/home/claude/web/site'+pt+'index.html',R+pt.lstrip('/')+'index.html','pt-PT')
+for es,en in pairs:
     wrap('/home/claude/web/site'+es+'index.html',R+es.lstrip('/')+'index.html','es')
     wrap('/home/claude/web/site'+en+'index.html',R+en.lstrip('/')+'index.html','en')
 wrap('/home/claude/web/site/servicios/index.html',R+'servicios/index.html','es')
 wrap('/home/claude/web/site/en/servicios/index.html',R+'en/servicios/index.html','en')
+wrap('/home/claude/web/site/pt/servicios/index.html',R+'pt/servicios/index.html','pt-PT')
 B="https://matiassilvaph.netlify.app"
 urls=""
 for es,en in pairs:
-    for u in (es,en):
+    pt="/pt"+es
+    for u in (es,en,pt):
         urls+=f"""  <url>
     <loc>{B}{u}</loc>
     <xhtml:link rel="alternate" hreflang="es" href="{B}{es}"/>
     <xhtml:link rel="alternate" hreflang="en" href="{B}{en}"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="{B}{pt}"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="{B}{es}"/>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
   </url>
 """
 home=""
