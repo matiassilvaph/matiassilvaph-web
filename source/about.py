@@ -38,7 +38,7 @@ T = {
    ("Nazaré", [
      "Imaginé Nazaré durante años antes de conocerla. La seguía desde 2014 y llegué por primera vez en 2022.",
      "Después viví tres años en Portugal. Una parte de ese tiempo la pasé instalado en Nazaré y el resto viajaba hasta allá cada vez que podía, para conocer sus olas, su cultura y su gente. De ahí sale la forma en que la fotografío.",
-     "Creé <a href=\"" + VN + "\" rel=\"noopener\">Viva Nazaré</a>, un proyecto dedicado a la gente, la cultura y las olas gigantes del pueblo. Fui cofundador de Nazaré Inside, que publica reportes sobre las olas y la vida local.",
+     "Creé <a href=\"" + VN + "\" rel=\"noopener\">Viva Nazaré</a>, un proyecto dedicado a la gente, la cultura y las olas gigantes del pueblo. Soy cofundador de Nazaré Inside, que publica reportes sobre las olas y la vida local, y creé toda su marca digital.",
    ]),
    ("Qué fotografío", [
      "El mar y las olas grandes, el surf, la calle, la naturaleza y la arquitectura: edificios, techos, lo que queda en pie entre lo que se mueve. Prefiero una edición sobria, más oscura y fría, y publico mis fotos sin marca de agua.",
@@ -55,7 +55,7 @@ T = {
   faq=[
    ("¿Quién es Matías Silva?","Matías Silva es un fotógrafo argentino de San Miguel, Buenos Aires. Fotografía Nazaré, Portugal, donde pasó parte de los tres años que vivió en ese país, y escribe un blog de fotografía en español, inglés y portugués."),
    ("¿Dónde vive Matías Silva?","En San Miguel, en el noroeste del Gran Buenos Aires, Argentina."),
-   ("¿Qué relación tiene con Nazaré?","Vivió tres años en Portugal, parte de ellos en Nazaré. Creó Viva Nazaré, un proyecto sobre la gente, la cultura y las olas del pueblo, y fue cofundador de Nazaré Inside."),
+   ("¿Qué relación tiene con Nazaré?","Vivió tres años en Portugal, parte de ellos en Nazaré. Creó Viva Nazaré, un proyecto sobre la gente, la cultura y las olas del pueblo, y es cofundador de Nazaré Inside, donde creó toda la marca digital."),
    ("¿Qué fotografía?","Mar y olas grandes, surf, fotografía de calle, naturaleza y arquitectura."),
    ("¿Cómo contactarlo?","Por correo a " + MAIL + " o por mensaje directo en Instagram, @matiassilva.ph."),
   ],
@@ -71,7 +71,7 @@ T = {
    ("Nazaré", [
      "I imagined Nazaré for years before I knew it. I had followed it since 2014 and first got there in 2022.",
      "Then I lived in Portugal for three years. Part of that time I was based in Nazaré, and the rest I travelled there whenever I could, to get to know its waves, its culture and its people. That is where the way I photograph it comes from.",
-     "I created <a href=\"" + VN + "\" rel=\"noopener\">Viva Nazaré</a>, a project dedicated to the people, the culture and the giant waves of the town. I co-founded Nazaré Inside, which publishes reports on the waves and local life.",
+     "I created <a href=\"" + VN + "\" rel=\"noopener\">Viva Nazaré</a>, a project dedicated to the people, the culture and the giant waves of the town. I am a co-founder of Nazaré Inside, which publishes reports on the waves and local life, and I built its entire digital brand.",
    ]),
    ("What I photograph", [
      "The sea and big waves, surfing, the street, nature and architecture: buildings, rooftops, what stays standing among what moves. I prefer a restrained edit, darker and cooler, and I publish my photographs without a watermark.",
@@ -88,7 +88,7 @@ T = {
   faq=[
    ("Who is Matías Silva?","Matías Silva is an Argentine photographer from San Miguel, Buenos Aires. He photographs Nazaré, Portugal, where he spent part of the three years he lived in that country, and writes a photography blog in Spanish, English and Portuguese."),
    ("Where does Matías Silva live?","In San Miguel, in the north-west of Greater Buenos Aires, Argentina."),
-   ("What is his connection to Nazaré?","He lived in Portugal for three years, part of them in Nazaré. He created Viva Nazaré, a project about the town's people, culture and waves, and co-founded Nazaré Inside."),
+   ("What is his connection to Nazaré?","He lived in Portugal for three years, part of them in Nazaré. He created Viva Nazaré, a project about the town's people, culture and waves, and is a co-founder of Nazaré Inside, where he built the entire digital brand."),
    ("What does he photograph?","The sea and big waves, surfing, street photography, nature and architecture."),
    ("How can I contact him?","By email at " + MAIL + " or by direct message on Instagram, @matiassilva.ph."),
   ],
@@ -104,7 +104,7 @@ T = {
    ("Nazaré", [
      "Imaginei a Nazaré durante anos antes de a conhecer. Acompanhava-a desde 2014 e cheguei lá pela primeira vez em 2022.",
      "Depois vivi três anos em Portugal. Parte desse tempo morei na Nazaré e, no resto, ia lá sempre que podia, para conhecer as suas ondas, a sua cultura e a sua gente. É daí que vem a forma como a fotografo.",
-     "Criei o <a href=\"" + VN + "\" rel=\"noopener\">Viva Nazaré</a>, um projeto dedicado às pessoas, à cultura e às ondas gigantes da vila. Fui cofundador do Nazaré Inside, que publica relatos sobre as ondas e a vida local.",
+     "Criei o <a href=\"" + VN + "\" rel=\"noopener\">Viva Nazaré</a>, um projeto dedicado às pessoas, à cultura e às ondas gigantes da vila. Sou cofundador do Nazaré Inside, que publica relatos sobre as ondas e a vida local, e criei toda a sua marca digital.",
    ]),
    ("O que fotografo", [
      "O mar e as ondas grandes, o surf, a rua, a natureza e a arquitetura: edifícios, telhados, o que fica de pé no meio do que se move. Prefiro uma edição sóbria, mais escura e fria, e publico as minhas fotografias sem marca de água.",
@@ -121,7 +121,7 @@ T = {
   faq=[
    ("Quem é Matías Silva?","Matías Silva é um fotógrafo argentino de San Miguel, Buenos Aires. Fotografa a Nazaré, onde passou parte dos três anos em que viveu em Portugal, e escreve um blog de fotografia em espanhol, inglês e português."),
    ("Onde vive Matías Silva?","Em San Miguel, no noroeste da Grande Buenos Aires, Argentina."),
-   ("Qual é a ligação dele à Nazaré?","Viveu três anos em Portugal, parte deles na Nazaré. Criou o Viva Nazaré, um projeto sobre as pessoas, a cultura e as ondas da vila, e foi cofundador do Nazaré Inside."),
+   ("Qual é a ligação dele à Nazaré?","Viveu três anos em Portugal, parte deles na Nazaré. Criou o Viva Nazaré, um projeto sobre as pessoas, a cultura e as ondas da vila, e é cofundador do Nazaré Inside, onde criou toda a marca digital."),
    ("O que fotografa?","O mar e as ondas grandes, o surf, a fotografia de rua, a natureza e a arquitetura."),
    ("Como o contactar?","Por e-mail para " + MAIL + " ou por mensagem direta no Instagram, @matiassilva.ph."),
   ],
@@ -152,7 +152,7 @@ for lang, t in T.items():
               "url": SITE + "/", "email": "mailto:" + MAIL, "image": SITE + "/img/detras.jpg",
               "sameAs": [IG, VN],
               "knowsAbout": ["Nazaré", "Praia do Norte", "Big wave photography", "Surf photography", "Street photography", "Photography education"],
-              "affiliation": [{"@type": "Organization", "name": "Viva Nazaré", "url": VN}]}
+              "affiliation": [{"@type": "Organization", "name": "Viva Nazaré", "url": VN}, {"@type": "Organization", "name": "Nazaré Inside"}]}
     ld = [{"@type": "ProfilePage", "url": SITE + t["url"], "inLanguage": LANG_TAG[lang],
            "name": t["title"], "description": t["desc"], "mainEntity": person},
           {"@type": "FAQPage", "inLanguage": LANG_TAG[lang],
