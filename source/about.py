@@ -33,7 +33,7 @@ T = {
   desc="Matías Silva es un fotógrafo argentino de San Miguel, Buenos Aires, que fotografía Nazaré, Portugal: las olas grandes de Praia do Norte, el pueblo y la luz del Atlántico.",
   eyebrow="Sobre mí", h1="Matías Silva",
   lead="Fotógrafo argentino. Vivo en San Miguel, Buenos Aires, y fotografío Nazaré, Portugal.",
-  alt="Cámara sobre trípode frente a Praia do Norte en un día de olas, Nazaré.", cap="Praia do Norte, Nazaré.",
+  alt="Matías Silva asomado a una ventana en un muro de piedra del Forte de São Miguel Arcanjo, Nazaré.", cap="Forte de São Miguel Arcanjo, Nazaré.",
   sections=[
    ("Nazaré", [
      "Imaginé Nazaré durante años antes de conocerla. La seguía desde 2014 y llegué por primera vez en 2022.",
@@ -66,7 +66,7 @@ T = {
   desc="Matías Silva is an Argentine photographer from San Miguel, Buenos Aires, who photographs Nazaré, Portugal: the big waves of Praia do Norte, the town and the Atlantic light.",
   eyebrow="About", h1="Matías Silva",
   lead="Argentine photographer. I live in San Miguel, Buenos Aires, and I photograph Nazaré, Portugal.",
-  alt="Camera on a tripod facing Praia do Norte on a wave day, Nazaré.", cap="Praia do Norte, Nazaré.",
+  alt="Matías Silva at a window in a stone wall of the Forte de São Miguel Arcanjo, Nazaré.", cap="Forte de São Miguel Arcanjo, Nazaré.",
   sections=[
    ("Nazaré", [
      "I imagined Nazaré for years before I knew it. I had followed it since 2014 and first got there in 2022.",
@@ -99,7 +99,7 @@ T = {
   desc="Matías Silva é um fotógrafo argentino de San Miguel, Buenos Aires, que fotografa a Nazaré: as ondas grandes da Praia do Norte, a vila e a luz do Atlântico.",
   eyebrow="Sobre mim", h1="Matías Silva",
   lead="Fotógrafo argentino. Vivo em San Miguel, Buenos Aires, e fotografo a Nazaré.",
-  alt="Câmara num tripé em frente à Praia do Norte num dia de ondas, Nazaré.", cap="Praia do Norte, Nazaré.",
+  alt="Matías Silva numa janela de um muro de pedra do Forte de São Miguel Arcanjo, Nazaré.", cap="Forte de São Miguel Arcanjo, Nazaré.",
   sections=[
    ("Nazaré", [
      "Imaginei a Nazaré durante anos antes de a conhecer. Acompanhava-a desde 2014 e cheguei lá pela primeira vez em 2022.",
@@ -137,7 +137,7 @@ for lang, t in T.items():
     content = f"""<div class="wrap">
   <header class="ab-head"><p class="eyebrow">{t['eyebrow']}</p><h1>{t['h1']}</h1><p class="lead">{t['lead']}</p></header>
   <div class="ab-grid">
-    <figure><img src="/img/detras.jpg" width="960" height="1280" alt="{html.escape(t['alt'])}"><figcaption>{t['cap']}</figcaption></figure>
+    <figure><img src="/img/matias-forte.jpg" width="960" height="1276" alt="{html.escape(t['alt'])}"><figcaption>{t['cap']}</figcaption></figure>
     <div class="ab-text">
       {secs}
       <h2>{t['facts_h']}</h2>
@@ -149,7 +149,7 @@ for lang, t in T.items():
     person = {"@type": "Person", "@id": SITE + "/#matias-silva", "name": "Matías Silva", "alternateName": "matiassilva.ph",
               "jobTitle": t["job"], "nationality": {"@type": "Country", "name": "Argentina"},
               "homeLocation": {"@type": "Place", "name": "San Miguel, Buenos Aires, Argentina"},
-              "url": SITE + "/", "email": "mailto:" + MAIL, "image": SITE + "/img/detras.jpg",
+              "url": SITE + "/", "email": "mailto:" + MAIL, "image": [SITE + "/img/matias.jpg", SITE + "/img/matias-forte.jpg"],
               "sameAs": [IG, VN],
               "knowsAbout": ["Nazaré", "Praia do Norte", "Big wave photography", "Surf photography", "Street photography", "Photography education"],
               "affiliation": [{"@type": "Organization", "name": "Viva Nazaré", "url": VN}, {"@type": "Organization", "name": "Nazaré Inside"}]}

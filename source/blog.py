@@ -120,7 +120,7 @@ for lang in ("es", "en", "pt"):
         alt_es, alt_en, alt_pt = f"/blog/{p['slug']}/", f"/en/blog/{p['slug']}/", f"/pt/blog/{p['slug']}/"
         ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": c["title"], "description": c["desc"],
               "inLanguage": ("pt-PT" if lang == "pt" else lang), "datePublished": p["date"], "dateModified": p["date"], "image": f"{SITE}/img/{p['image']}.jpg",
-              "author": {"@type": "Person", "name": "Matías Silva", "url": SITE + t["home"]},
+              "author": {"@type": "Person", "@id": SITE + "/#matias-silva", "name": "Matías Silva", "url": SITE + t["home"], "image": SITE + "/img/matias.jpg"},
               "publisher": {"@type": "Person", "name": "Matías Silva"}, "mainEntityOfPage": SITE + url}
         content = f"""<div class="wrap">
   <p class="crumbs"><a href="{t['home']}">{t['home_l']}</a> / <a href="{t['blog']}">Blog</a></p>
@@ -130,7 +130,7 @@ for lang in ("es", "en", "pt"):
   </header>
   <figure class="post-cover"><img src="/img/{p['image']}.jpg" alt="" width="1440" height="960" fetchpriority="high"></figure>
   <article class="prose">{c['body']}</article>
-  <aside class="author"><img src="/img/detras.jpg" alt="" width="96" height="96" loading="lazy"><p>{t['author']}</p></aside>
+  <aside class="author"><img src="/img/matias.jpg" alt="Matías Silva" width="96" height="96" loading="lazy"><p>{t['author']}</p></aside>
 </div>"""
         out[f"{lang}/{p['slug']}"] = (url, page(lang, c["title"] + " · Matías Silva", c["desc"], url, alt_es, alt_en, ld, content, p["image"], alt_pt))
         cards += f"""<a class="card" href="{url}"><img src="/img/{p['image']}-s.jpg" alt="" loading="lazy" width="760" height="507">
