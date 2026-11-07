@@ -457,6 +457,8 @@ POSTS = [
 <h2>Por qué en Nazaré</h2>
 <p>Frente a Praia do Norte nace el <strong>Cañón de Nazaré</strong>, una grieta submarina de unos 230 kilómetros de largo que llega a cerca de 5.000 metros de profundidad. El cañón lleva la energía del mar de fondo casi intacta hasta muy cerca de la costa, y ahí la ola crece de golpe. Por eso, con la misma tormenta, en Nazaré rompen olas mucho más grandes que en el resto de la costa portuguesa.</p>
 
+<figure class="fig"><img src="/img/praia-norte-arriba.jpg" alt="Praia do Norte vista desde el acantilado, con el mar de fondo rompiendo en largas líneas de espuma y gente en el borde." loading="lazy" width="960" height="1280"><figcaption>Un día de mar de fondo visto desde el acantilado: la espuma ocupa toda la playa. Praia do Norte, Nazaré.</figcaption></figure>
+
 <h2>Cuándo es la temporada</h2>
 <div class="table-wrap"><table>
 <thead><tr><th>Meses</th><th>Qué esperar</th></tr></thead>
@@ -474,6 +476,8 @@ POSTS = [
 <li><strong>Alerta verde</strong>: confirma que la competencia se hace en las 24 horas siguientes, si las condiciones se mantienen.</li>
 </ul>
 <p>Compiten nueve equipos invitados de surf remolcado: seis masculinos y tres femeninos. El día de la competencia el Forte se llena desde muy temprano.</p>
+
+<figure class="fig"><img src="/img/portico-big-wave.jpg" alt="Pórtico del Tudor Nazaré Big Wave Challenge con el período de espera del 1 de noviembre al 31 de marzo y el mar al fondo." loading="lazy" width="960" height="1280"><figcaption>El pórtico de la competencia en el camino al Forte, con el período de espera: del 1 de noviembre al 31 de marzo.</figcaption></figure>
 
 <h2>El récord</h2>
 <p>El récord Guinness de la ola más grande surfeada lo tiene el alemán <strong>Sebastian Steudtner</strong>: <strong>26,21 metros</strong>, el 29 de octubre de 2020, en Praia do Norte. En 2024 surfeó en el mismo lugar una ola medida en 28,57 metros, que según la información disponible todavía no fue homologada como récord.</p>
@@ -510,7 +514,9 @@ POSTS = [
 <li><strong>Seguí los avisos locales.</strong> La policía marítima cierra zonas cuando el mar está peligroso. Respetarlas no es opcional.</li>
 </ul>
 
-<figure class="fig"><img src="/img/maiores-ondas.jpg" alt="Portón de entrada al Forte de São Miguel Arcanjo con la inscripción Maiores Ondas do Mundo y el sol encima." loading="lazy" width="1440" height="960"><figcaption>La entrada al Forte, el punto de observación más conocido. Nazaré.</figcaption></figure>
+<figure class="fig"><img src="/img/tablas-forte.jpg" alt="Tablas de surf de grandes olas exhibidas en el túnel de piedra del Forte de São Miguel Arcanjo, Nazaré." loading="lazy" width="960" height="1280"><figcaption>Dentro del Forte se exhiben tablas usadas en Praia do Norte. Vale la visita aunque no haya olas.</figcaption></figure>
+
+<figure class="fig"><img src="/img/arcoiris-forte.jpg" alt="Multitud mirando el mar desde el Forte de Nazaré en un día de olas, con un arcoíris sobre el horizonte." loading="lazy" width="720" height="1280"><figcaption>Un día de olas en el Forte: la gente espera las series y el tiempo cambia en minutos.</figcaption></figure>
 
 <h2>Para fotografiarlas</h2>
 <ul>
@@ -533,6 +539,8 @@ POSTS = [
 <h2>Why Nazaré</h2>
 <p>Off Praia do Norte lies the <strong>Nazaré Canyon</strong>, an underwater gorge about 230 kilometres long that reaches depths of around 5,000 metres. The canyon carries the swell's energy almost intact to very close to the shore, where the wave suddenly grows. That is why, with the same storm, Nazaré gets much bigger waves than the rest of the Portuguese coast.</p>
 
+<figure class="fig"><img src="/img/praia-norte-arriba.jpg" alt="Praia do Norte seen from the cliff, with the swell breaking in long lines of white water and people at the edge." loading="lazy" width="960" height="1280"><figcaption>A swell day seen from the cliff: white water fills the whole beach. Praia do Norte, Nazaré.</figcaption></figure>
+
 <h2>When the season is</h2>
 <div class="table-wrap"><table>
 <thead><tr><th>Months</th><th>What to expect</th></tr></thead>
@@ -550,6 +558,8 @@ POSTS = [
 <li><strong>Green alert</strong>: confirms the contest will run within the next 24 hours, as long as conditions hold.</li>
 </ul>
 <p>Nine invited tow-surfing teams compete: six men's and three women's. On contest day the Forte fills up from very early.</p>
+
+<figure class="fig"><img src="/img/portico-big-wave.jpg" alt="Gate of the Tudor Nazaré Big Wave Challenge showing the waiting period from 1 November to 31 March, with the sea behind." loading="lazy" width="960" height="1280"><figcaption>The contest gate on the road to the Forte, showing the waiting period: 1 November to 31 March.</figcaption></figure>
 
 <h2>The record</h2>
 <p>The Guinness record for the largest wave surfed belongs to Germany's <strong>Sebastian Steudtner</strong>: <strong>26.21 metres</strong>, on 29 October 2020, at Praia do Norte. In 2024 he rode a wave measured at 28.57 metres at the same spot, which, according to available information, has not yet been ratified as a record.</p>
@@ -586,7 +596,9 @@ POSTS = [
 <li><strong>Follow local warnings.</strong> The maritime police close areas when the sea is dangerous. Respecting them is not optional.</li>
 </ul>
 
-<figure class="fig"><img src="/img/maiores-ondas.jpg" alt="Entrance gate to the Forte de São Miguel Arcanjo with the inscription Maiores Ondas do Mundo and the sun above." loading="lazy" width="1440" height="960"><figcaption>The entrance to the Forte, the best-known viewpoint. Nazaré.</figcaption></figure>
+<figure class="fig"><img src="/img/tablas-forte.jpg" alt="Big wave surfboards displayed in the stone tunnel of the Forte de São Miguel Arcanjo, Nazaré." loading="lazy" width="960" height="1280"><figcaption>Inside the Forte, boards ridden at Praia do Norte are on display. Worth the visit even without waves.</figcaption></figure>
+
+<figure class="fig"><img src="/img/arcoiris-forte.jpg" alt="Crowd watching the sea from the Forte in Nazaré on a wave day, with a rainbow over the horizon." loading="lazy" width="720" height="1280"><figcaption>A wave day at the Forte: people wait for the sets and the weather changes within minutes.</figcaption></figure>
 
 <h2>Photographing them</h2>
 <ul>

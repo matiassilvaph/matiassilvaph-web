@@ -220,6 +220,8 @@ PT = {
 <h2>Porquê na Nazaré</h2>
 <p>Em frente à Praia do Norte começa o <strong>Canhão da Nazaré</strong>, um vale submarino com cerca de 230 quilómetros de comprimento que chega a perto de 5000 metros de profundidade. O canhão leva a energia da ondulação quase intacta até muito perto da costa, e aí a onda cresce de repente. Por isso, com a mesma tempestade, na Nazaré rebentam ondas muito maiores do que no resto da costa portuguesa.</p>
 
+<figure class="fig"><img src="/img/praia-norte-arriba.jpg" alt="A Praia do Norte vista da falésia, com a ondulação a rebentar em longas linhas de espuma e pessoas à beira." loading="lazy" width="960" height="1280"><figcaption>Um dia de ondulação visto da falésia: a espuma ocupa a praia inteira. Praia do Norte, Nazaré.</figcaption></figure>
+
 <h2>Quando é a época</h2>
 <div class="table-wrap"><table>
 <thead><tr><th>Meses</th><th>O que esperar</th></tr></thead>
@@ -237,6 +239,8 @@ PT = {
 <li><strong>Alerta verde</strong>: confirma que a competição se realiza nas 24 horas seguintes, se as condições se mantiverem.</li>
 </ul>
 <p>Competem nove equipas convidadas de surf de reboque: seis masculinas e três femininas. No dia da competição, o Forte enche desde muito cedo.</p>
+
+<figure class="fig"><img src="/img/portico-big-wave.jpg" alt="Pórtico do Tudor Nazaré Big Wave Challenge com o período de espera de 1 de novembro a 31 de março e o mar ao fundo." loading="lazy" width="960" height="1280"><figcaption>O pórtico da competição no caminho para o Forte, com o período de espera: de 1 de novembro a 31 de março.</figcaption></figure>
 
 <h2>O recorde</h2>
 <p>O recorde Guinness da maior onda surfada pertence ao alemão <strong>Sebastian Steudtner</strong>: <strong>26,21 metros</strong>, a 29 de outubro de 2020, na Praia do Norte. Em 2024 surfou no mesmo local uma onda medida em 28,57 metros que, segundo a informação disponível, ainda não foi homologada como recorde.</p>
@@ -273,7 +277,9 @@ PT = {
 <li><strong>Segue os avisos locais.</strong> A Polícia Marítima fecha zonas quando o mar está perigoso. Respeitá-las não é opcional.</li>
 </ul>
 
-<figure class="fig"><img src="/img/maiores-ondas.jpg" alt="Portão de entrada do Forte de São Miguel Arcanjo com a inscrição Maiores Ondas do Mundo e o sol por cima." loading="lazy" width="1440" height="960"><figcaption>A entrada do Forte, o ponto de observação mais conhecido. Nazaré.</figcaption></figure>
+<figure class="fig"><img src="/img/tablas-forte.jpg" alt="Pranchas de surf de ondas grandes expostas no túnel de pedra do Forte de São Miguel Arcanjo, Nazaré." loading="lazy" width="960" height="1280"><figcaption>Dentro do Forte estão expostas pranchas usadas na Praia do Norte. Vale a visita mesmo sem ondas.</figcaption></figure>
+
+<figure class="fig"><img src="/img/arcoiris-forte.jpg" alt="Multidão a olhar o mar a partir do Forte da Nazaré num dia de ondas, com um arco-íris no horizonte." loading="lazy" width="720" height="1280"><figcaption>Um dia de ondas no Forte: as pessoas esperam as séries e o tempo muda em minutos.</figcaption></figure>
 
 <h2>Para as fotografar</h2>
 <ul>

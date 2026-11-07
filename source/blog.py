@@ -26,7 +26,7 @@ BLOG_CSS = """
 .prose strong{color:var(--fg);font-weight:600}
 .prose a{color:var(--accent)}
 .prose .fig{margin:2em 0}
-.prose .fig img{width:100%}
+.prose .fig img{width:auto;max-width:100%;max-height:82vh;display:block;margin:0 auto}
 .prose .fig figcaption{display:block;font:12px/1.7 var(--mono);color:var(--muted);padding-top:8px}
 .table-wrap{overflow-x:auto;margin:0 0 1.4em;border:1px solid var(--line)}
 .prose table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
