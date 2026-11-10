@@ -107,7 +107,7 @@ TEMPLATE = [
  ('<h3>Preguntas frecuentes</h3>', '<h3>Frequently asked questions</h3>'),
  ('Temporada y pronóstico: ', 'Season and forecast: '),
  ('Quién soy</h2><p>Matías Silva, fotógrafo entre San Miguel y Nazaré.</p>', 'About me</h2><p>Matías Silva, photographer between San Miguel and Nazaré.</p>'),
- ('alt="Cámara sobre trípode frente a Praia do Norte en un día de olas."', 'alt="Camera on a tripod facing Praia do Norte on a wave day."'),
+ ('alt="Matías Silva revisando una foto en su cámara Sony."', 'alt="Matías Silva checking a photo on his Sony camera."'),
  ('<p class="lead">Soy de San Miguel, Buenos Aires. Nazaré es mi segunda casa.</p>', '<p class="lead">I am from San Miguel, Buenos Aires. Nazaré is my second home.</p>'),
  ('<p>Viví tres años en Portugal. Parte de ese tiempo lo pasé instalado en Nazaré, y el resto viajaba hasta allá cada vez que podía para estudiar sus olas, su cultura, su gente y su energía. Fueron tres años de mirar el mismo lugar con paciencia, y de ahí salió la forma en que hoy lo fotografío.</p>',
   '<p>I lived in Portugal for three years. Part of that time I was based in Nazaré, and the rest of the time I travelled there whenever I could to study its waves, its culture, its people and its energy. Those were three years of looking at the same place with patience, and that is where the way I photograph it today comes from.</p>'),
