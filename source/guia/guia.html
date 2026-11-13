@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Guía para empezar en fotografía · Matías Silva</title>
+<style>
+@font-face{font-family:Bodoni;src:url(../web/node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-400-normal.woff2)}
+@font-face{font-family:Bodoni;font-style:italic;src:url(../web/node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-400-italic.woff2)}
+@font-face{font-family:Work;src:url(../web/node_modules/@fontsource/work-sans/files/work-sans-latin-400-normal.woff2)}
+@font-face{font-family:Work;font-weight:600;src:url(../web/node_modules/@fontsource/work-sans/files/work-sans-latin-600-normal.woff2)}
+@font-face{font-family:Plex;src:url(../web/node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2)}
+@page{size:A4;margin:0}
+:root{--ink:#111111;--muted:#5c5c5c;--line:#d6d6d6;--accent:#111111;--paper:#ffffff;--dark:#0d0d0d}
+*{box-sizing:border-box}
+body{margin:0;font:10.5pt/1.6 Work,sans-serif;color:var(--ink);background:var(--paper)}
+.page{width:210mm;height:297mm;padding:22mm 20mm 20mm;position:relative;overflow:hidden;page-break-after:always;background:var(--paper)}
+.page:last-child{page-break-after:auto}
+.folio{position:absolute;left:20mm;right:20mm;bottom:11mm;display:flex;justify-content:space-between;font:7.5pt Plex,monospace;color:var(--muted);letter-spacing:.06em;border-top:1px solid var(--line);padding-top:3mm}
+.eyebrow{font:8pt Plex,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 4mm}
+h1{font:400 34pt/1.02 Bodoni,serif;margin:0 0 6mm}
+h2{font:400 22pt/1.1 Bodoni,serif;margin:0 0 5mm}
+h3{font:600 11pt Work,sans-serif;margin:6mm 0 2mm}
+p{margin:0 0 3.2mm;max-width:150mm}
+ul,ol{margin:0 0 3.5mm;padding-left:5mm;max-width:150mm}
+li{margin-bottom:1.4mm}
+strong{font-weight:600}
+.num{font:italic 46pt/1 Bodoni,serif;color:var(--accent);margin-bottom:2mm}
+.lead{font:400 13pt/1.45 Bodoni,serif;color:var(--ink);max-width:150mm;margin-bottom:6mm}
+table{border-collapse:collapse;width:100%;margin:2mm 0 5mm;font-size:9pt;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:2.2mm 2.5mm;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:7.5pt Plex,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.box{border:1px solid var(--accent);padding:5mm 6mm;margin:4mm 0;max-width:160mm}
+.box .eyebrow{margin-bottom:2mm}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+.fig{margin:4mm 0 5mm}
+.fig img{width:100%;display:block;object-fit:cover}
+.fig figcaption{font:7.5pt/1.5 Plex,monospace;color:var(--muted);margin-top:2mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8mm}
+.check li{list-style:none;position:relative;padding-left:6mm}
+.check li::before{content:"";position:absolute;left:0;top:1.6mm;width:3mm;height:3mm;border:1px solid var(--accent)}
+/* cover */
+.cover{background:var(--dark);color:#f2f2f2;padding:0}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.cover .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.95) 80%)}
+.cover .t{position:absolute;left:20mm;right:20mm;bottom:28mm}
+.cover h1{font-size:46pt;color:#f2f2f2;margin-bottom:5mm}
+.cover p{color:#cccccc;font-size:12pt;max-width:130mm}
+.cover .eyebrow{color:#bdbdbd}
+.cover .by{font:9pt Plex,monospace;letter-spacing:.08em;color:#b0b0b0;margin-top:10mm}
+.dark{background:var(--dark);color:#f2f2f2}
+.dark p{color:#cccccc}
+.dark .folio{color:#9a9a9a;border-color:#333333}
+.quote{font:italic 24pt/1.25 Bodoni,serif;max-width:150mm;margin:0 0 8mm}
+.toc li{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:2.4mm 0;margin:0;list-style:none}
+.toc{padding:0;max-width:160mm}
+.toc span:last-child{font:8.5pt Plex,monospace;color:var(--muted)}
+.week{border-top:1px solid var(--line);padding-top:3mm;margin-bottom:4mm}
+.week b{font:400 13pt Bodoni,serif;display:block;margin-bottom:1mm}
+</style></head><body>
+
+<!-- 1 Portada -->
+<section class="page cover">
+  <img src="bn/portada.jpg" alt="" style="object-position:50% 30%">
+  <div class="shade"></div>
+  <div class="t">
+    <p class="eyebrow">Guía gratuita</p>
+    <h1>Empezar a fotografiar</h1>
+    <p>Lo esencial para dejar el modo automático y empezar a decidir tus fotos. Sirve para cualquier cámara, también para el celular.</p>
+    <p class="by">MATÍAS SILVA · MATIASSILVAPH.COM</p>
+  </div>
+</section>
+
+<!-- 2 Intro -->
+<section class="page">
+  <p class="eyebrow">Antes de empezar</p>
+  <h1>La técnica se aprende.<br>La mirada se trae.</h1>
+  <p class="lead">Hay gente que nunca tuvo una cámara y mira mejor que muchos fotógrafos. Si estás leyendo esto, probablemente ya te frenás frente a cosas que otros pasan de largo: una luz, un gato sobre un muro, una calle que termina en el mar.</p>
+  <p>Esta guía no te va a dar esa mirada. Ya la tenés. Lo que te da son las herramientas para que la cámara deje de ser un obstáculo y empiece a acompañar lo que ves.</p>
+  <p>Está pensada para leerse en una tarde y practicarse en un mes. Cada capítulo termina con un ejercicio corto. Hacelos: diez minutos con la cámara en la mano enseñan más que cualquier manual.</p>
+  <h3>Qué vas a encontrar</h3>
+  <ul class="toc">
+    <li><span>1. La luz y la exposición</span><span>3</span></li>
+    <li><span>2. Los modos de la cámara</span><span>5</span></li>
+    <li><span>3. El histograma</span><span>6</span></li>
+    <li><span>4. El enfoque</span><span>7</span></li>
+    <li><span>5. La composición</span><span>8</span></li>
+    <li><span>6. Leer la luz</span><span>10</span></li>
+    <li><span>7. Configurar tu cámara el primer día</span><span>11</span></li>
+    <li><span>8. Plan de práctica de cuatro semanas</span><span>12</span></li>
+  </ul>
+  <div class="box"><p class="eyebrow">Una aclaración</p><p>Los nombres de los botones y menús cambian según la marca. Cuando hace falta, la guía indica cómo se llama cada cosa en Sony, Canon, Nikon y Fujifilm. Si tu cámara no aparece, el concepto es el mismo: buscalo en el manual con estas palabras.</p></div>
+  <div class="folio"><span>Empezar a fotografiar</span><span>2</span></div>
+</section>
+
+<!-- 3 Exposición -->
+<section class="page">
+  <div class="num">1</div>
+  <h2>La luz y la exposición</h2>
+  <p class="lead">Una foto es luz que llega al sensor. Tres ajustes controlan cuánta: la apertura, la velocidad y el ISO. Los tres dan más o menos luz, pero cada uno cambia la imagen de una forma distinta.</p>
+  <h3>Apertura: qué queda nítido</h3>
+  <p>Es el tamaño del agujero dentro del lente. Se escribe con f: f/2.8, f/5.6, f/11. <strong>Número bajo, más luz y fondo desenfocado.</strong> Número alto, menos luz y todo nítido. Pensalo como una fracción: f/2 es un agujero más grande que f/16.</p>
+  <h3>Velocidad: qué pasa con el movimiento</h3>
+  <p>Es el tiempo que el obturador queda abierto. <strong>1/1000 o más congela</strong> una ola o un pájaro. 1/30 o menos barre lo que se mueve, y conviene usar trípode. Con la cámara en la mano, no bajes de 1 dividido la distancia focal: con un 50 mm, no menos de 1/50.</p>
+  <h3>ISO: cuánto se amplifica la señal</h3>
+  <p>ISO 100 da una imagen limpia. ISO 3200 permite sacar con poca luz, pero aparece grano. <strong>Usalo como último recurso</strong>: lo más bajo que la situación permita.</p>
+  <figure class="fig"><img src="bn/ola-spray.jpg" alt="" style="height:62mm"><figcaption>Para congelar el agua hace falta una velocidad alta. Praia do Norte, Nazaré.</figcaption></figure>
+  <div class="folio"><span>Empezar a fotografiar</span><span>3</span></div>
+</section>
+
+<!-- 4 Pasos -->
+<section class="page">
+  <p class="eyebrow">1 · La luz y la exposición</p>
+  <h2>Misma luz, distinta foto</h2>
+  <p>Cada ajuste se mueve en <strong>pasos</strong>. Un paso duplica o reduce a la mitad la luz. Por eso se pueden intercambiar: si cerrás un paso la apertura, lo recuperás alargando un paso la velocidad o subiendo un paso el ISO.</p>
+  <table>
+    <tr><th>Apertura</th><th>Velocidad</th><th>ISO</th><th>Qué cambia</th></tr>
+    <tr><td>f/8</td><td>1/250</td><td>100</td><td>Punto de partida</td></tr>
+    <tr><td>f/5.6</td><td>1/500</td><td>100</td><td>Fondo más suave, movimiento más congelado</td></tr>
+    <tr><td>f/11</td><td>1/250</td><td>200</td><td>Más profundidad de campo, algo más de ruido</td></tr>
+  </table>
+  <p>Las tres combinaciones dan la misma exposición. Lo que cambia es el aspecto de la foto, y esa es la decisión del fotógrafo.</p>
+  <h3>En qué orden decidir</h3>
+  <ol>
+    <li><strong>¿Qué querés mostrar?</strong> Si importa el fondo, manda la apertura. Si importa el movimiento, manda la velocidad.</li>
+    <li><strong>Fijá ese ajuste</strong> y elegí el otro para que la exposición cierre.</li>
+    <li><strong>El ISO, al final</strong>: subilo solo cuando los otros dos no te dan margen.</li>
+  </ol>
+  <h3>Puntos de partida</h3>
+  <table>
+    <tr><th>Situación</th><th>Ajustes orientativos</th></tr>
+    <tr><td>Retrato en la calle</td><td>f/2.8–f/4 · 1/250 o más · ISO automático</td></tr>
+    <tr><td>Paisaje o calle de día</td><td>f/8–f/11 · ISO 100</td></tr>
+    <tr><td>Olas, surf o deporte</td><td>1/1000–1/2000 · apertura abierta</td></tr>
+    <tr><td>Atardecer</td><td>f/8 · ISO 100 · medir sobre el cielo</td></tr>
+    <tr><td>Ciudad de noche</td><td>Trípode · f/8 · ISO 100 · varios segundos</td></tr>
+  </table>
+  <div class="box"><p class="eyebrow">Ejercicio</p><p>Elegí un sujeto cerca y un fondo lejos. Sacá la misma foto a f/4, f/8 y f/16 y compará cuánto se desenfoca el fondo.</p></div>
+  <div class="folio"><span>Empezar a fotografiar</span><span>4</span></div>
+</section>
+
+<!-- 5 Modos -->
+<section class="page">
+  <div class="num">2</div>
+  <h2>Los modos de la cámara</h2>
+  <p class="lead">El dial de modos dice algo simple: quién decide cada ajuste, vos o la cámara.</p>
+  <table>
+    <tr><th>Modo</th><th>Sony / Nikon</th><th>Canon</th><th>Vos elegís</th><th>Cuándo</th></tr>
+    <tr><td>Prioridad de apertura</td><td>A</td><td>Av</td><td>Apertura</td><td>Retrato, calle, paisaje, viaje</td></tr>
+    <tr><td>Prioridad de velocidad</td><td>S</td><td>Tv</td><td>Velocidad</td><td>Surf, deporte, animales</td></tr>
+    <tr><td>Manual</td><td>M</td><td>M</td><td>Las dos</td><td>Noche, estudio, luz estable</td></tr>
+    <tr><td>Programa</td><td>P</td><td>P</td><td>ISO y compensación</td><td>Fotos rápidas</td></tr>
+  </table>
+  <p>En muchas Fujifilm no hay dial de modos: se elige con el dial de velocidad y el anillo de apertura, y la letra A indica que la cámara calcula ese valor.</p>
+  <h3>Por dónde empezar</h3>
+  <p><strong>Las primeras semanas, en A o Av.</strong> Decidís cuánto se desenfoca el fondo y mirás qué velocidad elige la cámara. Si con poca luz baja de 1/60, abrí el diafragma o subí el ISO.</p>
+  <h3>Un truco para el movimiento</h3>
+  <p>Manual con ISO automático: fijás la velocidad y la apertura, que son las que definen la imagen, y el ISO acompaña los cambios de luz.</p>
+  <h3>La compensación de exposición (+/−)</h3>
+  <p>La cámara a veces se equivoca. Las escenas muy claras, como la playa o la espuma, las oscurece: corregí con +0,7 o +1. Las oscuras o los atardeceres los aclara de más: corregí con −0,7 o −1. <strong>Después volvé a 0.</strong></p>
+  <div class="box"><p class="eyebrow">Ejercicio</p><p>Buscá algo que se mueva: una fuente, autos, gente. En S o Tv, sacá la misma escena a 1/1000, 1/125 y 1/15 y compará.</p></div>
+  <div class="folio"><span>Empezar a fotografiar</span><span>5</span></div>
+</section>
+
+<!-- 6 Histograma -->
+<section class="page">
+  <div class="num">3</div>
+  <h2>El histograma</h2>
+  <p class="lead">La pantalla engaña: con sol se ve oscura, de noche, brillante. El histograma no depende de eso. Es la forma más confiable de saber si la exposición está bien.</p>
+  <p>Es un gráfico de cuántos píxeles hay en cada nivel de brillo. A la izquierda, el negro; a la derecha, el blanco; en el medio, los tonos intermedios.</p>
+  <h3>Lo que te avisa</h3>
+  <ul>
+    <li><strong>Montaña cortada contra el borde derecho</strong>: luces quemadas. Esa zona quedó en blanco, sin información, y no se recupera.</li>
+    <li><strong>Montaña cortada contra el borde izquierdo</strong>: sombras empastadas. Se recuperan un poco, pero aparece ruido.</li>
+  </ul>
+  <h3>No existe un histograma correcto</h3>
+  <p>Una playa con sol tiene la montaña a la derecha, y está bien. Una calle de noche, a la izquierda, y está bien. La pregunta no es si está centrada, sino <strong>si se cortó algo importante</strong>. Si lo único que toca el borde es el sol, no importa. Si es una cara o la cresta de una ola, corregí.</p>
+  <h3>Dos consejos</h3>
+  <ul>
+    <li>Usá el <strong>histograma RGB</strong> si tu cámara lo tiene: en los atardeceres, el rojo se quema antes que el resto.</li>
+    <li>Activá la <strong>alerta de luces altas</strong> en el menú de reproducción: las zonas quemadas parpadean.</li>
+  </ul>
+  <figure class="fig"><img src="bn/forte-dorado.jpg" alt="" style="height:58mm"><figcaption>En un contraluz, lo único que puede tocar el borde derecho es el sol. Forte de São Miguel Arcanjo, Nazaré.</figcaption></figure>
+  <div class="folio"><span>Empezar a fotografiar</span><span>6</span></div>
+</section>
+
+<!-- 7 Enfoque -->
+<section class="page">
+  <div class="num">4</div>
+  <h2>El enfoque</h2>
+  <p class="lead">Una foto puede estar mal expuesta y tener fuerza. Una foto desenfocada en el lugar equivocado casi nunca la tiene.</p>
+  <h3>Enfoque único o continuo</h3>
+  <table>
+    <tr><th>Modo</th><th>Sony / Nikon / Fujifilm</th><th>Canon</th><th>Para qué</th></tr>
+    <tr><td>Único</td><td>AF-S</td><td>One Shot</td><td>Sujetos quietos: retrato, paisaje, arquitectura</td></tr>
+    <tr><td>Continuo</td><td>AF-C</td><td>AI Servo / Servo</td><td>Sujetos en movimiento: surf, deporte, chicos, animales</td></tr>
+  </table>
+  <h3>Elegí vos el punto de enfoque</h3>
+  <p>En automático, la cámara decide qué enfocar, y suele elegir lo más cercano o lo más contrastado. Elegí <strong>un solo punto</strong> o una zona chica y movelo hacia lo que importa. En retratos, el ojo más cercano a la cámara. Muchas cámaras sin espejo detectan los ojos solas: activalo.</p>
+  <h3>Enfocar con el botón de atrás</h3>
+  <p>Muchos fotógrafos separan el enfoque del disparador: un botón trasero enfoca y el disparador solo dispara. Así enfocás una vez, recomponés y disparás todas las veces que quieras sin que la cámara vuelva a enfocar. Se configura en las funciones personalizadas; buscá "AF-ON", "AEL/AF" o "enfoque con botón trasero".</p>
+  <h3>Profundidad de campo</h3>
+  <p>Con aperturas muy abiertas (f/1.8, f/2.8) la franja nítida es finísima: si enfocás la nariz, los ojos pueden salir suaves. Para retratos, <strong>f/2.8 a f/4</strong> es un buen equilibrio.</p>
+  <div class="box"><p class="eyebrow">Ejercicio</p><p>Poné tres objetos en fila a distintas distancias. A f/2.8, enfocá cada uno por separado y mirá cómo cambia la foto. Después repetí a f/11.</p></div>
+  <div class="folio"><span>Empezar a fotografiar</span><span>7</span></div>
+</section>
+
+<!-- 8 Composición -->
+<section class="page">
+  <div class="num">5</div>
+  <h2>La composición</h2>
+  <p class="lead">Componer es decidir qué entra en el cuadro y dónde. Las reglas sirven para empezar; con el tiempo se rompen a propósito.</p>
+  <div class="two">
+    <div>
+      <h3>Regla de tercios</h3>
+      <p>Dividí el cuadro en tres partes a lo ancho y a lo alto. Ubicá el horizonte sobre una de las líneas, no en el medio, y el sujeto en uno de los cruces. Activá la cuadrícula de la cámara.</p>
+      <h3>Líneas que guían</h3>
+      <p>Calles, barandas, el borde del mar. Llevan la mirada hacia el sujeto o hacia el fondo de la imagen.</p>
+      <h3>Encuadre dentro del encuadre</h3>
+      <p>Un arco, una ventana, unas ramas. Ordenan la imagen y dan profundidad.</p>
+    </div>
+    <div>
+      <h3>Capas</h3>
+      <p>Algo cerca, algo en el medio y algo lejos. Una flor en primer plano, el pueblo y el mar detrás.</p>
+      <h3>Simplificar</h3>
+      <p>Antes de disparar, mirá los bordes. Un cesto de basura, un cable o un auto cortado se ven más en la foto que en la realidad. Muchas veces, moverse un paso alcanza.</p>
+      <h3>Dar aire</h3>
+      <p>Si el sujeto mira o se mueve hacia un lado, dejá espacio de ese lado.</p>
+    </div>
+  </div>
+  <figure class="fig"><img src="bn/pino-sitio.jpg" alt="" style="height:70mm"><figcaption>Las ramas enmarcan el pueblo y el tronco da profundidad: encuadre dentro del encuadre y capas en una misma foto. Nazaré.</figcaption></figure>
+  <div class="folio"><span>Empezar a fotografiar</span><span>8</span></div>
+</section>
+
+<!-- 9 Composición 2 -->
+<section class="page dark">
+  <p class="eyebrow">5 · La composición</p>
+  <h2>Un sujeto claro</h2>
+  <p class="quote">Si no podés decir en una frase qué muestra la foto, todavía no es una foto.</p>
+  <p>La diferencia entre un registro del lugar y una fotografía suele ser esa: tener un sujeto. Un gato sobre un muro, una familia caminando hacia el mar, un cartel que dice hacia dónde va todo el mundo.</p>
+  <p>Antes de disparar, preguntate: <strong>¿qué me frenó acá?</strong> Eso que te frenó es el sujeto. Todo lo demás en el cuadro tiene que acompañarlo o salir.</p>
+  <figure class="fig"><img src="bn/gato-muro.jpg" alt="" style="height:96mm"><figcaption style="color:#9a9a9a">La diagonal del muro, la pared cálida y el cielo frío. Un solo sujeto, y todo el cuadro trabaja para él. Nazaré.</figcaption></figure>
+  <div class="box" style="border-color:#e6e6e6"><p class="eyebrow" style="color:#e6e6e6">Ejercicio</p><p>Salí a caminar con un solo tema: lo que resiste en medio de la ciudad. Un árbol entre el cemento, una casa vieja entre edificios nuevos. Volvé con cinco fotos, no con cincuenta.</p></div>
+  <div class="folio"><span>Empezar a fotografiar</span><span>9</span></div>
+</section>
+
+<!-- 10 Luz -->
+<section class="page">
+  <div class="num">6</div>
+  <h2>Leer la luz</h2>
+  <p class="lead">La misma calle cambia por completo según la hora. Aprender a mirar la luz es lo que más rápido mejora tus fotos.</p>
+  <table>
+    <tr><th>Momento</th><th>Cómo es la luz</th><th>Para qué sirve</th></tr>
+    <tr><td>Hora dorada (la hora antes de la puesta y después del amanecer)</td><td>Baja, cálida, sombras largas</td><td>Retratos, calle, paisaje. Casi todo.</td></tr>
+    <tr><td>Hora azul (justo después de la puesta)</td><td>Suave, fría, cielo azul profundo</td><td>Ciudad con luces encendidas</td></tr>
+    <tr><td>Mediodía con sol</td><td>Dura, desde arriba, sombras cortas y marcadas</td><td>Sombras gráficas, arquitectura. Difícil para retratos.</td></tr>
+    <tr><td>Nublado</td><td>Difusa, pareja, sin sombras</td><td>Retratos suaves, detalles, colores</td></tr>
+  </table>
+  <h3>De dónde viene</h3>
+  <ul>
+    <li><strong>Luz de frente</strong>: muestra todo, pero aplana.</li>
+    <li><strong>Luz de costado</strong>: da volumen y textura. La favorita para retratos y arquitectura.</li>
+    <li><strong>Contraluz</strong>: siluetas, bordes iluminados, atmósfera. Medí sobre el cielo y dejá que lo demás quede oscuro.</li>
+  </ul>
+  <h3>Un hábito</h3>
+  <p>Antes de levantar la cámara, mirá dónde están las sombras. Si no te gusta la luz, a veces la solución es esperar media hora o volver otro día.</p>
+  <div class="box"><p class="eyebrow">Ejercicio</p><p>Fotografiá el mismo lugar cerca de tu casa a tres horas distintas: mañana, mediodía y hora dorada. Compará las tres.</p></div>
+  <div class="folio"><span>Empezar a fotografiar</span><span>10</span></div>
+</section>
+
+<!-- 11 Configuración -->
+<section class="page">
+  <div class="num">7</div>
+  <h2>Configurar tu cámara el primer día</h2>
+  <p class="lead">Diez minutos de configuración te ahorran muchas fotos perdidas.</p>
+  <ul class="check">
+    <li><strong>Calidad: RAW + JPEG.</strong> El RAW es tu original para editar y tu prueba de autoría; el JPEG, para compartir rápido.</li>
+    <li><strong>Fecha y hora correctas</strong>, con tu zona horaria. Quedan grabadas en cada archivo.</li>
+    <li><strong>Autor y copyright</strong> en los metadatos, si tu cámara lo permite (en algunas se carga con el programa del fabricante).</li>
+    <li><strong>Espacio de color: sRGB</strong>, el que usan la web y la mayoría de los concursos.</li>
+    <li><strong>Revisión de imagen: 2 segundos</strong>, con el histograma visible.</li>
+    <li><strong>Alerta de luces altas</strong> activada.</li>
+    <li><strong>Cuadrícula</strong> en pantalla y en el visor.</li>
+    <li><strong>Sonido de enfoque apagado</strong>, para la calle.</li>
+    <li><strong>ISO automático con un máximo</strong> (por ejemplo, 3200 o 6400 según tu cámara).</li>
+    <li><strong>Modo A o Av</strong> para empezar, y enfoque en un solo punto.</li>
+    <li><strong>Tarjeta formateada en la cámara</strong>, después de pasar las fotos a la computadora.</li>
+  </ul>
+  <div class="box"><p class="eyebrow">El hábito más importante</p><p>Después de cada salida, pasá las fotos a la computadora y a una nube, en carpetas por fecha y lugar (por ejemplo, 2026-11-08_San-Miguel). Los originales son tu archivo, y para muchos concursos, tu prueba de que la foto es tuya.</p></div>
+  <div class="folio"><span>Empezar a fotografiar</span><span>11</span></div>
+</section>
+
+<!-- 12 Plan -->
+<section class="page">
+  <div class="num">8</div>
+  <h2>Plan de práctica de cuatro semanas</h2>
+  <p class="lead">Una salida por semana alcanza. Lo importante es salir con una consigna.</p>
+  <div class="week"><b>Semana 1 · Apertura</b>Modo A o Av. Diez escenas, cada una a f/4 y a f/11. Aprendé a ver cómo cambia el fondo.</div>
+  <div class="week"><b>Semana 2 · Movimiento</b>Modo S o Tv. Agua, gente, autos, a 1/1000, 1/125 y 1/15. Mirá el histograma después de cada foto.</div>
+  <div class="week"><b>Semana 3 · Luz</b>Salí solo en hora dorada o en hora azul. Probá contraluz y luz de costado. Usá la compensación de exposición.</div>
+  <div class="week"><b>Semana 4 · Una serie</b>Elegí un tema y volvé con cinco fotos que se lean juntas. Lo que resiste, las ventanas encendidas, la gente que espera. La misma edición en todas.</div>
+  <div class="box"><p class="eyebrow">Y después</p><p>Revisá las fotos de las cuatro semanas y elegí las tres mejores. Preguntate por qué son mejores que el resto. Esa respuesta es tu estilo empezando a aparecer.</p></div>
+  <div class="folio"><span>Empezar a fotografiar</span><span>12</span></div>
+</section>
+
+<!-- 13 Cierre -->
+<section class="page dark">
+  <p class="eyebrow">Para terminar</p>
+  <p class="quote" style="margin-top:20mm">Fotografiar empieza en no acostumbrarse.</p>
+  <p>La técnica se aprende con práctica, y esta guía es un punto de partida. La mirada ya la tenés. Lo que une las dos cosas es aprender a detenerse: caminar más lento, frenar frente a lo que te llama, y darle tiempo a la foto para que aparezca.</p>
+  <p>Gracias por leer.</p>
+  <h3 style="color:#f2f2f2;margin-top:14mm">Seguí aprendiendo</h3>
+  <p>En el blog hay artículos completos sobre cada tema de esta guía, con más ejemplos y ejercicios:<br><strong style="color:#f2f2f2">matiassilvaph.com/blog</strong></p>
+  <p>Fotografías y proceso en Instagram: <strong style="color:#f2f2f2">@matiassilva.ph</strong><br>Consultas: <strong style="color:#f2f2f2">matiassilva.ph@gmail.com</strong></p>
+  <p style="margin-top:22mm;font:8pt Plex,monospace;color:#9a9a9a">© 2026 Matías Silva. Todas las fotografías son de autoría propia. Esta guía puede compartirse libremente sin modificarla.</p>
+  <div class="folio"><span>Empezar a fotografiar</span><span>13</span></div>
+</section>
+
+</body></html>

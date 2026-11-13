@@ -83,7 +83,7 @@ TEMPLATE = [
  ('Matías Silva <i>fotografía</i>', 'Matías Silva <i>fotografia</i>'),
  ('aria-label="Secciones"', 'aria-label="Secções"'),
  ('<a href="#mar">El mar</a><a href="#pueblo">El pueblo</a><a href="#luz">La luz</a><a href="#guia">Guía</a><a href="blog/">Blog</a><a href="/recursos/">Recursos</a><a href="sobre/">Quién soy</a>',
-  '<a href="#mar">O mar</a><a href="#pueblo">A vila</a><a href="#luz">A luz</a><a href="#guia">Guia</a><a href="blog/">Blog</a><a href="/recursos/" hreflang="es">Recursos</a><a href="sobre/">Quem sou</a>'),
+  '<a href="#mar">O mar</a><a href="#pueblo">A vila</a><a href="#luz">A luz</a><a href="#guia">Guia</a><a href="blog/">Blog</a><a href="/pt/recursos/">Recursos</a><a href="sobre/">Quem sou</a>'),
  ('aria-label="Portada"', 'aria-label="Capa"'),
  ('alt="Una familia camina hacia el mar al atardecer por una calle de Nazaré, Portugal."', 'alt="Uma família caminha em direção ao mar ao pôr do sol por uma rua da Nazaré, Portugal."'),
  ('Matías Silva · Fotografía</p>', 'Matías Silva · Fotografia</p>'),
@@ -132,4 +132,5 @@ TEMPLATE = [
  ('type="button">Cerrar</button>', 'type="button">Fechar</button>'),
  ('<a href="sobre/">Más sobre mí →</a>', '<a href="sobre/">Mais sobre mim →</a>'),
  ('<dt>Selección</dt><dd>Editor’s Pick 2026, Academy Photo Awards</dd>', '<dt>Seleção</dt><dd>Editor’s Pick 2026, Academy Photo Awards</dd>'),
+ ('<p class="more"><a href="/guia/">Guía gratuita: Empezar a fotografiar →</a></p>', '<p class="more"><a href="/pt/guia/">Guia gratuito: Começar a fotografar →</a></p>'),
 ]

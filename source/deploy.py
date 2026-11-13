@@ -44,6 +44,12 @@ for es,en in pairs:
     wrap('/home/claude/web/site'+en+'index.html',R+en.lstrip('/')+'index.html','en')
 wrap('/home/claude/web/site/servicios/index.html',R+'servicios/index.html','es')
 wrap('/home/claude/web/site/recursos/index.html',R+'recursos/index.html','es')
+wrap('/home/claude/web/site/en/recursos/index.html',R+'en/recursos/index.html','en')
+wrap('/home/claude/web/site/en/guia/index.html',R+'en/guia/index.html','en')
+wrap('/home/claude/web/site/en/guia/gracias/index.html',R+'en/guia/gracias/index.html','en')
+wrap('/home/claude/web/site/pt/recursos/index.html',R+'pt/recursos/index.html','pt-PT')
+wrap('/home/claude/web/site/pt/guia/index.html',R+'pt/guia/index.html','pt-PT')
+wrap('/home/claude/web/site/pt/guia/gracias/index.html',R+'pt/guia/gracias/index.html','pt-PT')
 wrap('/home/claude/web/site/guia/index.html',R+'guia/index.html','es')
 wrap('/home/claude/web/site/guia/gracias/index.html',R+'guia/gracias/index.html','es')
 wrap('/home/claude/web/site/en/servicios/index.html',R+'en/servicios/index.html','en')
@@ -73,12 +79,14 @@ for u in ("/","/en/","/pt/"):
     <lastmod>2026-11-06</lastmod>
   </url>
 """
-home+=f"""  <url>
-    <loc>{B}/guia/</loc>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-  <url>
-    <loc>{B}/recursos/</loc>
+for es_,en_,pt_ in (("/guia/","/en/guia/","/pt/guia/"),("/recursos/","/en/recursos/","/pt/recursos/")):
+    for u in (es_,en_,pt_):
+        home+=f"""  <url>
+    <loc>{B}{u}</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="{B}{es_}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{B}{en_}"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="{B}{pt_}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{B}{es_}"/>
     <lastmod>2026-11-13</lastmod>
   </url>
 """

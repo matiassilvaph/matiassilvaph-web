@@ -26,10 +26,50 @@
   </url>
   <url>
     <loc>https://matiassilvaph.com/guia/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/guia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/guia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/guia/"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://matiassilvaph.com/en/guia/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/guia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/guia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/guia/"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://matiassilvaph.com/pt/guia/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/guia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/guia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/guia/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://matiassilvaph.com/recursos/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/recursos/"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://matiassilvaph.com/en/recursos/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/recursos/"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://matiassilvaph.com/pt/recursos/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://matiassilvaph.com/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matiassilvaph.com/en/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://matiassilvaph.com/pt/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matiassilvaph.com/recursos/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
