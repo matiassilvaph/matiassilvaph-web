@@ -42,6 +42,7 @@ T = {
    ]),
    ("Qué fotografío", [
      "El mar y las olas grandes, el surf, la calle, la naturaleza y la arquitectura: edificios, techos, lo que queda en pie entre lo que se mueve. Prefiero una edición sobria, más oscura y fría, y publico mis fotos sin marca de agua.",
+     "Mi foto de un gato negro sobre un muro de Nazaré fue seleccionada como Editor’s Pick 2026 en los Academy Photo Awards.",
      "Trabajo con una Sony A7 III y un 50 mm f/1.8. Me preparo para volver a Nazaré en el invierno de 2027 y fotografiar la temporada de olas grandes desde el Forte.",
    ]),
    ("Qué escribo", [
@@ -50,7 +51,7 @@ T = {
   ],
   facts_h="En resumen",
   facts=[("Nombre","Matías Silva"),("Base","San Miguel, Buenos Aires, Argentina"),("Fotografía","Nazaré (Portugal), mar y olas grandes, calle, naturaleza"),
-         ("Proyectos","Viva Nazaré · cofundador de Nazaré Inside"),("Instagram","<a href=\"" + IG + "\" rel=\"noopener\">@matiassilva.ph</a>"),("Contacto",MAIL)],
+         ("Proyectos","Viva Nazaré · cofundador de Nazaré Inside"),("Reconocimiento","Editor’s Pick 2026, Academy Photo Awards"),("Instagram","<a href=\"" + IG + "\" rel=\"noopener\">@matiassilva.ph</a>"),("Contacto",MAIL)],
   faq_h="Preguntas frecuentes",
   faq=[
    ("¿Quién es Matías Silva?","Matías Silva es un fotógrafo argentino de San Miguel, Buenos Aires. Fotografía Nazaré, Portugal, donde pasó parte de los tres años que vivió en ese país, y escribe un blog de fotografía en español, inglés y portugués."),
@@ -75,6 +76,7 @@ T = {
    ]),
    ("What I photograph", [
      "The sea and big waves, surfing, the street, nature and architecture: buildings, rooftops, what stays standing among what moves. I prefer a restrained edit, darker and cooler, and I publish my photographs without a watermark.",
+     "My photograph of a black cat on a wall in Nazaré was selected as an Editor’s Pick 2026 at the Academy Photo Awards.",
      "I work with a Sony A7 III and a 50 mm f/1.8. I am preparing to return to Nazaré in the winter of 2027 to photograph the big wave season from the Forte.",
    ]),
    ("What I write", [
@@ -83,7 +85,7 @@ T = {
   ],
   facts_h="At a glance",
   facts=[("Name","Matías Silva"),("Based in","San Miguel, Buenos Aires, Argentina"),("Photographs","Nazaré (Portugal), the sea and big waves, street, nature"),
-         ("Projects","Viva Nazaré · co-founder of Nazaré Inside"),("Instagram","<a href=\"" + IG + "\" rel=\"noopener\">@matiassilva.ph</a>"),("Contact",MAIL)],
+         ("Projects","Viva Nazaré · co-founder of Nazaré Inside"),("Recognition","Editor’s Pick 2026, Academy Photo Awards"),("Instagram","<a href=\"" + IG + "\" rel=\"noopener\">@matiassilva.ph</a>"),("Contact",MAIL)],
   faq_h="Frequently asked questions",
   faq=[
    ("Who is Matías Silva?","Matías Silva is an Argentine photographer from San Miguel, Buenos Aires. He photographs Nazaré, Portugal, where he spent part of the three years he lived in that country, and writes a photography blog in Spanish, English and Portuguese."),
@@ -108,6 +110,7 @@ T = {
    ]),
    ("O que fotografo", [
      "O mar e as ondas grandes, o surf, a rua, a natureza e a arquitetura: edifícios, telhados, o que fica de pé no meio do que se move. Prefiro uma edição sóbria, mais escura e fria, e publico as minhas fotografias sem marca de água.",
+     "A minha fotografia de um gato preto num muro da Nazaré foi selecionada como Editor’s Pick 2026 nos Academy Photo Awards.",
      "Trabalho com uma Sony A7 III e uma 50 mm f/1.8. Estou a preparar-me para voltar à Nazaré no inverno de 2027 e fotografar a época das ondas grandes a partir do Forte.",
    ]),
    ("O que escrevo", [
@@ -116,7 +119,7 @@ T = {
   ],
   facts_h="Em resumo",
   facts=[("Nome","Matías Silva"),("Base","San Miguel, Buenos Aires, Argentina"),("Fotografia","Nazaré (Portugal), mar e ondas grandes, rua, natureza"),
-         ("Projetos","Viva Nazaré · cofundador do Nazaré Inside"),("Instagram","<a href=\"" + IG + "\" rel=\"noopener\">@matiassilva.ph</a>"),("Contacto",MAIL)],
+         ("Projetos","Viva Nazaré · cofundador do Nazaré Inside"),("Distinção","Editor’s Pick 2026, Academy Photo Awards"),("Instagram","<a href=\"" + IG + "\" rel=\"noopener\">@matiassilva.ph</a>"),("Contacto",MAIL)],
   faq_h="Perguntas frequentes",
   faq=[
    ("Quem é Matías Silva?","Matías Silva é um fotógrafo argentino de San Miguel, Buenos Aires. Fotografa a Nazaré, onde passou parte dos três anos em que viveu em Portugal, e escreve um blog de fotografia em espanhol, inglês e português."),
@@ -152,7 +155,7 @@ for lang, t in T.items():
               "url": SITE + "/", "email": "mailto:" + MAIL, "image": [SITE + "/img/matias.jpg", SITE + "/img/matias-forte.jpg", SITE + "/img/matias-orilla.jpg"],
               "sameAs": [IG, VN],
               "knowsAbout": ["Nazaré", "Praia do Norte", "Big wave photography", "Surf photography", "Street photography", "Photography education"],
-              "affiliation": [{"@type": "Organization", "name": "Viva Nazaré", "url": VN}, {"@type": "Organization", "name": "Nazaré Inside"}]}
+              "award": "Editor’s Pick 2026, Academy Photo Awards", "affiliation": [{"@type": "Organization", "name": "Viva Nazaré", "url": VN}, {"@type": "Organization", "name": "Nazaré Inside"}]}
     ld = [{"@type": "ProfilePage", "url": SITE + t["url"], "inLanguage": LANG_TAG[lang],
            "name": t["title"], "description": t["desc"], "mainEntity": person},
           {"@type": "FAQPage", "inLanguage": LANG_TAG[lang],
