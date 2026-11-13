@@ -643,17 +643,17 @@ POSTS = [
 </tbody></table></div>
 
 <h2>Opciones por presupuesto</h2>
-<p>Precios de referencia de una tienda de Buenos Aires en noviembre de 2026, en dólares. En pesos varían con el tipo de cambio, y conviene comparar varias tiendas antes de comprar.</p>
+<p>Precios aproximados en dólares, en Argentina, en noviembre de 2026. Varían según la tienda y el tipo de cambio, así que conviene comparar antes de comprar.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Presupuesto</th><th>Opción</th><th>Referencia</th><th>Para quién</th></tr></thead>
 <tbody>
 <tr><td>Sin gastar</td><td>El celular que ya tenés, con una app de modo manual</td><td>US$ 0</td><td>Para aprender composición y luz desde hoy.</td></tr>
 <tr><td>Bajo</td><td>Réflex o sin espejo usada, con lente de kit</td><td>Variable</td><td>Para aprender exposición con controles reales sin gastar mucho.</td></tr>
-<tr><td>Entrada</td><td>Canon EOS R50 con 18-45 mm</td><td>US$ 986</td><td>La más simple para empezar. Buen enfoque y menús que explican cada ajuste.</td></tr>
-<tr><td>Entrada</td><td>Sony a6400 con 16-50 mm</td><td>US$ 1.176</td><td>Enfoque muy bueno y acceso a todos los lentes de montura E.</td></tr>
-<tr><td>Entrada</td><td>Nikon Z50 II con 16-50 mm</td><td>US$ 1.355</td><td>Buen agarre y enfoque moderno, con montura compatible con los lentes Z de cuadro completo.</td></tr>
-<tr><td>Cuadro completo</td><td>Canon EOS RP con 24-105 mm</td><td>US$ 1.456</td><td>La forma más barata de entrar al cuadro completo con lente incluido.</td></tr>
-<tr><td>Cuadro completo</td><td>Sony A7 III (solo cuerpo)</td><td>US$ 1.650</td><td>Para quien ya sabe que la fotografía va en serio y quiere rendimiento con poca luz.</td></tr>
+<tr><td>Entrada</td><td>Canon EOS R50 con 18-45 mm</td><td>≈ US$ 1.000</td><td>La más simple para empezar. Buen enfoque y menús que explican cada ajuste.</td></tr>
+<tr><td>Entrada</td><td>Sony a6400 con 16-50 mm</td><td>≈ US$ 1.200</td><td>Enfoque muy bueno y acceso a todos los lentes de montura E.</td></tr>
+<tr><td>Entrada</td><td>Nikon Z50 II con 16-50 mm</td><td>≈ US$ 1.350</td><td>Buen agarre y enfoque moderno, con montura compatible con los lentes Z de cuadro completo.</td></tr>
+<tr><td>Cuadro completo</td><td>Canon EOS RP con 24-105 mm</td><td>≈ US$ 1.450</td><td>La forma más barata de entrar al cuadro completo con lente incluido.</td></tr>
+<tr><td>Cuadro completo</td><td>Sony A7 III (solo cuerpo)</td><td>≈ US$ 1.650</td><td>Para quien ya sabe que la fotografía va en serio y quiere rendimiento con poca luz.</td></tr>
 </tbody></table></div>
 <p>Si buscás lo más barato en nuevo, la Canon EOS R100 suele ser la sin espejo con visor de menor precio. Es más lenta y tiene menos funciones, pero cumple para aprender.</p>
 
@@ -718,17 +718,17 @@ POSTS = [
 </tbody></table></div>
 
 <h2>Options by budget</h2>
-<p>Reference prices from a Buenos Aires store in November 2026, in US dollars. Prices elsewhere will differ, so compare several shops before buying.</p>
+<p>Approximate prices in US dollars, in Argentina, in November 2026. They vary by store, so compare before buying.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Budget</th><th>Option</th><th>Reference</th><th>Who it suits</th></tr></thead>
 <tbody>
 <tr><td>Free</td><td>The phone you already have, with a manual-mode app</td><td>US$ 0</td><td>To start learning composition and light today.</td></tr>
 <tr><td>Low</td><td>A used DSLR or mirrorless with a kit lens</td><td>Varies</td><td>To learn exposure with real controls without spending much.</td></tr>
-<tr><td>Entry</td><td>Canon EOS R50 with 18-45 mm</td><td>US$ 986</td><td>The simplest way to start. Good autofocus and menus that explain each setting.</td></tr>
-<tr><td>Entry</td><td>Sony a6400 with 16-50 mm</td><td>US$ 1,176</td><td>Very good autofocus and access to every E-mount lens.</td></tr>
-<tr><td>Entry</td><td>Nikon Z50 II with 16-50 mm</td><td>US$ 1,355</td><td>Good grip and modern autofocus, on a mount shared with Nikon's full-frame Z lenses.</td></tr>
-<tr><td>Full frame</td><td>Canon EOS RP with 24-105 mm</td><td>US$ 1,456</td><td>The cheapest way into full frame with a lens included.</td></tr>
-<tr><td>Full frame</td><td>Sony A7 III (body only)</td><td>US$ 1,650</td><td>For those who already know photography is serious and want low-light performance.</td></tr>
+<tr><td>Entry</td><td>Canon EOS R50 with 18-45 mm</td><td>≈ US$ 1,000</td><td>The simplest way to start. Good autofocus and menus that explain each setting.</td></tr>
+<tr><td>Entry</td><td>Sony a6400 with 16-50 mm</td><td>≈ US$ 1,200</td><td>Very good autofocus and access to every E-mount lens.</td></tr>
+<tr><td>Entry</td><td>Nikon Z50 II with 16-50 mm</td><td>≈ US$ 1,350</td><td>Good grip and modern autofocus, on a mount shared with Nikon's full-frame Z lenses.</td></tr>
+<tr><td>Full frame</td><td>Canon EOS RP with 24-105 mm</td><td>≈ US$ 1,450</td><td>The cheapest way into full frame with a lens included.</td></tr>
+<tr><td>Full frame</td><td>Sony A7 III (body only)</td><td>≈ US$ 1,650</td><td>For those who already know photography is serious and want low-light performance.</td></tr>
 </tbody></table></div>
 <p>If you want the cheapest new option, the Canon EOS R100 is usually the lowest-priced mirrorless camera with a viewfinder. It is slower and has fewer features, but it does the job for learning.</p>
 
