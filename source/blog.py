@@ -9,7 +9,13 @@ tpl = open("/home/claude/web/template.html").read()
 CSS = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">'
 
-BLOG_CSS = """
+GUIA_CTA = '''<aside class="guia-cta"><p class="eyebrow">Guía gratuita</p><h2>Empezar a fotografiar</h2><p>Trece páginas para dejar el modo automático: exposición, modos, histograma, enfoque, composición y un plan de práctica de cuatro semanas. Sirve para cualquier cámara.</p><a class="btn" href="/guia/">Descargar la guía</a></aside>'''
+BLOG_CSS = """.guia-cta{max-width:68ch;margin-top:28px;padding:26px;border:1px solid var(--accent);background:var(--surface)}
+.guia-cta h2{font-family:var(--display);font-weight:400;font-size:1.8rem;margin:6px 0 8px}
+.guia-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:#0b0f12;font:500 .95rem var(--body);padding:12px 20px;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+
 .crumbs{font:12px var(--mono);color:var(--muted);padding-block:28px 0}
 .crumbs a{text-decoration:none}.crumbs a:hover{color:var(--fg)}
 .post-head{max-width:820px;padding-block:18px 28px}
@@ -51,19 +57,19 @@ BLOG_CSS = """
 """
 
 L = {
- "es": dict(home="/", blog="/blog/", nav=[("/#mar","El mar"),("/#pueblo","El pueblo"),("/#luz","La luz"),("/#guia","Guía"),("/blog/","Blog"),("/sobre/","Quién soy")],
+ "es": dict(home="/", blog="/blog/", nav=[("/#mar","El mar"),("/#pueblo","El pueblo"),("/#luz","La luz"),("/#guia","Guía"),("/blog/","Blog"),("/recursos/","Recursos"),("/sobre/","Quién soy")],
             brand="fotografía", blogtitle="Blog", blogdesc="Artículos sobre fotografía para quienes empiezan: exposición, modos de la cámara, composición y luz. Sirven para cualquier cámara.",
             blogh="Blog", blogp="Lo que voy aprendiendo sobre fotografía, explicado simple. Conceptos que sirven con cualquier cámara, del celular a una sin espejo.",
             read="min de lectura", by="Por Matías Silva", home_l="Inicio",
             author="<b>Matías Silva</b> · Fotógrafo entre San Miguel y Nazaré. Escribo sobre lo que aprendo en cada salida.",
             foot="© 2026 Matías Silva · Todas las fotografías son de autoría propia.", months=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]),
- "pt": dict(home="/pt/", blog="/pt/blog/", nav=[("/pt/#mar","O mar"),("/pt/#pueblo","A vila"),("/pt/#luz","A luz"),("/pt/#guia","Guia"),("/pt/blog/","Blog"),("/pt/sobre/","Quem sou")],
+ "pt": dict(home="/pt/", blog="/pt/blog/", nav=[("/pt/#mar","O mar"),("/pt/#pueblo","A vila"),("/pt/#luz","A luz"),("/pt/#guia","Guia"),("/pt/blog/","Blog"),("/recursos/","Recursos"),("/pt/sobre/","Quem sou")],
             brand="fotografia", blogtitle="Blog", blogdesc="Artigos de fotografia para quem está a começar: exposição, modos da câmara, composição e luz. Servem para qualquer câmara.",
             blogh="Blog", blogp="O que vou aprendendo sobre fotografia, explicado de forma simples. Conceitos que servem para qualquer câmara, do telemóvel a uma sem espelho.",
             read="min de leitura", by="Por Matías Silva", home_l="Início",
             author="<b>Matías Silva</b> · Fotógrafo entre San Miguel e a Nazaré. Escrevo sobre o que aprendo em cada saída.",
             foot="© 2026 Matías Silva · Todas as fotografias são de autoria própria.", months=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]),
- "en": dict(home="/en/", blog="/en/blog/", nav=[("/en/#mar","The sea"),("/en/#pueblo","The town"),("/en/#luz","The light"),("/en/#guia","Guide"),("/en/blog/","Blog"),("/en/sobre/","About")],
+ "en": dict(home="/en/", blog="/en/blog/", nav=[("/en/#mar","The sea"),("/en/#pueblo","The town"),("/en/#luz","The light"),("/en/#guia","Guide"),("/en/blog/","Blog"),("/recursos/","Resources"),("/en/sobre/","About")],
             brand="photography", blogtitle="Blog", blogdesc="Photography articles for beginners: exposure, camera modes, composition and light. They work with any camera.",
             blogh="Blog", blogp="What I am learning about photography, explained simply. Concepts that work with any camera, from a phone to a mirrorless.",
             read="min read", by="By Matías Silva", home_l="Home",
@@ -131,6 +137,7 @@ for lang in ("es", "en", "pt"):
   <figure class="post-cover"><img src="/img/{p['image']}.jpg" alt="" width="1440" height="960" fetchpriority="high"></figure>
   <article class="prose">{c['body']}</article>
   <aside class="author"><img src="/img/matias.jpg" alt="Matías Silva" width="96" height="96" loading="lazy"><p>{t['author']}</p></aside>
+  {GUIA_CTA if lang == "es" else ""}
 </div>"""
         out[f"{lang}/{p['slug']}"] = (url, page(lang, c["title"] + " · Matías Silva", c["desc"], url, alt_es, alt_en, ld, content, p["image"], alt_pt))
         cards += f"""<a class="card" href="{url}"><img src="/img/{p['image']}-s.jpg" alt="" loading="lazy" width="760" height="507">

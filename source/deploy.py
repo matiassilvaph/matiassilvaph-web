@@ -43,6 +43,9 @@ for es,en in pairs:
     wrap('/home/claude/web/site'+es+'index.html',R+es.lstrip('/')+'index.html','es')
     wrap('/home/claude/web/site'+en+'index.html',R+en.lstrip('/')+'index.html','en')
 wrap('/home/claude/web/site/servicios/index.html',R+'servicios/index.html','es')
+wrap('/home/claude/web/site/recursos/index.html',R+'recursos/index.html','es')
+wrap('/home/claude/web/site/guia/index.html',R+'guia/index.html','es')
+wrap('/home/claude/web/site/guia/gracias/index.html',R+'guia/gracias/index.html','es')
 wrap('/home/claude/web/site/en/servicios/index.html',R+'en/servicios/index.html','en')
 wrap('/home/claude/web/site/pt/servicios/index.html',R+'pt/servicios/index.html','pt-PT')
 B="https://matiassilvaph.com"
@@ -68,6 +71,15 @@ for u in ("/","/en/","/pt/"):
     <xhtml:link rel="alternate" hreflang="pt-PT" href="{B}/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="{B}/"/>
     <lastmod>2026-11-06</lastmod>
+  </url>
+"""
+home+=f"""  <url>
+    <loc>{B}/guia/</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>{B}/recursos/</loc>
+    <lastmod>2026-11-13</lastmod>
   </url>
 """
 open(R+'sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+home+urls+'</urlset>\n')
