@@ -61,17 +61,25 @@ for lang,t in T.items():
   <label class="chk"><input type="checkbox" name="novedades" value="si"> {t['chk']}</label>
   <button type="submit">{t['btn']}</button>
 </form>"""
+    script=f"""<script>
+document.querySelector('form[name="{t['form']}"]').addEventListener('submit',function(e){{
+  e.preventDefault();var f=this,b=f.querySelector('button');b.disabled=true;
+  var go=function(){{location.href='{t['url']}gracias/';}};
+  fetch('/',{{method:'POST',headers:{{'Content-Type':'application/x-www-form-urlencoded'}},body:new URLSearchParams(new FormData(f)).toString()}}).then(go,go);
+  setTimeout(go,4000);
+}});
+</script>"""
     content=f"""<div class="wrap"><p class="crumbs" style="margin-top:24px"><a href="{t['rec']}">{t['rec_l']}</a> / {t['crumb']}</p><div class="g-wrap" style="padding-top:12px">
   <div class="g-cover"><img src="/img/{TAPAS[lang]}.jpg" alt="{t['alt']}" width="900" height="1272"></div>
   <div class="g-text"><p class="eyebrow">{t['eyebrow']}</p><h1>{t['h1']}</h1><p class="lead">{t['lead']}</p><ul>{items}</ul>{form}<p class="g-note">{t['note']}</p></div>
-</div></div>"""
+</div></div>"""+script
     ld={"@context":"https://schema.org","@type":"CreativeWork","name":t["h1"],"inLanguage":("pt-PT" if lang=="pt" else lang),"isAccessibleForFree":True,
         "author":{"@type":"Person","@id":SITE+"/#matias-silva","name":"Matías Silva"},"url":SITE+t["url"],"image":SITE+f"/img/{TAPAS[lang]}.jpg"}
     pg=blog.page(lang,t["title"],t["desc"],t["url"],"/guia/","/en/guia/",ld,content,"familia",alt_pt="/pt/guia/").replace("</style>",CSS+"</style>",1)
     d="/home/claude/web/site"+t["url"]; os.makedirs(d+"gracias",exist_ok=True)
     open(d+"index.html","w").write(pg)
     ok=f"""<div class="wrap"><div class="g-ok"><p class="eyebrow">{t['ok_e']}</p><h1>{t['ok_h']}</h1>
-  <p><a class="btn" href="{t['pdf']}" download>{t['ok_b']}</a></p>
+  <p><a class="btn" href="{t['pdf']}" target="_blank" rel="noopener">{t['ok_b']}</a></p>
   <p style="color:var(--muted);margin-top:24px">{t['ok_p'].format(blog=t['blog'])}</p></div></div>"""
     pg2=blog.page(lang,t["ok_t"],t["ok_t"],t["url"]+"gracias/",t["url"]+"gracias/",t["url"]+"gracias/",{},ok)
     pg2=pg2.replace("<title>",'<meta name="robots" content="noindex">\n<title>',1).replace("</style>",CSS+"</style>",1)

@@ -280,7 +280,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <label class="chk"><input type="checkbox" name="novedades" value="si"> Quero receber novidades: artigos novos, o curso e o livro. Sem spam, e podes cancelar quando quiseres.</label>
   <button type="submit">Descarregar o guia gratuito</button>
 </form><p class="g-note">Deixa o teu nome e o teu e-mail e a transferência abre de imediato. Só uso os teus dados para te enviar novidades deste site.</p></div>
-</div></div>
+</div></div><script>
+document.querySelector('form[name="guia-pt"]').addEventListener('submit',function(e){
+  e.preventDefault();var f=this,b=f.querySelector('button');b.disabled=true;
+  var go=function(){location.href='/pt/guia/gracias/';};
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()}).then(go,go);
+  setTimeout(go,4000);
+});
+</script>
 </main>
 <footer class="wrap">© 2026 Matías Silva · Todas as fotografias são de autoria própria.</footer>
 
