@@ -131,5 +131,5 @@ TEMPLATE = [
  ('Siguiente →', 'Seguinte →'),
  ('type="button">Cerrar</button>', 'type="button">Fechar</button>'),
  ('<a href="sobre/">Más sobre mí →</a>', '<a href="sobre/">Mais sobre mim →</a>'),
- ('<dt>Reconocimiento</dt><dd>Editor’s Pick 2026, Academy Photo Awards</dd>', '<dt>Distinção</dt><dd>Editor’s Pick 2026, Academy Photo Awards</dd>'),
+ ('<dt>Selección</dt><dd>Editor’s Pick 2026, Academy Photo Awards</dd>', '<dt>Seleção</dt><dd>Editor’s Pick 2026, Academy Photo Awards</dd>'),
 ]
