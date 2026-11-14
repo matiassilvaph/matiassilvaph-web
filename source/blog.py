@@ -13,7 +13,70 @@ GUIA_CTA = {
  "es": '''<aside class="guia-cta"><p class="eyebrow">Guía gratuita</p><h2>Empezar a fotografiar</h2><p>Trece páginas para dejar el modo automático: exposición, modos, histograma, enfoque, composición y un plan de práctica de cuatro semanas. Sirve para cualquier cámara.</p><a class="btn" href="/guia/">Descargar la guía</a></aside>''',
  "en": '''<aside class="guia-cta"><p class="eyebrow">Free guide</p><h2>Start taking photographs</h2><p>Thirteen pages to leave auto mode: exposure, modes, histogram, focus, composition and a four-week practice plan. It works with any camera.</p><a class="btn" href="/en/guia/">Download the guide</a></aside>''',
  "pt": '''<aside class="guia-cta"><p class="eyebrow">Guia gratuito</p><h2>Começar a fotografar</h2><p>Treze páginas para deixar o modo automático: exposição, modos, histograma, focagem, composição e um plano de prática de quatro semanas. Serve para qualquer câmara.</p><a class="btn" href="/pt/guia/">Descarregar o guia</a></aside>'''}
-BLOG_CSS = """.guia-cta{max-width:68ch;margin-top:28px;padding:26px;border:1px solid var(--accent);background:var(--surface)}
+
+POP_T = {
+ "es": dict(form="guia", ok="/guia/gracias/", img="/img/guia-tapa.jpg", ey="Guía gratuita · PDF", h="Empezar a fotografiar",
+            p="Trece páginas para dejar el modo automático. Sirve para cualquier cámara.", name="Tu nombre", mail="Tu correo",
+            chk="Quiero recibir novedades. Sin spam.", btn="Descargar gratis", close="Cerrar"),
+ "en": dict(form="guia-en", ok="/en/guia/gracias/", img="/img/guia-tapa-en.jpg", ey="Free guide · PDF", h="Start taking photographs",
+            p="Thirteen pages to leave auto mode. It works with any camera.", name="Your name", mail="Your email",
+            chk="I would like to receive updates. No spam.", btn="Download free", close="Close"),
+ "pt": dict(form="guia-pt", ok="/pt/guia/gracias/", img="/img/guia-tapa-pt.jpg", ey="Guia gratuito · PDF", h="Começar a fotografar",
+            p="Treze páginas para deixar o modo automático. Serve para qualquer câmara.", name="O teu nome", mail="O teu e-mail",
+            chk="Quero receber novidades. Sem spam.", btn="Descarregar grátis", close="Fechar"),
+}
+def popup(lang):
+    t = POP_T[lang]
+    return f"""<div class="gp" id="gp" hidden role="dialog" aria-modal="false" aria-labelledby="gp-h">
+  <button class="gp-x" type="button" aria-label="{t['close']}">×</button>
+  <img src="{t['img']}" alt="" width="120" height="170" loading="lazy">
+  <div class="gp-b">
+    <p class="eyebrow">{t['ey']}</p><p class="gp-h" id="gp-h">{t['h']}</p><p class="gp-p">{t['p']}</p>
+    <form name="{t['form']}" method="POST" action="{t['ok']}" data-netlify="true" netlify-honeypot="empresa">
+      <input type="hidden" name="form-name" value="{t['form']}"><p hidden><input name="empresa"></p>
+      <input type="text" name="nombre" placeholder="{t['name']}" required autocomplete="given-name">
+      <input type="email" name="email" placeholder="{t['mail']}" required autocomplete="email">
+      <label><input type="checkbox" name="novedades" value="si"> {t['chk']}</label>
+      <button type="submit">{t['btn']}</button>
+    </form>
+  </div>
+</div>
+<script>
+(function(){{
+  var K='gpHide',p=document.getElementById('gp');if(!p)return;
+  function get(){{try{{return localStorage.getItem(K)}}catch(e){{return null}}}}
+  function set(v){{try{{localStorage.setItem(K,v)}}catch(e){{}}}}
+  var v=get();if(v==='done'||(v&&Date.now()<+v))return;
+  var shown=false;
+  function show(){{if(shown)return;shown=true;p.hidden=false;requestAnimationFrame(function(){{p.classList.add('on')}});}}
+  function close(){{p.classList.remove('on');setTimeout(function(){{p.hidden=true}},300);set(String(Date.now()+30*864e5));}}
+  window.addEventListener('scroll',function(){{var h=document.documentElement;if((h.scrollTop+innerHeight)/h.scrollHeight>0.5)show();}},{{passive:true}});
+  p.querySelector('.gp-x').addEventListener('click',close);
+  document.addEventListener('keydown',function(e){{if(e.key==='Escape'&&shown)close();}});
+  p.querySelector('form').addEventListener('submit',function(e){{
+    e.preventDefault();var f=this;f.querySelector('button').disabled=true;set('done');
+    var go=function(){{location.href='{t['ok']}';}};
+    fetch('/',{{method:'POST',headers:{{'Content-Type':'application/x-www-form-urlencoded'}},body:new URLSearchParams(new FormData(f)).toString()}}).then(go,go);
+    setTimeout(go,4000);
+  }});
+}})();
+</script>"""
+POP_CSS = """
+.gp{position:fixed;z-index:60;right:24px;bottom:24px;width:min(440px,calc(100vw - 32px));background:#131a1f;border:1px solid var(--accent);box-shadow:0 20px 60px rgba(0,0,0,.6);display:flex;gap:18px;padding:22px;transform:translateY(24px);opacity:0;transition:transform .3s,opacity .3s}
+.gp.on{transform:none;opacity:1}
+.gp img{width:96px;height:auto;align-self:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.5)}
+.gp-b{flex:1;min-width:0}
+.gp .eyebrow{margin:0 0 4px}
+.gp-h{font:400 1.45rem/1.1 var(--display);margin:0 0 6px;color:var(--fg)}
+.gp-p{font-size:.88rem;color:var(--muted);margin:0 0 12px}
+.gp form{display:flex;flex-direction:column;gap:8px}
+.gp input[type=text],.gp input[type=email]{background:#0b0f12;border:1px solid var(--line);color:var(--fg);font:.95rem var(--body);padding:10px;width:100%;box-sizing:border-box}
+.gp label{font-size:.78rem;color:var(--muted);display:flex;gap:6px;align-items:flex-start}
+.gp button[type=submit]{background:var(--accent);color:#0b0f12;border:0;font:500 .95rem var(--body);padding:11px;cursor:pointer}
+.gp-x{position:absolute;top:6px;right:8px;background:none;border:0;color:var(--muted);font-size:1.6rem;line-height:1;cursor:pointer;padding:4px 8px}
+@media (max-width:600px){.gp{left:0;right:0;bottom:0;width:auto;border-width:1px 0 0;padding:18px 16px 20px}.gp img{display:none}}
+"""
+BLOG_CSS = """"""+POP_CSS+""".guia-cta{max-width:68ch;margin-top:28px;padding:26px;border:1px solid var(--accent);background:var(--surface)}
 .guia-cta h2{font-family:var(--display);font-weight:400;font-size:1.8rem;margin:6px 0 8px}
 .guia-cta p{margin:0 0 16px;color:var(--muted)}
 .btn{display:inline-block;background:var(--accent);color:#0b0f12;font:500 .95rem var(--body);padding:12px 20px;text-decoration:none}
@@ -141,6 +204,9 @@ for lang in ("es", "en", "pt"):
   <article class="prose">{c['body']}</article>
   <aside class="author"><img src="/img/matias.jpg" alt="Matías Silva" width="96" height="96" loading="lazy"><p>{t['author']}</p></aside>
   {GUIA_CTA[lang]}
+</div>
+{popup(lang)}
+<div hidden>
 </div>"""
         out[f"{lang}/{p['slug']}"] = (url, page(lang, c["title"] + " · Matías Silva", c["desc"], url, alt_es, alt_en, ld, content, p["image"], alt_pt))
         cards += f"""<a class="card" href="{url}"><img src="/img/{p['image']}-s.jpg" alt="" loading="lazy" width="760" height="507">
