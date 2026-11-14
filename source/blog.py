@@ -27,7 +27,7 @@ POP_T = {
 }
 def popup(lang):
     t = POP_T[lang]
-    return f"""<div class="gp" id="gp" hidden role="dialog" aria-modal="false" aria-labelledby="gp-h">
+    return f"""<div class="gp-bg" id="gp-bg"></div><div class="gp" id="gp" hidden role="dialog" aria-modal="false" aria-labelledby="gp-h">
   <button class="gp-x" type="button" aria-label="{t['close']}">×</button>
   <img src="{t['img']}" alt="" width="120" height="170" loading="lazy">
   <div class="gp-b">
@@ -48,8 +48,9 @@ def popup(lang):
   function set(v){{try{{localStorage.setItem(K,v)}}catch(e){{}}}}
   var v=get();if(v==='done'||(v&&Date.now()<+v))return;
   var shown=false;
-  function show(){{if(shown)return;shown=true;p.hidden=false;requestAnimationFrame(function(){{p.classList.add('on')}});}}
-  function close(){{p.classList.remove('on');setTimeout(function(){{p.hidden=true}},300);set(String(Date.now()+30*864e5));}}
+  var bg=document.getElementById('gp-bg');
+  function show(){{if(shown)return;shown=true;p.hidden=false;requestAnimationFrame(function(){{p.classList.add('on');if(bg)bg.classList.add('on')}});}}
+  function close(){{p.classList.remove('on');if(bg)bg.classList.remove('on');setTimeout(function(){{p.hidden=true}},300);set(String(Date.now()+30*864e5));}}
   window.addEventListener('scroll',function(){{var h=document.documentElement;if((h.scrollTop+innerHeight)/h.scrollHeight>0.5)show();}},{{passive:true}});
   p.querySelector('.gp-x').addEventListener('click',close);
   document.addEventListener('keydown',function(e){{if(e.key==='Escape'&&shown)close();}});
@@ -62,19 +63,22 @@ def popup(lang):
 }})();
 </script>"""
 POP_CSS = """
-.gp{position:fixed;z-index:60;right:24px;bottom:24px;width:min(440px,calc(100vw - 32px));background:#131a1f;border:1px solid var(--accent);box-shadow:0 20px 60px rgba(0,0,0,.6);display:flex;gap:18px;padding:22px;transform:translateY(24px);opacity:0;transition:transform .3s,opacity .3s}
+.gp-bg{position:fixed;inset:0;z-index:59;background:rgba(0,0,0,.45);opacity:0;transition:opacity .3s;pointer-events:none}
+.gp-bg.on{opacity:1}
+.gp{position:fixed;z-index:60;right:28px;bottom:28px;width:min(500px,calc(100vw - 32px));background:#131a1f;border:1px solid var(--accent);border-top:4px solid var(--accent);box-shadow:0 24px 80px rgba(0,0,0,.75);display:flex;gap:20px;padding:26px;transform:translateY(30px);opacity:0;transition:transform .35s,opacity .35s}
 .gp.on{transform:none;opacity:1}
-.gp img{width:96px;height:auto;align-self:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.5)}
+.gp img{width:118px;height:auto;align-self:flex-start;box-shadow:0 10px 24px rgba(0,0,0,.6)}
 .gp-b{flex:1;min-width:0}
-.gp .eyebrow{margin:0 0 4px}
-.gp-h{font:400 1.45rem/1.1 var(--display);margin:0 0 6px;color:var(--fg)}
-.gp-p{font-size:.88rem;color:var(--muted);margin:0 0 12px}
+.gp .eyebrow{margin:0 0 6px;color:var(--accent)}
+.gp-h{font:400 1.75rem/1.05 var(--display);margin:0 0 8px;color:var(--fg)}
+.gp-p{font-size:.92rem;color:#c9c5be;margin:0 0 14px}
 .gp form{display:flex;flex-direction:column;gap:8px}
-.gp input[type=text],.gp input[type=email]{background:#0b0f12;border:1px solid var(--line);color:var(--fg);font:.95rem var(--body);padding:10px;width:100%;box-sizing:border-box}
+.gp input[type=text],.gp input[type=email]{background:#0b0f12;border:1px solid var(--line);color:var(--fg);font:.95rem var(--body);padding:11px;width:100%;box-sizing:border-box}
 .gp label{font-size:.78rem;color:var(--muted);display:flex;gap:6px;align-items:flex-start}
-.gp button[type=submit]{background:var(--accent);color:#0b0f12;border:0;font:500 .95rem var(--body);padding:11px;cursor:pointer}
-.gp-x{position:absolute;top:6px;right:8px;background:none;border:0;color:var(--muted);font-size:1.6rem;line-height:1;cursor:pointer;padding:4px 8px}
-@media (max-width:600px){.gp{left:0;right:0;bottom:0;width:auto;border-width:1px 0 0;padding:18px 16px 20px}.gp img{display:none}}
+.gp button[type=submit]{background:var(--accent);color:#0b0f12;border:0;font:600 1rem var(--body);padding:13px;cursor:pointer}
+.gp button[type=submit]:hover{filter:brightness(1.08)}
+.gp-x{position:absolute;top:8px;right:10px;background:none;border:0;color:var(--muted);font-size:1.7rem;line-height:1;cursor:pointer;padding:4px 8px}
+@media (max-width:600px){.gp{left:0;right:0;bottom:0;width:auto;border-width:4px 0 0;padding:20px 16px 22px}.gp img{display:none}.gp-h{font-size:1.5rem}}
 """
 BLOG_CSS = """"""+POP_CSS+""".guia-cta{max-width:68ch;margin-top:28px;padding:26px;border:1px solid var(--accent);background:var(--surface)}
 .guia-cta h2{font-family:var(--display);font-weight:400;font-size:1.8rem;margin:6px 0 8px}

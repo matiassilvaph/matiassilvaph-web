@@ -28,8 +28,13 @@ def wrap(src,out,lang):
     page=('<!doctype html>\n<html lang="'+lang+'">\n<head>\n'+GA4+GTM_HEAD+'<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
           + head.replace('<meta name="claude:viewport-fit-sides" content="cover">\n','') +
           '<style>[hidden]{display:none!important}</style>\n</head>\n<body>\n'+GTM_BODY + body + '\n</body>\n</html>\n')
+    if out.endswith(('matiassilvaph-web/index.html','en/index.html','pt/index.html')) and '/blog/' not in out:
+        page=_pop(page,{'es':'es','en':'en','pt-PT':'pt'}[lang])
     os.makedirs(os.path.dirname(out),exist_ok=True)
     open(out,'w').write(page)
+import blog as _blog
+def _pop(page,lang):
+    return page.replace('</style>\n</head>','</style>\n<style>'+_blog.POP_CSS+'</style>\n</head>',1).replace('\n</body>','\n'+_blog.popup(lang)+'\n</body>',1)
 R='/home/claude/matiassilvaph-web/'
 wrap('/home/claude/web/site/index.html',R+'index.html','es')
 wrap('/home/claude/web/site/en/index.html',R+'en/index.html','en')
