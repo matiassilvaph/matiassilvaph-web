@@ -35,6 +35,10 @@ T = {
   lead="Fotógrafo argentino. Vivo en San Miguel, Buenos Aires, y fotografío Nazaré, Portugal.",
   alt="Matías Silva asomado a una ventana en un muro de piedra del Forte de São Miguel Arcanjo, Nazaré.", cap="Forte de São Miguel Arcanjo, Nazaré.", alt2="Matías Silva de espaldas en la orilla, frente a una ola en Nazaré.",
   sections=[
+   ("Por qué fotografío", [
+     "Fotografío lo que me obliga a detenerme, lo que me hace soltar el acelerador para mirar el momento: algo o alguien que resiste con su luz en un mundo lleno de ruido.",
+     "La fotografía siempre estuvo en mí. Hoy me meto de lleno, con sensibilidad y con intensidad, y comparto lo que voy aprendiendo en el camino.",
+   ]),
    ("Nazaré", [
      "Imaginé Nazaré durante años antes de conocerla. La seguía desde 2014 y llegué por primera vez en 2022.",
      "Después viví tres años en Portugal. Una parte de ese tiempo la pasé instalado en Nazaré y el resto viajaba hasta allá cada vez que podía, para conocer sus olas, su cultura y su gente. De ahí sale la forma en que la fotografío.",
@@ -69,6 +73,10 @@ T = {
   lead="Argentine photographer. I live in San Miguel, Buenos Aires, and I photograph Nazaré, Portugal.",
   alt="Matías Silva at a window in a stone wall of the Forte de São Miguel Arcanjo, Nazaré.", cap="Forte de São Miguel Arcanjo, Nazaré.", alt2="Matías Silva from behind at the shoreline, facing a wave in Nazaré.",
   sections=[
+   ("Why I photograph", [
+     "I photograph what makes me stop, what makes me ease off the accelerator to look at the moment: something or someone that holds on with its light in a world full of noise.",
+     "Photography was always in me. Now I am going all in, with sensitivity and with intensity, and I share what I learn along the way.",
+   ]),
    ("Nazaré", [
      "I imagined Nazaré for years before I knew it. I had followed it since 2014 and first got there in 2022.",
      "Then I lived in Portugal for three years. Part of that time I was based in Nazaré, and the rest I travelled there whenever I could, to get to know its waves, its culture and its people. That is where the way I photograph it comes from.",
@@ -103,6 +111,10 @@ T = {
   lead="Fotógrafo argentino. Vivo em San Miguel, Buenos Aires, e fotografo a Nazaré.",
   alt="Matías Silva numa janela de um muro de pedra do Forte de São Miguel Arcanjo, Nazaré.", cap="Forte de São Miguel Arcanjo, Nazaré.", alt2="Matías Silva de costas à beira-mar, em frente a uma onda na Nazaré.",
   sections=[
+   ("Porque fotografo", [
+     "Fotografo o que me obriga a parar, o que me faz tirar o pé do acelerador para olhar o momento: algo ou alguém que resiste com a sua luz num mundo cheio de ruído.",
+     "A fotografia sempre esteve em mim. Hoje entrego-me a ela por inteiro, com sensibilidade e com intensidade, e partilho o que vou aprendendo pelo caminho.",
+   ]),
    ("Nazaré", [
      "Imaginei a Nazaré durante anos antes de a conhecer. Acompanhava-a desde 2014 e cheguei lá pela primeira vez em 2022.",
      "Depois vivi três anos em Portugal. Parte desse tempo morei na Nazaré e, no resto, ia lá sempre que podia, para conhecer as suas ondas, a sua cultura e a sua gente. É daí que vem a forma como a fotografo.",
