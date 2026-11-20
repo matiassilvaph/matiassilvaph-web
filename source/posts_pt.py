@@ -363,7 +363,7 @@ PT = {
 
 <h2>Em resumo</h2>
 <p>Se estás a começar, aprende com o que tens e, quando quiseres dar o passo, escolhe uma sem espelho de entrada com uma boa objetiva. O formato completo é para quando já sabes que a fotografia vai fazer parte da tua vida. Seja qual for a câmara, o que faz a diferença é perceber o <a href="/pt/blog/triangulo-de-exposicion/">triângulo de exposição</a> e sair para a usar com frequência.</p>
-<p class="next">Leitura seguinte: <a href="/pt/blog/modos-de-la-camara/">Modos da câmara: quando usar A, S, M e P</a>.</p>
+<p class="next">Leitura seguinte: <a href="/pt/blog/como-configurar-una-camara-nueva/">Como configurar uma câmara nova: 10 ajustes para o primeiro dia</a>.</p>
 """},
 "como-configurar-una-camara-nueva": {
  "title": 'Como configurar uma câmara nova: 10 ajustes para o primeiro dia',

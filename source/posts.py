@@ -688,7 +688,7 @@ POSTS = [
 
 <h2>En resumen</h2>
 <p>Si recién empezás, aprendé con lo que tengas y, cuando quieras dar el paso, elegí una sin espejo de entrada con un buen lente. El cuadro completo es para cuando ya sabés que la fotografía va a ser parte de tu vida. Sea cual sea la cámara, lo que hace la diferencia es entender el <a href="/blog/triangulo-de-exposicion/">triángulo de exposición</a> y salir a usarla seguido.</p>
-<p class="next">Siguiente lectura: <a href="/blog/modos-de-la-camara/">Modos de la cámara: cuándo usar A, S, M y P</a>.</p>
+<p class="next">Siguiente lectura: <a href="/blog/como-configurar-una-camara-nueva/">Cómo configurar una cámara nueva: 10 ajustes para el primer día</a>.</p>
 """
  },
  "en": {
@@ -763,7 +763,7 @@ POSTS = [
 
 <h2>In short</h2>
 <p>If you are just starting, learn with what you have and, when you want to take the step, choose an entry-level mirrorless camera with a good lens. Full frame is for when you already know photography will be part of your life. Whatever the camera, what makes the difference is understanding the <a href="/en/blog/triangulo-de-exposicion/">exposure triangle</a> and going out to use it often.</p>
-<p class="next">Next: <a href="/en/blog/modos-de-la-camara/">Camera modes: when to use A, S, M and P</a>.</p>
+<p class="next">Read next: <a href="/en/blog/como-configurar-una-camara-nueva/">How to set up a new camera: 10 settings for day one</a>.</p>
 """
  },
 },
